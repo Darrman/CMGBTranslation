@@ -10,752 +10,955 @@
 #JMP($38000, $385A6) // Jump to insertion point
 #HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
 
+//Name notes:
+//JP = proper translation of Japanese name
+//M = used in English manga
+//EN = used in TCG and/or 4kids dub
+
 //POINTER #0 @ $385A7 - STRING #0 @ $38000
 #W16($385A7)
 //イカニンジャ[Exit]
+//JP: Squid Ninja
+//EN: Ninja Squid
 //
 // current address: $3800A
 
 //POINTER #1 @ $385A9 - STRING #1 @ $3800A
 #W16($385A9)
 //グレートホワイト[Exit]
+//Great White
 //
 // current address: $38016
 
 //POINTER #2 @ $385AB - STRING #2 @ $38016
 #W16($385AB)
-//ジリーフッシュ[Exit]
+//ジェリーフィッシュ[Exit]
+//Jellyfish
 //
 // current address: $38023
 
 //POINTER #3 @ $385AD - STRING #3 @ $38023
 #W16($385AD)
 //デビルクラーケン[Exit]
+//JP/M: Devil Kraken
+//EN: Fiend Kraken
 //
 // current address: $38031
 
 //POINTER #4 @ $385AF - STRING #4 @ $38031
 #W16($385AF)
 //カタパルトタートル[Exit]
+//Catapult Turtle
 //
 // current address: $3803E
 
 //POINTER #5 @ $385B1 - STRING #5 @ $3803E
 #W16($385B1)
 //リバイアサン[Exit]
+//JP/M: Leviathan
+//EN: Kairyu-Shin
 //
 // current address: $38048
 
 //POINTER #6 @ $385B3 - STRING #6 @ $38048
 #W16($385B3)
 //グレート・パー[Exit]
+//M: The Great "Pa"
 //
 // current address: $38055
 
 //POINTER #7 @ $385B5 - STRING #7 @ $38055
 #W16($385B5)
 //ガンボ[Exit]
+//Gumbo
 //
 // current address: $3805E
 
 //POINTER #8 @ $385B7 - STRING #8 @ $3805E
 #W16($385B7)
 //サイガー[Exit]
+//JP: Saigar
+//M: Saiga
+//EN: Torike
 //
 // current address: $38066
 
 //POINTER #9 @ $385B9 - STRING #9 @ $38066
 #W16($385B9)
 //ルイーズ[Exit]
+//JP: Louise
+//EN: Beaver Warrior
 //
 // current address: $3806E
 
 //POINTER #10 @ $385BB - STRING #10 @ $3806E
 #W16($385BB)
-//アルテメーター[Exit]
-//
+//アルティメーター[Exit]
+//JP: (Grappling Warrior) Ultimator
+//M: (Kung Fu Fighter) Ultimator
+//EN: Battle Warrior
 // current address: $38078
 
 //POINTER #11 @ $385BD - STRING #11 @ $38078
 #W16($385BD)
 //タイガーアックス[Exit]
+//Tiger Axe
 //
 // current address: $38084
 
 //POINTER #12 @ $385BF - STRING #12 @ $38084
 #W16($385BF)
 //ケンタウロス[Exit]
+//JP: Centaur
+//EN: Mystic Horseman
 //
 // current address: $3808C
 
 //POINTER #13 @ $385C1 - STRING #13 @ $3808C
 #W16($385C1)
 //アックスレイダー[Exit]
+//Axe Raider
 //
 // current address: $38098
 
 //POINTER #14 @ $385C3 - STRING #14 @ $38098
 #W16($385C3)
 //ぎゅうまじん[Exit]
+//JP: Bull Djinn
+//EN: Battle Steer
 //
 // current address: $380A4
 
 //POINTER #15 @ $385C5 - STRING #15 @ $380A4
 #W16($385C5)
 //バーバリアン[Exit]
+//JP: Barbarian
+//EN: Battleguard
 //
 // current address: $380B0
 
 //POINTER #16 @ $385C7 - STRING #16 @ $380B0
 #W16($385C7)
 //ガルーザス[Exit]
+//Garoozis
 //
 // current address: $380BB
 
 //POINTER #17 @ $385C9 - STRING #17 @ $380BB
 #W16($385C9)
 //ほのおのけんし[Exit]
+//Flame Swordsman
 //
 // current address: $380C4
 
 //POINTER #18 @ $385CB - STRING #18 @ $380C4
 #W16($385CB)
 //ミノタウルス[Exit]
+//JP: Minotaur
+//EN: Battle Ox
 //
 // current address: $380CC
 
 //POINTER #19 @ $385CD - STRING #19 @ $380CC
 #W16($385CD)
 //ミノケンタウルス[Exit]
+//JP: Minocentaur
+//EN: Rabid Horseman
 //
 // current address: $380D6
 
 //POINTER #20 @ $385CF - STRING #20 @ $380D6
 #W16($385CF)
 //あんこくきしガイア[Exit]
+//JP: Gaia the Dark Knight
+//EN: Gaia the Fierce Knight
 //
 // current address: $380E3
 
 //POINTER #21 @ $385D1 - STRING #21 @ $380E3
 #W16($385D1)
 //ゆゅうきしガイア[Exit]
+//JP: Gaia the Dragon Knight
+//EN: Gaia the Dragon Champion
 //
 // current address: $380EF
 
 //POINTER #22 @ $385D3 - STRING #22 @ $380EF
 #W16($385D3)
 //トッポー[Exit]
+//Toppo
 //
 // current address: $380F7
 
 //POINTER #23 @ $385D5 - STRING #23 @ $380F7
 #W16($385D5)
 //トリガン[Exit]
+//Torigun
 //
 // current address: $380FF
 
 //POINTER #24 @ $385D7 - STRING #24 @ $380FF
 #W16($385D7)
-//マウンテンウリアー[Exit]
+//マウンテンウォリアー[Exit]
+//Mountain Warrior
 //
 // current address: $3810B
 
 //POINTER #25 @ $385D9 - STRING #25 @ $3810B
 #W16($385D9)
 //オーガロック[Exit]
+//JP: (Cavern Djinn) Ogre Rock
+//EN: Rock Ogre Grotto
 //
 // current address: $38115
 
 //POINTER #26 @ $385DB - STRING #26 @ $38115
 #W16($385DB)
 //ガーゴイル[Exit]
-//
+//JP: Gargoyle
+//EN: Ryu-Kishin
 // current address: $38120
 
 //POINTER #27 @ $385DD - STRING #27 @ $38120
 #W16($385DD)
 //サイクロプス[Exit]
-//
+//JP: Cyclops
+//EN: Hitotsu-Me Giant
+
 // current address: $3812A
 
 //POINTER #28 @ $385DF - STRING #28 @ $3812A
 #W16($385DF)
-//ハーピーレデ[Exit]
-//
+//ハーピーレディ[Exit]
+//Harp(y/ie) Lady
+
 // current address: $38137
 
 //POINTER #29 @ $385E1 - STRING #29 @ $38137
 #W16($385E1)
 //とゆでをまもよろくゆゅう[Exit]
+//TODO: find name
 //
 // current address: $38147
 
 //POINTER #30 @ $385E3 - STRING #30 @ $38147
 #W16($385E3)
 //あんこくのドラゴン[Exit]
+//JP: Dark Dragon
+//EN: Blackland Fire Dragon
 //
 // current address: $38156
 
 //POINTER #31 @ $385E5 - STRING #31 @ $38156
 #W16($385E5)
 //ガーゴイルパワード[Exit]
+//JP: Gargoyle Powered
+//EN: Ryu-Kishin Powered
 //
 // current address: $38169
 
 //POINTER #32 @ $385E7 - STRING #32 @ $38169
 #W16($385E7)
 //ちをはうドラゴン[Exit]
+//Crawling Dragon
 //
 // current address: $38177
 
 //POINTER #33 @ $385E9 - STRING #33 @ $38177
 #W16($385E9)
 //デビルドラゴン[Exit]
+//JP: Devil Dragon
+//EN: Koumori Dragon
 //
 // current address: $38188
 
 //POINTER #34 @ $385EB - STRING #34 @ $38188
 #W16($385EB)
 //カースオブドラゴン[Exit]
+//Curse of Dragon
 //
 // current address: $38199
 
 //POINTER #35 @ $385ED - STRING #35 @ $38199
 #W16($385ED)
 //ベビードラゴン[Exit]
+//Baby Dragon
 //
 // current address: $381AA
 
 //POINTER #36 @ $385EF - STRING #36 @ $381AA
 #W16($385EF)
 //1000ねんドラゴン[Exit]
+//Thousand Dragon
+//Different name in Japanese than usual
 //
 // current address: $381BA
 
 //POINTER #37 @ $385F1 - STRING #37 @ $381BA
 #W16($385F1)
 //ダイナソーウイング[Exit]
+//Dinosaur Wing
 //
 // current address: $381C9
 
 //POINTER #38 @ $385F3 - STRING #38 @ $381C9
 #W16($385F3)
 //アルマザウルス[Exit]
+//Armorsaurus
 //
 // current address: $381D4
 
 //POINTER #39 @ $385F5 - STRING #39 @ $381D4
 #W16($385F5)
 //アーマーリザード[Exit]
+//JP: Armour Lizard
+//EN: Armored Lizard
 //
 // current address: $381E2
 
 //POINTER #40 @ $385F7 - STRING #40 @ $381E2
 #W16($385F7)
 //ワイルドラプター[Exit]
+//JP: Wild Raptor
+//EN: Uraby
 //
 // current address: $381F0
 
 //POINTER #41 @ $385F9 - STRING #41 @ $381F0
 #W16($385F9)
 //ソードドラゴン[Exit]
+//JP/M: Sword Dragon
+//EN: Sword Arm of Dragon
 //
 // current address: $381FF
 
 //POINTER #42 @ $385FB - STRING #42 @ $381FF
 #W16($385FB)
 //メガザウラー[Exit]
+//JP/EN: Megazowler
+//M: Megasaurus
 //
 // current address: $3820B
 
 //POINTER #43 @ $385FD - STRING #43 @ $3820B
 #W16($385FD)
 //にとうをもつKレックス[Exit]
+//Two-Headed K(ing) Rex
 //
 // current address: $38218
 
 //POINTER #44 @ $385FF - STRING #44 @ $38218
 #W16($385FF)
 //へッドザッカー[Exit]
+//Head Sucker
 //
 // current address: $38225
 
 //POINTER #45 @ $38601 - STRING #45 @ $38225
 #W16($38601)
 //ワイト[Exit]
+//JP: Wight
+//EN: Skull Servant
 //
 // current address: $3822A
 
 //POINTER #46 @ $38603 - STRING #46 @ $3822A
 #W16($38603)
 //メデューサのぼうらい[Exit]
+//JP/M: Medusa's Ghost
+//EN: The Snake Hair
 //
 // current address: $3823A
 
 //POINTER #47 @ $38605 - STRING #47 @ $3823A
 #W16($38605)
 //マンモスのはかば[Exit]
+//Mammoth Graveyard
 //
 // current address: $38246
 
 //POINTER #48 @ $38607 - STRING #48 @ $38246
 #W16($38607)
 //マーダーサーカスゾンビ[Exit]
+//JP: Murder Circus Zombie
+//EN: Clown Zombie
 //
 // current address: $38259
 
 //POINTER #49 @ $38609 - STRING #49 @ $38259
 #W16($38609)
 //ろりいむしゃゾンビ[Exit]
+//Armored Zombie
 //
 // current address: $38268
 
 //POINTER #50 @ $3860B - STRING #50 @ $38268
 #W16($3860B)
 //ドラゴンゾンビ[Exit]
+//Dragon Zombie
 //
 // current address: $38279
 
 //POINTER #51 @ $3860D - STRING #51 @ $38279
 #W16($3860D)
 //パンプキング[Exit]
+//Pumpking (the King of Ghosts)
 //
 // current address: $38287
 
 //POINTER #52 @ $3860F - STRING #52 @ $38287
 #W16($3860F)
 //ビートン[Exit]
+//Beeton
 //
 // current address: $3828F
 
 //POINTER #53 @ $38611 - STRING #53 @ $3828F
 #W16($38611)
 //ハイパービートル[Exit]
+//Hyper Beetle
 //
 // current address: $3829D
 
 //POINTER #54 @ $38613 - STRING #54 @ $3829D
 #W16($38613)
 //モグリン[Exit]
+//JP: Moglin
+//M: Mogley
 //
 // current address: $382A5
 
 //POINTER #55 @ $38615 - STRING #55 @ $382A5
 #W16($38615)
 //のうミソスライム[Exit]
+//Brain Slime
 //
 // current address: $382AF
 
 //POINTER #56 @ $38617 - STRING #56 @ $382AF
 #W16($38617)
 //フラワーマン[Exit]
+//Flower Man
 //
 // current address: $382B7
 
 //POINTER #57 @ $38619 - STRING #57 @ $382B7
 #W16($38619)
 //アイ・マウス[Exit]
+//Eye Mouth
 //
 // current address: $382BF
 
 //POINTER #58 @ $3861B - STRING #58 @ $382BF
 #W16($3861B)
 //ビッグフット[Exit]
+//Big Foot
 //
 // current address: $382CB
 
 //POINTER #59 @ $3861D - STRING #59 @ $382CB
 #W16($3861D)
 //クリボー[Exit]
+//Kuriboh
 //
 // current address: $382D3
 
 //POINTER #60 @ $3861F - STRING #60 @ $382D3
 #W16($3861F)
 //きのこマン[Exit]
+//Mushroom Man
 //
 // current address: $382DA
 
 //POINTER #61 @ $38621 - STRING #61 @ $382DA
 #W16($38621)
 //コブラーダ[Exit]
+//Cobrada
 //
 // current address: $382E5
 
 //POINTER #62 @ $38623 - STRING #62 @ $382E5
 #W16($38623)
 //ビックアント[Exit]
+//JP/M: Big Ant
+//EN: Big Insect
 //
 // current address: $382EF
 
 //POINTER #63 @ $38625 - STRING #63 @ $382EF
 #W16($38625)
 //ベーシックインセクト[Exit]
+//Basic Insect
 //
 // current address: $382FD
 
 //POINTER #64 @ $38627 - STRING #64 @ $382FD
 #W16($38627)
 //キラービー[Exit]
+//JP: Killer Bee
+//EN: Killer Needle
 //
 // current address: $38306
 
 //POINTER #65 @ $38629 - STRING #65 @ $38306
 #W16($38629)
 //ゴキボール[Exit]
+//JP: Roachball
+//M: Pillroach
+//EN: Gokibore
 //
 // current address: $38311
 
 //POINTER #66 @ $3862B - STRING #66 @ $38311
 #W16($3862B)
 //オオカミ[Exit]
+//Wolf
 //
 // current address: $38317
 
 //POINTER #67 @ $3862D - STRING #67 @ $38317
 #W16($3862D)
-//シルバーフング[Exit]
+//シルバーフォング[Exit]
+//Silver Fang
 //
 // current address: $38325
 
 //POINTER #68 @ $3862F - STRING #68 @ $38325
 #W16($3862F)
 //ワームビースト[Exit]
+//(The Wicked) Worm Beast
 //
 // current address: $38330
 
 //POINTER #69 @ $38631 - STRING #69 @ $38330
 #W16($38631)
 //ラーバモス[Exit]
+//Larva Moth
 //
 // current address: $38339
 
 //POINTER #70 @ $38633 - STRING #70 @ $38339
 #W16($38633)
 //グレートモス1[Exit]
+//Great Moth 1
 //
 // current address: $38344
 
 //POINTER #71 @ $38635 - STRING #71 @ $38344
 #W16($38635)
 //グレートモス2[Exit]
+..Great Moth 2
 //
 // current address: $3834F
 
 //POINTER #72 @ $38637 - STRING #72 @ $3834F
 #W16($38637)
 //グレートモス3[Exit]
+//Great Moth 3
 //
 // current address: $3835A
 
 //POINTER #73 @ $38639 - STRING #73 @ $3835A
 #W16($38639)
 //グレートモス4[Exit]
+//Great Moth 4
 //
 // current address: $38365
 
 //POINTER #74 @ $3863B - STRING #74 @ $38365
 #W16($3863B)
 //グレートモスS[Exit]
+//Great Moth S
 //
 // current address: $38370
 
 //POINTER #75 @ $3863D - STRING #75 @ $38370
 #W16($3863D)
 //つぼまじん[Exit]
+//JP: Jar Djinn
+//EN: Dragon Piper
 //
 // current address: $3837B
 
 //POINTER #76 @ $3863F - STRING #76 @ $3837B
 #W16($3863F)
 //るみのどうけしサギー[Exit]
+//Saggi the Dark Clown
 //
 // current address: $3838B
 
 //POINTER #77 @ $38641 - STRING #77 @ $3838B
 #W16($38641)
 //インプ[Exit]
+//JP/M: Imp
+//EN: Horn Imp
 //
 // current address: $38392
 
 //POINTER #78 @ $38643 - STRING #78 @ $38392
 #W16($38643)
 //グレムリン[Exit]
+//JP: Gremlin
+//EN: Feral Imp
 //
 // current address: $3839B
 
 //POINTER #79 @ $38645 - STRING #79 @ $3839B
 #W16($38645)
 //グラップラー[Exit]
+//Grappler
 //
 // current address: $383A7
 
 //POINTER #80 @ $38647 - STRING #80 @ $383A7
 #W16($38647)
 //ろりいむしゃザンキ[Exit]
+//JP: Demon Slayer, the Armoured Warrior
+//EN: Zanki
 //
 // current address: $383B4
 
 //POINTER #81 @ $38649 - STRING #81 @ $383B4
 #W16($38649)
 //ラ・ジーン[Exit]
+//JP: La Jinn (the Demonic Spirit of the Lamp)
+//EN: La Jinn (the Mystical Genie of the Lamp)
 //
 // current address: $383BD
 
 //POINTER #82 @ $3864B - STRING #82 @ $383BD
 #W16($3864B)
 //マーダーサーカス[Exit]
+//JP: Murder Circus
+//EN: Crass Clown
 //
 // current address: $383C9
 
 //POINTER #83 @ $3864D - STRING #83 @ $383C9
 #W16($3864D)
 //ダンジョンワーム[Exit]
+//Dungeon Worm
 //
 // current address: $383D7
 
 //POINTER #84 @ $3864F - STRING #84 @ $383D7
 #W16($3864F)
 //シャドウグール[Exit]
+//Shadow Ghoul
 //
 // current address: $383E4
 
 //POINTER #85 @ $38651 - STRING #85 @ $383E4
 #W16($38651)
 //ソードストーカー[Exit]
+//Swordstalker
 //
 // current address: $383F0
 
 //POINTER #86 @ $38653 - STRING #86 @ $383F0
 #W16($38653)
 //バロックス[Exit]
+//Barox
 //
 // current address: $383F9
 
 //POINTER #87 @ $38655 - STRING #87 @ $383F9
 #W16($38655)
 //ダーク・キメラ[Exit]
+//Dark Chimera
 //
 // current address: $38404
 
 //POINTER #88 @ $38657 - STRING #88 @ $38404
 #W16($38657)
 //ジャッジマン[Exit]
+//Judge Man
 //
 // current address: $38410
 
 //POINTER #89 @ $38659 - STRING #89 @ $38410
 #W16($38659)
-//メタルガーデアン[Exit]
+//メタルガーディアン[Exit]
+//Metal Guardian
 //
 // current address: $3841F
 
 //POINTER #90 @ $3865B - STRING #90 @ $3841F
 #W16($3865B)
-//ノーフイス[Exit]
+//ノーフェイス[Exit]
+//JP: (Illusionist) No Face
+//EN: (Illusionist) Faceless Mage
 //
 // current address: $38427
 
 //POINTER #91 @ $3865D - STRING #91 @ $38427
 #W16($3865D)
 //REBドラゴン[Exit]
+//R(ed) E(yes) B(lack) Dragon
 //
 // current address: $38434
 
 //POINTER #92 @ $3865F - STRING #92 @ $38434
 #W16($3865F)
 //ブラックマジシャン[Exit]
+//JP: Black Magician
+//EN: Dark Magician
 //
 // current address: $38443
 
 //POINTER #93 @ $38661 - STRING #93 @ $38443
 #W16($38661)
 //デーモン[Exit]
+//JP: (Summoned) Demon
+//EN: (Summoned) Skull
 //
 // current address: $3844B
 
 //POINTER #94 @ $38663 - STRING #94 @ $3844B
 #W16($38663)
 //るみまかいのはおう[Exit]
+//JP: Supreme King of the Dark Demon World
+//EN: King of Yamimakai
 //
 // current address: $38456
 
 //POINTER #95 @ $38665 - STRING #95 @ $38456
 #W16($38665)
 //BDドラゴン[Exit]
+//JP: B(lack) D(emon's) Dragon
+//EN: Black Skull Dragon
 //
 // current address: $38462
 
 //POINTER #96 @ $38667 - STRING #96 @ $38462
 #W16($38667)
 //ふういんさらしみぎウデ[Exit]
+//JP: Right Arm of the Sealed One
+//EN: Right Arm of the Forbidden One
 //
 // current address: $38473
 
 //POINTER #97 @ $38669 - STRING #97 @ $38473
 #W16($38669)
 //ふういんさらしひだゆウデ[Exit]
+//JP: Left Arm of the Sealed One
+//EN: Left Arm of the Forbidden One
 //
 // current address: $38485
 
 //POINTER #98 @ $3866B - STRING #98 @ $38485
 #W16($3866B)
 //ふういんさらしアシ[Exit]
+//Legs of the Sealed One
+//"Legs of the Forbidden One"
 //
 // current address: $38490
 
 //POINTER #99 @ $3866D - STRING #99 @ $38490
 #W16($3866D)
 //ふういんさらしカラダ[Exit]
+//Body of the Sealed One
+//"Head of the Forbidden One"?
+//Typically Exodia of the Forbidden One...
 //
 // current address: $3849E
 
 //POINTER #100 @ $3866F - STRING #100 @ $3849E
 #W16($3866F)
-//エクゾデア[Exit]
+//エクゾディア[Exit]
+//Exodia
+//...but here's the full Exodia
 //
 // current address: $384AA
 
 //POINTER #101 @ $38671 - STRING #101 @ $384AA
 #W16($38671)
 //ホーリーエルフ[Exit]
+//JP: Holy Elf
+//EN: Mystical Elf
 //
 // current address: $384B3
 
 //POINTER #102 @ $38673 - STRING #102 @ $384B3
 #W16($38673)
 //ホーリードール[Exit]
+//JP: Holy Doll
+//EN: Rogue Doll
 //
 // current address: $384BE
 
 //POINTER #103 @ $38675 - STRING #103 @ $384BE
 #W16($38675)
 //エルフのけんし[Exit]
+//JP: Elf Swordsman
+//EN: Celtic Guardian
 //
 // current address: $384C7
 
 //POINTER #104 @ $38677 - STRING #104 @ $384C7
 #W16($38677)
 //エレキッズ[Exit]
+//JP: Eleckids
+//M: Oscillo Hero #2
+//EN: Wattkid
+//Note: Name errata'd, manga uses older name
 //
 // current address: $384D0
 
 //POINTER #105 @ $38679 - STRING #105 @ $384D0
 #W16($38679)
 //ドラゴンふういんのつぼ[Exit]
+//JP: Dragon-Tribe Seal Jar
+//EN: Dragon Capture Jar
 //
 // current address: $384E3
 
 //POINTER #106 @ $3867B - STRING #106 @ $384E3
 #W16($3867B)
 //BEWドラゴン[Exit]
+//B(lue) E(yes) (White) Dragon
 //
 // current address: $384F0
 
 //POINTER #107 @ $3867D - STRING #107 @ $384F0
 #W16($3867D)
 //BEAドラゴン[Exit]
+//B(lue) E(yes) U(ltimate) Dragon
+//The A should be a U; Ultimate's kana starts with A
 //
 // current address: $384FD
 
 //POINTER #108 @ $3867F - STRING #108 @ $384FD
 #W16($3867F)
-//トーンアリゲーター[Exit]
+//トゥーンアリゲーター[Exit]
+//Toon Alligator
 //
 // current address: $3850B
 
 //POINTER #109 @ $38681 - STRING #109 @ $3850B
 #W16($38681)
 //パロットドラゴン[Exit]
+//Parrot Dragon
 //
 // current address: $3851B
 
 //POINTER #110 @ $38683 - STRING #110 @ $3851B
 #W16($38683)
 //ダークラビット[Exit]
+//Dark rabbit
 //
 // current address: $38528
 
 //POINTER #111 @ $38685 - STRING #111 @ $38528
 #W16($38685)
 //ルードカイザー[Exit]
+//Rude Kaiser
 //
 // current address: $38535
 
 //POINTER #112 @ $38687 - STRING #112 @ $38535
 #W16($38687)
 //ジョー[Exit]
+//So here's where things get a bit more complicated.
+//The names used are the Monster World pieces.
+//Which never got dubbed. The manga uses Japanese names.
+//JP: Joe; shortend Jonouchi
+//Katsuya Jonouchi
+//M: Joey; changed to use dub name
+//Problem is he always goes by Joey in dub land,
+//though he has been referred to as Joseph
+//EN: Joey (Wheeler)
 //
 // current address: $3853C
 
 //POINTER #113 @ $38689 - STRING #113 @ $3853C
 #W16($38689)
 //バクラ[Exit]
+//(Ryo) Bakura
+//"Bakura Ryou" is wrong. I will not use that.
+//The dub only ever calls him Bakura anyway...
 //
 // current address: $38543
 
 //POINTER #114 @ $3868B - STRING #114 @ $38543
 #W16($3868B)
 //ヒロト[Exit]
+//JP/M: Hiroto (Honda)
+//Uses his first name when last is typically used
+//Could translate as "Taylor"
+//EN: Tristan Taylor
 //
 // current address: $38548
 
 //POINTER #115 @ $3868D - STRING #115 @ $38548
 #W16($3868D)
 //アンズ[Exit]
+//JP/M: Anzu (Mazaki)
+//EN: Tea (Gardner)
 //
 // current address: $3854F
 
 //POINTER #116 @ $3868F - STRING #116 @ $3854F
 #W16($3868F)
 //スゴロク[Exit]
+//JP: Sugoroku (Mutou)
+//EN: Solomon (Muto)
 //
 // current address: $38557
 
 //POINTER #117 @ $38691 - STRING #117 @ $38557
 #W16($38691)
 //ユーギ[Exit]
+//Yugi (Muto/u)
 //
 // current address: $3855E
 
 //POINTER #118 @ $38693 - STRING #118 @ $3855E
 #W16($38693)
 //ヤミ・ユーギ[Exit]
+//JP/EN: Yami Yugi
+//M: Dark Yugi
 //
 // current address: $38568
 
 //POINTER #119 @ $38695 - STRING #119 @ $38568
 #W16($38695)
 //しんかカプセル[Exit]
+//Evolution Capsule
 //
 // current address: $38573
 
 //POINTER #120 @ $38697 - STRING #120 @ $38573
 #W16($38697)
 //わざカプセル[Exit]
+//Move Capsule
 //
 // current address: $3857F
 
 //POINTER #121 @ $38699 - STRING #121 @ $3857F
 #W16($38699)
 //HPカプセル[Exit]
+//HP Capsule
 //
 // current address: $38589
 
 //POINTER #122 @ $3869B - STRING #122 @ $38589
 #W16($3869B)
 //ATカプセル[Exit]
+//Attack Capsule
 //
 // current address: $38593
 
 //POINTER #123 @ $3869D - STRING #123 @ $38593
 #W16($3869D)
 //DFカプセル[Exit]
+//Defence Capsule
 //
 // current address: $3859D
 
 //POINTER #124 @ $3869F - STRING #124 @ $3859D
 #W16($3869F)
 //SPカプセル[Exit]
+//Speed Capsule
 //
 // current address: $385A7
