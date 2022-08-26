@@ -1,0 +1,1397 @@
+//GAME NAME:		Yu-Gi-Oh: Capsule Monsters GB
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
+
+//BLOCK #001 NAME:		Attack Names?
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($386A1, $391E1) // Jump to insertion point
+#HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $391E2 - STRING #0 @ $386A1
+#W16($391E2)
+//イカスミ[Exit]
+//
+// current address: $386A7
+
+//POINTER #1 @ $391E4 - STRING #1 @ $386A7
+#W16($391E4)
+//グレートフング[Exit]
+//
+// current address: $386B5
+
+//POINTER #2 @ $391E6 - STRING #2 @ $386B5
+#W16($391E6)
+//でんげき[Exit]
+//
+// current address: $386BF
+
+//POINTER #3 @ $391E8 - STRING #3 @ $386BF
+#W16($391E8)
+//ゲソサブミッション[Exit]
+//
+// current address: $386CE
+
+//POINTER #4 @ $391EA - STRING #4 @ $386CE
+#W16($391EA)
+//ウオーターショット[Exit]
+//
+// current address: $386D9
+
+//POINTER #5 @ $391EC - STRING #5 @ $386D9
+#W16($391EC)
+//つなみ[Exit]
+//
+// current address: $386DE
+
+//POINTER #6 @ $391EE - STRING #6 @ $386DE
+#W16($391EE)
+//しっぷうざん[Exit]
+//
+// current address: $386EA
+
+//POINTER #7 @ $391F0 - STRING #7 @ $386EA
+#W16($391F0)
+//トマホークアタック[Exit]
+//
+// current address: $386F5
+
+//POINTER #8 @ $391F2 - STRING #8 @ $386F5
+#W16($391F2)
+//サイガーサンダー[Exit]
+//
+// current address: $38703
+
+//POINTER #9 @ $391F4 - STRING #9 @ $38703
+#W16($391F4)
+//クロスソード[Exit]
+//
+// current address: $3870D
+
+//POINTER #10 @ $391F6 - STRING #10 @ $3870D
+#W16($391F6)
+//シャインエッジ[Exit]
+//
+// current address: $38718
+
+//POINTER #11 @ $391F8 - STRING #11 @ $38718
+#W16($391F8)
+//スクリューナックル[Exit]
+//
+// current address: $38723
+
+//POINTER #12 @ $391FA - STRING #12 @ $38723
+#W16($391FA)
+//タイガークラッシュ[Exit]
+//
+// current address: $38730
+
+//POINTER #13 @ $391FC - STRING #13 @ $38730
+#W16($391FC)
+//スピアマンテス[Exit]
+//
+// current address: $3873C
+
+//POINTER #14 @ $391FE - STRING #14 @ $3873C
+#W16($391FE)
+//かいてんぎゆ[Exit]
+//
+// current address: $38746
+
+//POINTER #15 @ $39200 - STRING #15 @ $38746
+#W16($39200)
+//じごくづき[Exit]
+//
+// current address: $38753
+
+//POINTER #16 @ $39202 - STRING #16 @ $38753
+#W16($39202)
+//しゅんさつぎゆ[Exit]
+//
+// current address: $3875E
+
+//POINTER #17 @ $39204 - STRING #17 @ $3875E
+#W16($39204)
+//えんざんけん[Exit]
+//
+// current address: $38768
+
+//POINTER #18 @ $39206 - STRING #18 @ $38768
+#W16($39206)
+//ごうわんアックス[Exit]
+//
+// current address: $38774
+
+//POINTER #19 @ $39208 - STRING #19 @ $38774
+#W16($39208)
+//スパイラルシイバー[Exit]
+//
+// current address: $38784
+
+//POINTER #20 @ $3920A - STRING #20 @ $38784
+#W16($3920A)
+//とびつき[Exit]
+//
+// current address: $3878C
+
+//POINTER #21 @ $3920C - STRING #21 @ $3878C
+#W16($3920C)
+//えいしざん[Exit]
+//
+// current address: $38795
+
+//POINTER #22 @ $3920E - STRING #22 @ $38795
+#W16($3920E)
+//ロッククラッシュ[Exit]
+//
+// current address: $3879F
+
+//POINTER #23 @ $39210 - STRING #23 @ $3879F
+#W16($39210)
+//フ<$9E>イアボール[Exit]
+//
+// current address: $387AA
+
+//POINTER #24 @ $39212 - STRING #24 @ $387AA
+#W16($39212)
+//スクラッチクラッシュ[Exit]
+//
+// current address: $387B6
+
+//POINTER #25 @ $39214 - STRING #25 @ $387B6
+#W16($39214)
+//かきゅうのつぶて[Exit]
+//
+// current address: $387C2
+
+//POINTER #26 @ $39216 - STRING #26 @ $387C2
+#W16($39216)
+//かえんのブレス[Exit]
+//
+// current address: $387CD
+
+//POINTER #27 @ $39218 - STRING #27 @ $387CD
+#W16($39218)
+//パワードビーム[Exit]
+//
+// current address: $387DC
+
+//POINTER #28 @ $3921A - STRING #28 @ $387DC
+#W16($3921A)
+//クエイク[Exit]
+//
+// current address: $387E2
+
+//POINTER #29 @ $3921C - STRING #29 @ $387E2
+#W16($3921C)
+//デビルフ<$9E>イア[Exit]
+//
+// current address: $387EF
+
+//POINTER #30 @ $3921E - STRING #30 @ $387EF
+#W16($3921E)
+//⋯ルフレイム[Exit]
+//
+// current address: $387F7
+
+//POINTER #31 @ $39220 - STRING #31 @ $387F7
+#W16($39220)
+//ベビーキック[Exit]
+//
+// current address: $38803
+
+//POINTER #32 @ $39222 - STRING #32 @ $38803
+#W16($39222)
+//ブレス[Exit]
+//
+// current address: $3880A
+
+//POINTER #33 @ $39224 - STRING #33 @ $3880A
+#W16($39224)
+//ウイングサンダー[Exit]
+//
+// current address: $38818
+
+//POINTER #34 @ $39226 - STRING #34 @ $38818
+#W16($39226)
+//かえん[Exit]
+//
+// current address: $3881D
+
+//POINTER #35 @ $39228 - STRING #35 @ $3881D
+#W16($39228)
+//リザードサンダー[Exit]
+//
+// current address: $3882D
+
+//POINTER #36 @ $3922A - STRING #36 @ $3882D
+#W16($3922A)
+//ウイップテイル[Exit]
+//
+// current address: $38838
+
+//POINTER #37 @ $3922C - STRING #37 @ $38838
+#W16($3922C)
+//ゆゅうびけん[Exit]
+//
+// current address: $38842
+
+//POINTER #38 @ $3922E - STRING #38 @ $38842
+#W16($3922E)
+//とっしんこうげき[Exit]
+//
+// current address: $3884E
+
+//POINTER #39 @ $39230 - STRING #39 @ $3884E
+#W16($39230)
+//ダイナソーキック[Exit]
+//
+// current address: $3885A
+
+//POINTER #40 @ $39232 - STRING #40 @ $3885A
+#W16($39232)
+//しのといき[Exit]
+//
+// current address: $38861
+
+//POINTER #41 @ $39234 - STRING #41 @ $38861
+#W16($39234)
+//ワイトパンチ[Exit]
+//
+// current address: $3886B
+
+//POINTER #42 @ $39236 - STRING #42 @ $3886B
+#W16($39236)
+//メデューサブレス[Exit]
+//
+// current address: $38879
+
+//POINTER #43 @ $39238 - STRING #43 @ $38879
+#W16($39238)
+//えいがとっしん[Exit]
+//
+// current address: $38884
+
+//POINTER #44 @ $3923A - STRING #44 @ $38884
+#W16($3923A)
+//ゾンビダンス[Exit]
+//
+// current address: $38892
+
+//POINTER #45 @ $3923C - STRING #45 @ $38892
+#W16($3923C)
+//のりいぎゆ[Exit]
+//
+// current address: $3889B
+
+//POINTER #46 @ $3923E - STRING #46 @ $3889B
+#W16($3923E)
+//ブレス[Exit]
+//
+// current address: $388A2
+
+//POINTER #47 @ $39240 - STRING #47 @ $388A2
+#W16($39240)
+//らいこんプラズマ[Exit]
+//
+// current address: $388B0
+
+//POINTER #48 @ $39242 - STRING #48 @ $388B0
+#W16($39242)
+//ビートンビーム[Exit]
+//
+// current address: $388BD
+
+//POINTER #49 @ $39244 - STRING #49 @ $388BD
+#W16($39244)
+//つのアタック[Exit]
+//
+// current address: $388C5
+
+//POINTER #50 @ $39246 - STRING #50 @ $388C5
+#W16($39246)
+//モグリンパンチ[Exit]
+//
+// current address: $388D2
+
+//POINTER #51 @ $39248 - STRING #51 @ $388D2
+#W16($39248)
+//ポイズンスピット[Exit]
+//
+// current address: $388E2
+
+//POINTER #52 @ $3924A - STRING #52 @ $388E2
+#W16($3924A)
+//フ<$9E>イアーフラワー[Exit]
+//
+// current address: $388ED
+
+//POINTER #53 @ $3924C - STRING #53 @ $388ED
+#W16($3924C)
+//アイビーム[Exit]
+//
+// current address: $388F6
+
+//POINTER #54 @ $3924E - STRING #54 @ $388F6
+#W16($3924E)
+//マッスルパンチ[Exit]
+//
+// current address: $38901
+
+//POINTER #55 @ $39250 - STRING #55 @ $38901
+#W16($39250)
+//クリボーアタック[Exit]
+//
+// current address: $3890D
+
+//POINTER #56 @ $39252 - STRING #56 @ $3890D
+#W16($39252)
+//きけんなほうし[Exit]
+//
+// current address: $38916
+
+//POINTER #57 @ $39254 - STRING #57 @ $38916
+#W16($39254)
+//アリパンチ[Exit]
+//
+// current address: $3891F
+
+//POINTER #58 @ $39256 - STRING #58 @ $3891F
+#W16($39256)
+//フ<$9E>イアライフル[Exit]
+//
+// current address: $38929
+
+//POINTER #59 @ $39258 - STRING #59 @ $38929
+#W16($39258)
+//どくしんさつ[Exit]
+//
+// current address: $38933
+
+//POINTER #60 @ $3925A - STRING #60 @ $38933
+#W16($3925A)
+//ゴキアタック[Exit]
+//
+// current address: $3893D
+
+//POINTER #61 @ $3925C - STRING #61 @ $3893D
+#W16($3925C)
+//ウルフフング[Exit]
+//
+// current address: $38948
+
+//POINTER #62 @ $3925E - STRING #62 @ $38948
+#W16($3925E)
+//ポイズンゾール[Exit]
+//
+// current address: $38957
+
+//POINTER #63 @ $39260 - STRING #63 @ $38957
+#W16($39260)
+//シャインカオス[Exit]
+//
+// current address: $38960
+
+//POINTER #64 @ $39262 - STRING #64 @ $38960
+#W16($39262)
+//ダークグライド[Exit]
+//
+// current address: $3896F
+
+//POINTER #65 @ $39264 - STRING #65 @ $3896F
+#W16($39264)
+//インプパンチ[Exit]
+//
+// current address: $3897B
+
+//POINTER #66 @ $39266 - STRING #66 @ $3897B
+#W16($39266)
+//サンダーホーン[Exit]
+//
+// current address: $38986
+
+//POINTER #67 @ $39268 - STRING #67 @ $38986
+#W16($39268)
+//しっぷうぎゆ[Exit]
+//
+// current address: $38992
+
+//POINTER #68 @ $3926A - STRING #68 @ $38992
+#W16($3926A)
+//マジックランプ[Exit]
+//
+// current address: $3899F
+
+//POINTER #69 @ $3926C - STRING #69 @ $3899F
+#W16($3926C)
+//マーダーダンス[Exit]
+//
+// current address: $389AC
+
+//POINTER #70 @ $3926E - STRING #70 @ $389AC
+#W16($3926E)
+//アシッドスプラッシュ[Exit]
+//
+// current address: $389BC
+
+//POINTER #71 @ $39270 - STRING #71 @ $389BC
+#W16($39270)
+//かまいたち[Exit]
+//
+// current address: $389C3
+
+//POINTER #72 @ $39272 - STRING #72 @ $389C3
+#W16($39272)
+//グラッジソード[Exit]
+//
+// current address: $389D2
+
+//POINTER #73 @ $39274 - STRING #73 @ $389D2
+#W16($39274)
+//ダークボール[Exit]
+//
+// current address: $389DE
+
+//POINTER #74 @ $39276 - STRING #74 @ $389DE
+#W16($39276)
+//ダークサンダー[Exit]
+//
+// current address: $389EB
+
+//POINTER #75 @ $39278 - STRING #75 @ $389EB
+#W16($39278)
+//るみのしんぱん[Exit]
+//
+// current address: $389F6
+
+//POINTER #76 @ $3927A - STRING #76 @ $389F6
+#W16($3927A)
+//ライトニングショット[Exit]
+//
+// current address: $38A04
+
+//POINTER #77 @ $3927C - STRING #77 @ $38A04
+#W16($3927C)
+//マジックイリュージョン[Exit]
+//
+// current address: $38A15
+
+//POINTER #78 @ $3927E - STRING #78 @ $38A15
+#W16($3927E)
+//こくえんだん[Exit]
+//
+// current address: $38A1F
+
+//POINTER #79 @ $39280 - STRING #79 @ $38A1F
+#W16($39280)
+//ブラックマジック[Exit]
+//
+// current address: $38A2D
+
+//POINTER #80 @ $39282 - STRING #80 @ $38A2D
+#W16($39282)
+//まこうやい[Exit]
+//
+// current address: $38A34
+
+//POINTER #81 @ $39284 - STRING #81 @ $38A34
+#W16($39284)
+//ダークウイブ[Exit]
+//
+// current address: $38A41
+
+//POINTER #82 @ $39286 - STRING #82 @ $38A41
+#W16($39286)
+//メテオ[Exit]
+//
+// current address: $38A46
+
+//POINTER #83 @ $39288 - STRING #83 @ $38A46
+#W16($39288)
+//エレキ[Exit]
+//
+// current address: $38A4B
+
+//POINTER #84 @ $3928A - STRING #84 @ $38A4B
+#W16($3928A)
+//たおらかかよ[Exit]
+//
+// current address: $38A53
+
+//POINTER #85 @ $3928C - STRING #85 @ $38A53
+#W16($3928C)
+//つぼパンチ[Exit]
+//
+// current address: $38A5E
+
+//POINTER #86 @ $3928E - STRING #86 @ $38A5E
+#W16($3928E)
+//バースト[Exit]
+//
+// current address: $38A66
+
+//POINTER #87 @ $39290 - STRING #87 @ $38A66
+#W16($39290)
+//パンチ[Exit]
+//
+// current address: $38A6D
+
+//POINTER #88 @ $39292 - STRING #88 @ $38A6D
+#W16($39292)
+//パンチ[Exit]
+//
+// current address: $38A74
+
+//POINTER #89 @ $39294 - STRING #89 @ $38A74
+#W16($39294)
+//キック[Exit]
+//
+// current address: $38A79
+
+//POINTER #90 @ $39296 - STRING #90 @ $38A79
+#W16($39296)
+//たいあたゆ[Exit]
+//
+// current address: $38A80
+
+//POINTER #91 @ $39298 - STRING #91 @ $38A80
+#W16($39298)
+//エクゾードフレイム[Exit]
+//
+// current address: $38A8F
+
+//POINTER #92 @ $3929A - STRING #92 @ $38A8F
+#W16($3929A)
+//ニンジャボム[Exit]
+//
+// current address: $38A9B
+
+//POINTER #93 @ $3929C - STRING #93 @ $38A9B
+#W16($3929C)
+//フカヒレカッター[Exit]
+//
+// current address: $38AA5
+
+//POINTER #94 @ $3929E - STRING #94 @ $38AA5
+#W16($3929E)
+//しびらでんげき[Exit]
+//
+// current address: $38AB4
+
+//POINTER #95 @ $392A0 - STRING #95 @ $38AB4
+#W16($392A0)
+//ゲソスプラッシュ[Exit]
+//
+// current address: $38AC2
+
+//POINTER #96 @ $392A2 - STRING #96 @ $38AC2
+#W16($392A2)
+//ボムクラッシャー[Exit]
+//
+// current address: $38ACE
+
+//POINTER #97 @ $392A4 - STRING #97 @ $38ACE
+#W16($392A4)
+//グレートソード[Exit]
+//
+// current address: $38ADB
+
+//POINTER #98 @ $392A6 - STRING #98 @ $38ADB
+#W16($392A6)
+//トマホーククラッシュ[Exit]
+//
+// current address: $38AE7
+
+//POINTER #99 @ $392A8 - STRING #99 @ $38AE7
+#W16($392A8)
+//サイガーサンダーギガ[Exit]
+//
+// current address: $38AFB
+
+//POINTER #100 @ $392AA - STRING #100 @ $38AFB
+#W16($392AA)
+//ルイーズスペシャル[Exit]
+//
+// current address: $38B0A
+
+//POINTER #101 @ $392AC - STRING #101 @ $38B0A
+#W16($392AC)
+//アルテメットナックル[Exit]
+//
+// current address: $38B17
+
+//POINTER #102 @ $392AE - STRING #102 @ $38B17
+#W16($392AE)
+//タイガースプリット[Exit]
+//
+// current address: $38B26
+
+//POINTER #103 @ $392B0 - STRING #103 @ $38B26
+#W16($392B0)
+//しっぷうぎゆ[Exit]
+//
+// current address: $38B32
+
+//POINTER #104 @ $392B2 - STRING #104 @ $38B32
+#W16($392B2)
+//まじんのいかずち[Exit]
+//
+// current address: $38B40
+
+//POINTER #105 @ $392B4 - STRING #105 @ $38B40
+#W16($392B4)
+//しゅんさつ5らんぞくぎゆ[Exit]
+//
+// current address: $38B52
+
+//POINTER #106 @ $392B6 - STRING #106 @ $38B52
+#W16($392B6)
+//とうきえんざんけん[Exit]
+//
+// current address: $38B5F
+
+//POINTER #107 @ $392B8 - STRING #107 @ $38B5F
+#W16($392B8)
+//アースデバイドアックス[Exit]
+//
+// current address: $38B73
+
+//POINTER #108 @ $392BA - STRING #108 @ $38B73
+#W16($392BA)
+//グレートメガスマッシャー[Exit]
+//
+// current address: $38B85
+
+//POINTER #109 @ $392BC - STRING #109 @ $38B85
+#W16($392BC)
+//しっぷうえいしざん[Exit]
+//
+// current address: $38B94
+
+//POINTER #110 @ $392BE - STRING #110 @ $38B94
+#W16($392BE)
+//オーガクラッシュ[Exit]
+//
+// current address: $38BA0
+
+//POINTER #111 @ $392C0 - STRING #111 @ $38BA0
+#W16($392C0)
+//フ<$9E>イアバースト[Exit]
+//
+// current address: $38BAC
+
+//POINTER #112 @ $392C2 - STRING #112 @ $38BAC
+#W16($392C2)
+//ウイップパニッシュ[Exit]
+//
+// current address: $38BBB
+
+//POINTER #113 @ $392C4 - STRING #113 @ $38BBB
+#W16($392C4)
+//ほのおのゆゅうせい[Exit]
+//
+// current address: $38BC6
+
+//POINTER #114 @ $392C6 - STRING #114 @ $38BC6
+#W16($392C6)
+//ほのおのブレス[Exit]
+//
+// current address: $38BD1
+
+//POINTER #115 @ $392C8 - STRING #115 @ $38BD1
+#W16($392C8)
+//パワードレーザー[Exit]
+//
+// current address: $38BE1
+
+//POINTER #116 @ $392CA - STRING #116 @ $38BE1
+#W16($392CA)
+//アースクエイク[Exit]
+//
+// current address: $38BEA
+
+//POINTER #117 @ $392CC - STRING #117 @ $38BEA
+#W16($392CC)
+//⋯ルフ<$9E>イア[Exit]
+//
+// current address: $38BF2
+
+//POINTER #118 @ $392CE - STRING #118 @ $38BF2
+#W16($392CE)
+//カースフレイム[Exit]
+//
+// current address: $38BFB
+
+//POINTER #119 @ $392D0 - STRING #119 @ $38BFB
+#W16($392D0)
+//ベビーフレイム[Exit]
+//
+// current address: $38C08
+
+//POINTER #120 @ $392D2 - STRING #120 @ $38C08
+#W16($392D2)
+//サウザンドノーズブレス[Exit]
+//
+// current address: $38C1D
+
+//POINTER #121 @ $392D4 - STRING #121 @ $38C1D
+#W16($392D4)
+//サンダーストリーム[Exit]
+//
+// current address: $38C2A
+
+//POINTER #122 @ $392D6 - STRING #122 @ $38C2A
+#W16($392D6)
+//アルマアタック[Exit]
+//
+// current address: $38C33
+
+//POINTER #123 @ $392D8 - STRING #123 @ $38C33
+#W16($392D8)
+//ギガサンダー[Exit]
+//
+// current address: $38C41
+
+//POINTER #124 @ $392DA - STRING #124 @ $38C41
+#W16($392DA)
+//ワイルドブレス[Exit]
+//
+// current address: $38C4E
+
+//POINTER #125 @ $392DC - STRING #125 @ $38C4E
+#W16($392DC)
+//ざんてつゆゅうびけん[Exit]
+//
+// current address: $38C5E
+
+//POINTER #126 @ $392DE - STRING #126 @ $38C5E
+#W16($392DE)
+//メガスタンプ[Exit]
+//
+// current address: $38C6A
+
+//POINTER #127 @ $392E0 - STRING #127 @ $38C6A
+#W16($392E0)
+//ダイナソーフットスタンプ[Exit]
+//
+// current address: $38C7C
+
+//POINTER #128 @ $392E2 - STRING #128 @ $38C7C
+#W16($392E2)
+//デスブレス[Exit]
+//
+// current address: $38C87
+
+//POINTER #129 @ $392E4 - STRING #129 @ $38C87
+#W16($392E4)
+//ワイトキック[Exit]
+//
+// current address: $38C8F
+
+//POINTER #130 @ $392E6 - STRING #130 @ $38C8F
+#W16($392E6)
+//マンモスブレス[Exit]
+//
+// current address: $38C9A
+
+//POINTER #131 @ $392E8 - STRING #131 @ $38C9A
+#W16($392E8)
+//じごくおくゆのきょくげい[Exit]
+//
+// current address: $38CAE
+
+//POINTER #132 @ $392EA - STRING #132 @ $38CAE
+#W16($392EA)
+//デッドリー・ブレス[Exit]
+//
+// current address: $38CBF
+
+//POINTER #133 @ $392EC - STRING #133 @ $38CBF
+#W16($392EC)
+//キングインフルノ[Exit]
+//
+// current address: $38CCC
+
+//POINTER #134 @ $392EE - STRING #134 @ $38CCC
+#W16($392EE)
+//つのクラッシャー[Exit]
+//
+// current address: $38CD6
+
+//POINTER #135 @ $392F0 - STRING #135 @ $38CD6
+#W16($392F0)
+//フレイムフラワー[Exit]
+//
+// current address: $38CE0
+
+//POINTER #136 @ $392F2 - STRING #136 @ $38CE0
+#W16($392F2)
+//マウスキッス[Exit]
+//
+// current address: $38CE8
+
+//POINTER #137 @ $392F4 - STRING #137 @ $38CE8
+#W16($392F4)
+//ベアハッグ[Exit]
+//
+// current address: $38CF3
+
+//POINTER #138 @ $392F6 - STRING #138 @ $38CF3
+#W16($392F6)
+//クリボーボム[Exit]
+//
+// current address: $38CFF
+
+//POINTER #139 @ $392F8 - STRING #139 @ $38CFF
+#W16($392F8)
+//きのこマジック[Exit]
+//
+// current address: $38D0A
+
+//POINTER #140 @ $392FA - STRING #140 @ $38D0A
+#W16($392FA)
+//コブラツイスト[Exit]
+//
+// current address: $38D15
+
+//POINTER #141 @ $392FC - STRING #141 @ $38D15
+#W16($392FC)
+//メサイアのあゆじごく[Exit]
+//
+// current address: $38D25
+
+//POINTER #142 @ $392FE - STRING #142 @ $38D25
+#W16($392FE)
+//レーザーキャノン[Exit]
+//
+// current address: $38D31
+
+//POINTER #143 @ $39300 - STRING #143 @ $38D31
+#W16($39300)
+//キラービーム[Exit]
+//
+// current address: $38D3B
+
+//POINTER #144 @ $39302 - STRING #144 @ $38D3B
+#W16($39302)
+//ゴキフライングアタック[Exit]
+//
+// current address: $38D4C
+
+//POINTER #145 @ $39304 - STRING #145 @ $38D4C
+#W16($39304)
+//シルバースピリット[Exit]
+//
+// current address: $38D5B
+
+//POINTER #146 @ $39306 - STRING #146 @ $38D5B
+#W16($39306)
+//ビーストテイル[Exit]
+//
+// current address: $38D66
+
+//POINTER #147 @ $39308 - STRING #147 @ $38D66
+#W16($39308)
+//モスバーニングデストルネード[Exit]
+//
+// current address: $38D7E
+
+//POINTER #148 @ $3930A - STRING #148 @ $38D7E
+#W16($3930A)
+//インプキック[Exit]
+//
+// current address: $38D88
+
+//POINTER #149 @ $3930C - STRING #149 @ $38D88
+#W16($3930C)
+//ませいかえんそう[Exit]
+//
+// current address: $38D92
+
+//POINTER #150 @ $3930E - STRING #150 @ $38D92
+#W16($3930E)
+//マーダーボム[Exit]
+//
+// current address: $38D9E
+
+//POINTER #151 @ $39310 - STRING #151 @ $38D9E
+#W16($39310)
+//ワームウイップ[Exit]
+//
+// current address: $38DA9
+
+//POINTER #152 @ $39312 - STRING #152 @ $38DA9
+#W16($39312)
+//シャドウマンテス[Exit]
+//
+// current address: $38DB6
+
+//POINTER #153 @ $39314 - STRING #153 @ $38DB6
+#W16($39314)
+//おんねんぎゆ[Exit]
+//
+// current address: $38DC0
+
+//POINTER #154 @ $39316 - STRING #154 @ $38DC0
+#W16($39316)
+//ダークアブソリュート[Exit]
+//
+// current address: $38DD0
+
+//POINTER #155 @ $39318 - STRING #155 @ $38DD0
+#W16($39318)
+//じごくのしんぱん[Exit]
+//
+// current address: $38DE0
+
+//POINTER #156 @ $3931A - STRING #156 @ $38DE0
+#W16($3931A)
+//メタルボンバー[Exit]
+//
+// current address: $38DED
+
+//POINTER #157 @ $3931C - STRING #157 @ $38DED
+#W16($3931C)
+//ばくらつこくえんだん[Exit]
+//
+// current address: $38DFD
+
+//POINTER #158 @ $3931E - STRING #158 @ $38DFD
+#W16($3931E)
+//しんまこうやい[Exit]
+//
+// current address: $38E06
+
+//POINTER #159 @ $39320 - STRING #159 @ $38E06
+#W16($39320)
+//まどうは[Exit]
+//
+// current address: $38E0E
+
+//POINTER #160 @ $39322 - STRING #160 @ $38E0E
+#W16($39322)
+//メテオフレア[Exit]
+//
+// current address: $38E16
+
+//POINTER #161 @ $39324 - STRING #161 @ $38E16
+#W16($39324)
+//キッズライトニング[Exit]
+//
+// current address: $38E25
+
+//POINTER #162 @ $39326 - STRING #162 @ $38E25
+#W16($39326)
+//アルテメットバースト[Exit]
+//
+// current address: $38E34
+
+//POINTER #163 @ $39328 - STRING #163 @ $38E34
+#W16($39328)
+//キャッスルクラッシャー[Exit]
+//
+// current address: $38E41
+
+//POINTER #164 @ $3932A - STRING #164 @ $38E41
+#W16($3932A)
+//パースペシャル[Exit]
+//
+// current address: $38E4E
+
+//POINTER #165 @ $3932C - STRING #165 @ $38E4E
+#W16($3932C)
+//ライトニングエッジ[Exit]
+//
+// current address: $38E5D
+
+//POINTER #166 @ $3932E - STRING #166 @ $38E5D
+#W16($3932E)
+//Aスクリューナックル[Exit]
+//
+// current address: $38E69
+
+//POINTER #167 @ $39330 - STRING #167 @ $38E69
+#W16($39330)
+//サラマンドラ[Exit]
+//
+// current address: $38E73
+
+//POINTER #168 @ $39332 - STRING #168 @ $38E73
+#W16($39332)
+//サイバーライトニングウイップ[Exit]
+//
+// current address: $38E89
+
+//POINTER #169 @ $39334 - STRING #169 @ $38E89
+#W16($39334)
+//もえさかよだいち[Exit]
+//
+// current address: $38E95
+
+//POINTER #170 @ $39336 - STRING #170 @ $38E95
+#W16($39336)
+//ライトニングウイング[Exit]
+//
+// current address: $38EA5
+
+//POINTER #171 @ $39338 - STRING #171 @ $38EA5
+#W16($39338)
+//アルマフレイム[Exit]
+//
+// current address: $38EAE
+
+//POINTER #172 @ $3933A - STRING #172 @ $38EAE
+#W16($3933A)
+//しんくうゆゅうびけん[Exit]
+//
+// current address: $38EBC
+
+//POINTER #173 @ $3933C - STRING #173 @ $38EBC
+#W16($3933C)
+//ツインバースト[Exit]
+//
+// current address: $38EC7
+
+//POINTER #174 @ $3933E - STRING #174 @ $38EC7
+#W16($3933E)
+//いっとうゆょうだん[Exit]
+//
+// current address: $38ED4
+
+//POINTER #175 @ $39340 - STRING #175 @ $38ED4
+#W16($39340)
+//ジャイアントスイング[Exit]
+//
+// current address: $38EE4
+
+//POINTER #176 @ $39342 - STRING #176 @ $38EE4
+#W16($39342)
+//ライトニングショット[Exit]
+//
+// current address: $38EF2
+
+//POINTER #177 @ $39344 - STRING #177 @ $38EF2
+#W16($39344)
+//ライトニング・ビー[Exit]
+//
+// current address: $38F01
+
+//POINTER #178 @ $39346 - STRING #178 @ $38F01
+#W16($39346)
+//ゴキスピリット[Exit]
+//
+// current address: $38F0E
+
+//POINTER #179 @ $39348 - STRING #179 @ $38F0E
+#W16($39348)
+//フルムーンスピリット[Exit]
+//
+// current address: $38F1C
+
+//POINTER #180 @ $3934A - STRING #180 @ $38F1C
+#W16($3934A)
+//まかいのしんぱん[Exit]
+//
+// current address: $38F28
+
+//POINTER #181 @ $3934C - STRING #181 @ $38F28
+#W16($3934C)
+//メタルエクスプロージョン[Exit]
+//
+// current address: $38F3A
+
+//POINTER #182 @ $3934E - STRING #182 @ $38F3A
+#W16($3934E)
+//レッドバーニングS[Exit]
+//
+// current address: $38F4B
+
+//POINTER #183 @ $39350 - STRING #183 @ $38F4B
+#W16($39350)
+//まかいごうまどうは[Exit]
+//
+// current address: $38F5A
+
+//POINTER #184 @ $39352 - STRING #184 @ $38F5A
+#W16($39352)
+//エクゾードナックル[Exit]
+//
+// current address: $38F69
+
+//POINTER #185 @ $39354 - STRING #185 @ $38F69
+#W16($39354)
+//エクゾードナックル[Exit]
+//
+// current address: $38F78
+
+//POINTER #186 @ $39356 - STRING #186 @ $38F78
+#W16($39356)
+//エクゾードキック[Exit]
+//
+// current address: $38F86
+
+//POINTER #187 @ $39358 - STRING #187 @ $38F86
+#W16($39358)
+//エクゾードプレス[Exit]
+//
+// current address: $38F96
+
+//POINTER #188 @ $3935A - STRING #188 @ $38F96
+#W16($3935A)
+//つうこんげき[Exit]
+//
+// current address: $38FA0
+
+//POINTER #189 @ $3935C - STRING #189 @ $38FA0
+#W16($3935C)
+//めっさつつうこんげき[Exit]
+//
+// current address: $38FAE
+
+//POINTER #190 @ $3935E - STRING #190 @ $38FAE
+#W16($3935E)
+//オーシャントルネード[Exit]
+//
+// current address: $38FBC
+
+//POINTER #191 @ $39360 - STRING #191 @ $38FBC
+#W16($39360)
+//アックスクラッシャー[Exit]
+//
+// current address: $38FC8
+
+//POINTER #192 @ $39362 - STRING #192 @ $38FC8
+#W16($39362)
+//スパイラルスプリット[Exit]
+//
+// current address: $38FD8
+
+//POINTER #193 @ $39364 - STRING #193 @ $38FD8
+#W16($39364)
+//ザンキ[Exit]
+//
+// current address: $38FDF
+
+//POINTER #194 @ $39366 - STRING #194 @ $38FDF
+#W16($39366)
+//かみつき[Exit]
+//
+// current address: $38FE5
+
+//POINTER #195 @ $39368 - STRING #195 @ $38FE5
+#W16($39368)
+//ビーストフング[Exit]
+//
+// current address: $38FF3
+
+//POINTER #196 @ $3936A - STRING #196 @ $38FF3
+#W16($3936A)
+//モスハリケーン[Exit]
+//
+// current address: $38FFC
+
+//POINTER #197 @ $3936C - STRING #197 @ $38FFC
+#W16($3936C)
+//モストルネード[Exit]
+//
+// current address: $39007
+
+//POINTER #198 @ $3936E - STRING #198 @ $39007
+#W16($3936E)
+//ギガサンダー[Exit]
+//
+// current address: $39015
+
+//POINTER #199 @ $39370 - STRING #199 @ $39015
+#W16($39370)
+//ほりびのバーストストリーム[Exit]
+//
+// current address: $39028
+
+//POINTER #200 @ $39372 - STRING #200 @ $39028
+#W16($39372)
+//ヒーリング[Exit]
+//
+// current address: $39031
+
+//POINTER #201 @ $39374 - STRING #201 @ $39031
+#W16($39374)
+//ペンタグラムのじゅばく[Exit]
+//
+// current address: $39046
+
+//POINTER #202 @ $39376 - STRING #202 @ $39046
+#W16($39376)
+//げんわくのまなこ[Exit]
+//
+// current address: $39052
+
+//POINTER #203 @ $39378 - STRING #203 @ $39052
+#W16($39378)
+//ひかゆのごふうけん[Exit]
+//
+// current address: $3905F
+
+//POINTER #204 @ $3937A - STRING #204 @ $3905F
+#W16($3937A)
+//ペンタグラムのじゅばくS[Exit]
+//
+// current address: $39075
+
+//POINTER #205 @ $3937C - STRING #205 @ $39075
+#W16($3937C)
+//げんわくのまなこS[Exit]
+//
+// current address: $39082
+
+//POINTER #206 @ $3937E - STRING #206 @ $39082
+#W16($3937E)
+//ひかゆのごふうけんS[Exit]
+//
+// current address: $39090
+
+//POINTER #207 @ $39380 - STRING #207 @ $39090
+#W16($39380)
+//アリゲータートマホーク[Exit]
+//
+// current address: $3909F
+
+//POINTER #208 @ $39382 - STRING #208 @ $3909F
+#W16($39382)
+//パロットフ<$9E>イア[Exit]
+//
+// current address: $390AB
+
+//POINTER #209 @ $39384 - STRING #209 @ $390AB
+#W16($39384)
+//トーンアタック[Exit]
+//
+// current address: $390B5
+
+//POINTER #210 @ $39386 - STRING #210 @ $390B5
+#W16($39386)
+//カイザーエッジ[Exit]
+//
+// current address: $390C2
+
+//POINTER #211 @ $39388 - STRING #211 @ $390C2
+#W16($39388)
+//ショートソード[Exit]
+//
+// current address: $390CD
+
+//POINTER #212 @ $3938A - STRING #212 @ $390CD
+#W16($3938A)
+//シャイニングマジック[Exit]
+//
+// current address: $390DD
+
+//POINTER #213 @ $3938C - STRING #213 @ $390DD
+#W16($3938C)
+//マジックガン[Exit]
+//
+// current address: $390E9
+
+//POINTER #214 @ $3938E - STRING #214 @ $390E9
+#W16($3938E)
+//デスブレイズ[Exit]
+//
+// current address: $390F7
+
+//POINTER #215 @ $39390 - STRING #215 @ $390F7
+#W16($39390)
+//スゴロクパンチ[Exit]
+//
+// current address: $39104
+
+//POINTER #216 @ $39392 - STRING #216 @ $39104
+#W16($39392)
+//てだまパンチ[Exit]
+//
+// current address: $39110
+
+//POINTER #217 @ $39394 - STRING #217 @ $39110
+#W16($39394)
+//ジットストリームパンチ[Exit]
+//
+// current address: $39122
+
+//POINTER #218 @ $39396 - STRING #218 @ $39122
+#W16($39396)
+//アリゲーターサンダー[Exit]
+//
+// current address: $39132
+
+//POINTER #219 @ $39398 - STRING #219 @ $39132
+#W16($39398)
+//パロットフレイム[Exit]
+//
+// current address: $3913E
+
+//POINTER #220 @ $3939A - STRING #220 @ $3913E
+#W16($3939A)
+//トーンジットコースター[Exit]
+//
+// current address: $3914F
+
+//POINTER #221 @ $3939C - STRING #221 @ $3914F
+#W16($3939C)
+//カイザーストーム[Exit]
+//
+// current address: $3915B
+
+//POINTER #222 @ $3939E - STRING #222 @ $3915B
+#W16($3939E)
+//きあいぎゆ[Exit]
+//
+// current address: $39164
+
+//POINTER #223 @ $393A0 - STRING #223 @ $39164
+#W16($393A0)
+//サンダーグレネード[Exit]
+//
+// current address: $39175
+
+//POINTER #224 @ $393A2 - STRING #224 @ $39175
+#W16($393A2)
+//スゴロクキック[Exit]
+//
+// current address: $39180
+
+//POINTER #225 @ $393A4 - STRING #225 @ $39180
+#W16($393A4)
+//ダークミレニアム[Exit]
+//
+// current address: $3918C
+
+//POINTER #226 @ $393A6 - STRING #226 @ $3918C
+#W16($393A6)
+//アリゲーターミラクル[Exit]
+//
+// current address: $3919A
+
+//POINTER #227 @ $393A8 - STRING #227 @ $3919A
+#W16($393A8)
+//パロットドラゴンバースト[Exit]
+//
+// current address: $391B0
+
+//POINTER #228 @ $393AA - STRING #228 @ $391B0
+#W16($393AA)
+//トーンメリーゴーランド[Exit]
+//
+// current address: $391C2
+
+//POINTER #229 @ $393AC - STRING #229 @ $391C2
+#W16($393AC)
+//ばくらつきあいぎゆ[Exit]
+//
+// current address: $391D1
+
+//POINTER #230 @ $393AE - STRING #230 @ $391D1
+#W16($393AE)
+//フ<$9E>イナルビックバン<$FE>[Exit]
+//
+// current address: $391E2
