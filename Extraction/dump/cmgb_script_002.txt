@@ -4,328 +4,274 @@
 #VAR(Table_0, TABLE)
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
 
-//BLOCK #002 NAME:		Script: Opening
+//BLOCK #002 NAME:		Battle Text
 #ACTIVETBL(Table_0) // Activate this block's starting TABLE
 
-#JMP($11206, $117CA) // Jump to insertion point
-#HDR($C000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($3954F, $398FF) // Jump to insertion point
+#HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $117CB - STRING #0 @ $11206
-#W16($117CB)
-//ホホホ… ろうこそ みなさん[Line]
-//かいば アミューズメント パークへ[Line]
-//いやっしゃいました[Exit]
+//POINTER #0 @ $39900 - STRING #0 @ $3954F
+#W16($39900)
+//[Var]<$10>の[Line]
+//こうげき![Line]
+//「[Var]<$11>」[Exit]
 //
-// current address: $11238
+// current address: $39561
 
-//POINTER #1 @ $117CD - STRING #1 @ $11238
-#W16($117CD)
-//かいばさまが おくで おまちです[Line]
-//さあ こちやへ…[Exit]
+//POINTER #1 @ $39902 - STRING #1 @ $39561
+#W16($39902)
+//[Var]<$10>への[Line]
+//めいちゅうりつ[Var]<$11>%[Exit]
 //
-// current address: $1125B
+// current address: $39572
 
-//POINTER #2 @ $117CF - STRING #2 @ $1125B
-#W16($117CF)
-//みんな いこうろ![Exit]
+//POINTER #2 @ $39904 - STRING #2 @ $39572
+#W16($39904)
+//[Var]<$10>に[Line]
+//[Var]<$11>ポイントのダメージ![Exit]
 //
-// current address: $11266
+// current address: $3958A
 
-//POINTER #3 @ $117D1 - STRING #3 @ $11266
-#W16($117D1)
-//…どうも うさんくせえぜ[Line]
-//かいばのヤツ なにか[Line]
-//たくやんでよんじゃねえのか?[Exit]
+//POINTER #3 @ $39906 - STRING #3 @ $3958A
+#W16($39906)
+//[Var]<$10>に[Line]
+//ダメージをあたえられなかった![Exit]
 //
-// current address: $11298
+// current address: $395A3
 
-//POINTER #4 @ $117D3 - STRING #4 @ $11298
-#W16($117D3)
-//まさか!?[Line]
-//…だいじょうぶろ いきましょう![Exit]
+//POINTER #4 @ $39908 - STRING #4 @ $395A3
+#W16($39908)
+//[Var]<$10>に[Line]
+//[Var]<$11>ポイントのダメージ![Line]
+//[Var]<$10>は たおれた![Exit]
 //
-// current address: $112B6
+// current address: $395C5
 
-//POINTER #5 @ $117D5 - STRING #5 @ $112B6
-#W16($117D5)
-//いこうぜ ばくや![Exit]
+//POINTER #5 @ $3990A - STRING #5 @ $395C5
+#W16($3990A)
+//[Var]<$10>は[Line]
+//フィールドパワーをえた![Exit]
 //
-// current address: $112C5
+// current address: $395DB
 
-//POINTER #6 @ $117D7 - STRING #6 @ $112C5
-#W16($117D7)
-//うん ……でも[Line]
-//なんだか いるな ろかんがすよろ…[Exit]
+//POINTER #6 @ $3990C - STRING #6 @ $395DB
+#W16($3990C)
+//[Var]<$10>は[Line]
+//なかまの しえんこうかをえた![Exit]
 //
-// current address: $112E6
+// current address: $395F0
 
-//POINTER #7 @ $117D9 - STRING #7 @ $112E6
-#W16($117D9)
-//るらるら…[Line]
-//ワシも いくとすよか…[Exit]
+//POINTER #7 @ $3990E - STRING #7 @ $395F0
+#W16($3990E)
+//めいちゅうりつアップ![Line]
+//こうげきりょくアップ![Exit]
 //
-// current address: $112F9
+// current address: $3960F
 
-//POINTER #8 @ $117DB - STRING #8 @ $112F9
-#W16($117DB)
-//ろくきたな れうぎ[Exit]
+//POINTER #8 @ $39910 - STRING #8 @ $3960F
+#W16($39910)
+//クリティカルヒット!![Exit]
 //
-// current address: $11306
+// current address: $3961C
 
-//POINTER #9 @ $117DD - STRING #9 @ $11306
-#W16($117DD)
-//かいばくん!![Line]
-//…ろかった げんきそうで[Exit]
+//POINTER #9 @ $39912 - STRING #9 @ $3961C
+#W16($39912)
+//さいあく![Line]
+//ファンブルが でてしまった![Exit]
 //
-// current address: $11322
+// current address: $39638
 
-//POINTER #10 @ $117DF - STRING #10 @ $11322
-#W16($117DF)
-//なにを うからていよ?[Line]
-//オレと なかろく ともだちごっこが[Line]
-//できよとでも おもったか!![Exit]
+//POINTER #10 @ $39914 - STRING #10 @ $39638
+#W16($39914)
+//ダメージが[Line]
+//じぶんに ふりかかる![Exit]
 //
-// current address: $1135A
+// current address: $39655
 
-//POINTER #11 @ $117E1 - STRING #11 @ $1135A
-#W16($117E1)
-//!?[Exit]
+//POINTER #11 @ $39916 - STRING #11 @ $39655
+#W16($39916)
+//[Var]<$10>の まほう[Line]
+//「[Var]<$11>」![Exit]
 //
-// current address: $1135E
+// current address: $39664
 
-//POINTER #12 @ $117E3 - STRING #12 @ $1135E
-#W16($117E3)
-//ククク… マインドール!![Exit]
+//POINTER #12 @ $39918 - STRING #12 @ $39664
+#W16($39918)
+//[Var]<$10>の HPが[Line]
+//[Var]<$11>% かいふくした![Exit]
 //
-// current address: $1136F
+// current address: $3967B
 
-//POINTER #13 @ $117E5 - STRING #13 @ $1136F
-#W16($117E5)
-//み みんな!![Exit]
+//POINTER #13 @ $3991A - STRING #13 @ $3967B
+#W16($3991A)
+//[Var]<$10>の[Line]
+//こうげきりょくを [Var]<$11>%さげた![Exit]
 //
-// current address: $11378
+// current address: $39695
 
-//POINTER #14 @ $117E7 - STRING #14 @ $11378
-#W16($117E7)
-//かいばっ!![Line]
-//いったい どういうつもゆだ…?[Line]
-//みんなに なにをしたんだ!?[Exit]
+//POINTER #14 @ $3991C - STRING #14 @ $39695
+#W16($3991C)
+//[Var]<$10>は[Line]
+//こんらん して[Line]
+//じぶんを こうげきした![Exit]
 //
-// current address: $113A7
+// current address: $396B5
 
-//POINTER #15 @ $117E9 - STRING #15 @ $113A7
-#W16($117E9)
-//そいつやの ここりは[Line]
-//5つの にんぎょうに ふうじこめた[Exit]
+//POINTER #15 @ $3991E - STRING #15 @ $396B5
+#W16($3991E)
+//[Var]<$10>のこうどうを[Line]
+//[Var]<$11>ターン ふうじこめた![Exit]
 //
-// current address: $113C9
+// current address: $396D1
 
-//POINTER #16 @ $117EB - STRING #16 @ $113C9
-#W16($117EB)
-//なかまを たすけたけらば[Line]
-//この「デュエルタワー」ないで[Line]
-//かいさいすよ[Exit]
+//POINTER #16 @ $39920 - STRING #16 @ $396D1
+#W16($39920)
+//しっぱい![Line]
+//まほうは きかなかった![Exit]
 //
-// current address: $113F3
+// current address: $396E7
 
-//POINTER #17 @ $117ED - STRING #17 @ $113F3
-#W16($117ED)
-//「モンスターワールドたいかい」を[Line]
-//かちぬいてこい… れうぎ!![Exit]
+//POINTER #17 @ $39922 - STRING #17 @ $396E7
+#W16($39922)
+//てきモンスターを やっつけた![Line]
+//それぞれ[Line]
+//けいけんち [Var]<$10>ポイントを えた[Exit]
 //
-// current address: $11418
+// current address: $39712
 
-//POINTER #18 @ $117EF - STRING #18 @ $11418
-#W16($117EF)
-//かくフロアを まもよ[Line]
-//ダークマスターを たおすごとに[Exit]
+//POINTER #18 @ $39924 - STRING #18 @ $39712
+#W16($39924)
+//[Var]<$10>の MCは ぜんめつした![Line]
+//[Var]<$11>の かち![Exit]
 //
-// current address: $11438
+// current address: $3972D
 
-//POINTER #19 @ $117F1 - STRING #19 @ $11438
-#W16($117F1)
-//1つずつ にんぎょうを[Line]
-//わたしてるりう[Exit]
+//POINTER #19 @ $39926 - STRING #19 @ $3972D
+#W16($39926)
+//スターチップを 1まい[Line]
+//かくとくした[Exit]
 //
-// current address: $11451
+// current address: $39743
 
-//POINTER #20 @ $117F3 - STRING #20 @ $11451
-#W16($117F3)
-//ただし!![Line]
-//そこで おまえが まけたときは…[Exit]
+//POINTER #20 @ $39928 - STRING #20 @ $39743
+#W16($39928)
+//[Var]<$10>は[Line]
+//レベルがあがった![Exit]
 //
-// current address: $1146F
+// current address: $39758
 
-//POINTER #21 @ $117F5 - STRING #21 @ $1146F
-#W16($117F5)
-//その「せんねんパズル」を[Line]
-//わたしてもやうぞ!![Exit]
+//POINTER #21 @ $3992A - STRING #21 @ $39758
+#W16($3992A)
+//LV[Var]<$12>[Line]
+//HPが [Var]<$10>あがった[Line]
+//ATが [Var]<$11>あがった[Exit]
 //
-// current address: $1148E
+// current address: $3977D
 
-//POINTER #22 @ $117F7 - STRING #22 @ $1148E
-#W16($117F7)
-//…いいだりう![Line]
-//このゲーム うけてるよぜ!![Exit]
+//POINTER #22 @ $3992C - STRING #22 @ $3977D
+#W16($3992C)
+//DFが [Var]<$10>あがった[Line]
+//SPが [Var]<$11>あがった[Exit]
 //
-// current address: $114AC
+// current address: $3979C
 
-//POINTER #23 @ $117F9 - STRING #23 @ $114AC
-#W16($117F9)
-//ククク… では [Line]
-//さいじょうかいで まっていよぞ![Exit]
+//POINTER #23 @ $3992E - STRING #23 @ $3979C
+#W16($3992E)
+//LV[Var]<$10>[Exit]
 //
-// current address: $114CF
+// current address: $397A3
 
-//POINTER #24 @ $117FB - STRING #24 @ $114CF
-#W16($117FB)
-//みんなの ここり…[Line]
-//かなやず とゆもどしてみせよぜ!![Exit]
+//POINTER #24 @ $39930 - STRING #24 @ $397A3
+#W16($39930)
+//HPが [Var]<$10>あがった[Exit]
 //
-// current address: $114F2
+// current address: $397B3
 
-//POINTER #25 @ $117FD - STRING #25 @ $114F2
-#W16($117FD)
-//フフフフフ… そらでは [Line]
-//たいかいの ルールを[Line]
-//せつめい いたしましょうか?[Exit]
+//POINTER #25 @ $39932 - STRING #25 @ $397B3
+#W16($39932)
+//ATが [Var]<$10>あがった[Exit]
 //
-// current address: $1151C
+// current address: $397C3
 
-//POINTER #26 @ $117FF - STRING #26 @ $1151C
-#W16($117FF)
-// はい[Line]
-// いいえ[Exit]
+//POINTER #26 @ $39934 - STRING #26 @ $397C3
+#W16($39934)
+//DFが [Var]<$10>あがった[Exit]
 //
-// current address: $11526
+// current address: $397D3
 
-//POINTER #27 @ $11801 - STRING #27 @ $11526
-#W16($11801)
-//そらでは まず[Line]
-//「スターチップ」を 5まい[Line]
-//おわたししましょう[Exit]
+//POINTER #27 @ $39936 - STRING #27 @ $397D3
+#W16($39936)
+//SPが [Var]<$10>あがった[Exit]
 //
-// current address: $1154D
+// current address: $397E3
 
-//POINTER #28 @ $11803 - STRING #28 @ $1154D
-#W16($11803)
-//たいかいさんかしゃは[Line]
-//このスターチップを かけて[Line]
-//バトルをしていただきます[Exit]
+//POINTER #28 @ $39938 - STRING #28 @ $397E3
+#W16($39938)
+//[Var]<$10>の MCは ぜんめつした![Exit]
 //
-// current address: $1157A
+// current address: $397F6
 
-//POINTER #29 @ $11805 - STRING #29 @ $1157A
-#W16($11805)
-//バトルの ほうほうは[Line]
-//プレイヤーが おたがいに[Line]
-//4たいまでの モンスターカプセル…[Exit]
+//POINTER #29 @ $3993A - STRING #29 @ $397F6
+#W16($3993A)
+//スターチップを 1まい[Line]
+//うしなった![Exit]
 //
-// current address: $115B1
+// current address: $3980C
 
-//POINTER #30 @ $11807 - STRING #30 @ $115B1
-#W16($11807)
-//ゆゃくして「MC」を たたかわせ[Line]
-//さきに ぜんめつさせたほうが[Line]
-//かちです[Exit]
+//POINTER #30 @ $3993C - STRING #30 @ $3980C
+#W16($3993C)
+//ふういんされし[Line]
+//エクゾディアの しょうかん[Line]
+//「エクゾートフレイム」!![Exit]
 //
-// current address: $115DD
+// current address: $39837
 
-//POINTER #31 @ $11809 - STRING #31 @ $115DD
-#W16($11809)
-//まけたほうは スターチップを[Line]
-//さしださなけらば なゆません[Exit]
+//POINTER #31 @ $3993E - STRING #31 @ $39837
+#W16($3993E)
+//「ドラゴンふういんのつぼ」は[Line]
+//ドラゴンぞくの モンスターを[Line]
+//ふうじこめた![Exit]
 //
-// current address: $11602
+// current address: $3986C
 
-//POINTER #32 @ $1180B - STRING #32 @ $11602
-#W16($1180B)
-//スターチップが なくなよか[Line]
-//てもちの MCが なくなよと[Line]
-//しっかくとなゆます[Exit]
+//POINTER #32 @ $39940 - STRING #32 @ $3986C
+#W16($39940)
+//しかし つぼまじんの ちからによって[Line]
+//ふういんは うちけされた!![Exit]
 //
-// current address: $11630
+// current address: $39893
 
-//POINTER #33 @ $1180D - STRING #33 @ $11630
-#W16($1180D)
-//きをつけて くださいませ…[Exit]
+//POINTER #33 @ $39942 - STRING #33 @ $39893
+#W16($39942)
+//せんねんパズルを[Line]
+//うしなった![Exit]
 //
-// current address: $11641
+// current address: $398A8
 
-//POINTER #34 @ $1180F - STRING #34 @ $11641
-#W16($1180F)
-//スターチップは[Line]
-//コインの かわゆとして[Line]
-//フロアに せっちしてあよ[Exit]
+//POINTER #34 @ $39944 - STRING #34 @ $398A8
+#W16($39944)
+//スターチップを 3まい[Line]
+//かくとくした[Exit]
 //
-// current address: $11665
+// current address: $398BE
 
-//POINTER #35 @ $11811 - STRING #35 @ $11665
-#W16($11811)
-//「カプセルマシン」かや [Line]
-//あたやしく MCを [Line]
-//てにいらたゆ…[Exit]
+//POINTER #35 @ $39946 - STRING #35 @ $398BE
+#W16($39946)
+//エクゾディアの[Line]
+//パーツの 1つが[Line]
+//しょうめつしてしまった!![Exit]
 //
-// current address: $11688
+// current address: $398E6
 
-//POINTER #36 @ $11813 - STRING #36 @ $11688
-#W16($11813)
-//きめやらた かずを あつめよと[Line]
-//その フロアを まもよ[Line]
-//「ダークマスター」に[Exit]
+//POINTER #36 @ $39948 - STRING #36 @ $398E6
+#W16($39948)
+//スターチップを すべて[Line]
+//うしなった![Exit]
 //
-// current address: $116B4
+// current address: $398FE
 
-//POINTER #37 @ $11815 - STRING #37 @ $116B4
-#W16($11815)
-//「モンスターワールド」で[Line]
-//ちょうせんすよことが できます[Exit]
+//POINTER #37 @ $3994A - STRING #37 @ $398FE
+#W16($3994A)
+//[Exit]
 //
-// current address: $116DA
-
-//POINTER #38 @ $11817 - STRING #38 @ $116DA
-#W16($11817)
-//フロアは ぜんぶで 5つ[Line]
-//かく フロアの ダークマスターを[Line]
-//すべて たおせば[Exit]
-//
-// current address: $1170E
-
-//POINTER #39 @ $11819 - STRING #39 @ $1170E
-#W16($11819)
-//さいじょうかいの かいばさまに[Line]
-//ちょうせんすよことが できます…[Exit]
-//
-// current address: $11738
-
-//POINTER #40 @ $1181B - STRING #40 @ $11738
-#W16($1181B)
-//そらでは あなたの ごけんとうを[Line]
-//おいのゆして おゆます[Line]
-//ヒヒヒ……[Exit]
-//
-// current address: $11760
-
-//POINTER #41 @ $1181D - STRING #41 @ $11760
-#W16($1181D)
-//ヒヒヒ……[Line]
-//ルールを きかないとは[Line]
-//たいした じしんですねぇ?[Exit]
-//
-// current address: $11785
-
-//POINTER #42 @ $1181F - STRING #42 @ $11785
-#W16($1181F)
-//いいでしょう[Line]
-//「スターチップ」を 5まい[Line]
-//おわたしいたします[Exit]
-//
-// current address: $117A9
-
-//POINTER #43 @ $11821 - STRING #43 @ $117A9
-#W16($11821)
-//あなたの ごけんとうを[Line]
-//おいのゆして おゆますろ[Line]
-//ヒヒヒ……[Exit]
-//
-// current address: $117CB
+// current address: $39900

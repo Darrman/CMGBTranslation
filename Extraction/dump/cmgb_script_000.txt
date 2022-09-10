@@ -138,7 +138,7 @@
 
 //POINTER #21 @ $385D1 - STRING #21 @ $380E3
 #W16($385D1)
-//ゆゅうきしガイア[Exit]
+//りゅうきしガイア[Exit]
 //
 // current address: $380EF
 
@@ -186,7 +186,7 @@
 
 //POINTER #29 @ $385E1 - STRING #29 @ $38137
 #W16($385E1)
-//とゆでをまもよろくゆゅう[Exit]
+//とりでをまもるよくりゅう[Exit]
 //
 // current address: $38147
 
@@ -288,7 +288,7 @@
 
 //POINTER #46 @ $38603 - STRING #46 @ $3822A
 #W16($38603)
-//メデューサのぼうらい[Exit]
+//メデューサのぼうれい[Exit]
 //
 // current address: $3823A
 
@@ -306,7 +306,7 @@
 
 //POINTER #49 @ $38609 - STRING #49 @ $38259
 #W16($38609)
-//ろりいむしゃゾンビ[Exit]
+//よろいむしゃゾンビ[Exit]
 //
 // current address: $38268
 
@@ -468,7 +468,7 @@
 
 //POINTER #76 @ $3863F - STRING #76 @ $3837B
 #W16($3863F)
-//るみのどうけしサギー[Exit]
+//やみのどうけしサギー[Exit]
 //
 // current address: $3838B
 
@@ -492,7 +492,7 @@
 
 //POINTER #80 @ $38647 - STRING #80 @ $383A7
 #W16($38647)
-//ろりいむしゃザンキ[Exit]
+//よろいむしゃザンキ[Exit]
 //
 // current address: $383B4
 
@@ -576,7 +576,7 @@
 
 //POINTER #94 @ $38663 - STRING #94 @ $3844B
 #W16($38663)
-//るみまかいのはおう[Exit]
+//やみまかいのはおう[Exit]
 //
 // current address: $38456
 
@@ -588,25 +588,25 @@
 
 //POINTER #96 @ $38667 - STRING #96 @ $38462
 #W16($38667)
-//ふういんさらしみぎウデ[Exit]
+//ふういんされしみぎウデ[Exit]
 //
 // current address: $38473
 
 //POINTER #97 @ $38669 - STRING #97 @ $38473
 #W16($38669)
-//ふういんさらしひだゆウデ[Exit]
+//ふういんされしひだりウデ[Exit]
 //
 // current address: $38485
 
 //POINTER #98 @ $3866B - STRING #98 @ $38485
 #W16($3866B)
-//ふういんさらしアシ[Exit]
+//ふういんされしアシ[Exit]
 //
 // current address: $38490
 
 //POINTER #99 @ $3866D - STRING #99 @ $38490
 #W16($3866D)
-//ふういんさらしカラダ[Exit]
+//ふういんされしカラダ[Exit]
 //
 // current address: $3849E
 

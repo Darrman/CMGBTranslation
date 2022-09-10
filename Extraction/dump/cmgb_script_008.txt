@@ -1,0 +1,26 @@
+//GAME NAME:		Yu-Gi-Oh: Capsule Monsters GB
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
+
+//BLOCK #008 NAME:		Text Speed Options
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($83267, $8329B) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $8329C - STRING #0 @ $83267
+#W16($8329C)
+//メッセージの スピードを[Line]
+//えらんで ください[Exit]
+//
+// current address: $83289
+
+//POINTER #1 @ $8329E - STRING #1 @ $83289
+#W16($8329E)
+//  はやい[Line]
+//  ふつう[Line]
+//  おそい[Exit]
+//
+// current address: $8329C

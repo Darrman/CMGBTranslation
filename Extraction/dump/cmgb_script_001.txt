@@ -96,7 +96,7 @@
 
 //POINTER #14 @ $391FE - STRING #14 @ $3873C
 #W16($391FE)
-//かいてんぎゆ[Exit]
+//かいてんぎり[Exit]
 //
 // current address: $38746
 
@@ -108,7 +108,7 @@
 
 //POINTER #16 @ $39202 - STRING #16 @ $38753
 #W16($39202)
-//しゅんさつぎゆ[Exit]
+//しゅんさつぎり[Exit]
 //
 // current address: $3875E
 
@@ -234,7 +234,7 @@
 
 //POINTER #37 @ $3922C - STRING #37 @ $38838
 #W16($3922C)
-//ゆゅうびけん[Exit]
+//りゅうびけん[Exit]
 //
 // current address: $38842
 
@@ -282,7 +282,7 @@
 
 //POINTER #45 @ $3923C - STRING #45 @ $38892
 #W16($3923C)
-//のりいぎゆ[Exit]
+//のろいぎり[Exit]
 //
 // current address: $3889B
 
@@ -294,7 +294,7 @@
 
 //POINTER #47 @ $39240 - STRING #47 @ $388A2
 #W16($39240)
-//らいこんプラズマ[Exit]
+//れいこんプラズマ[Exit]
 //
 // current address: $388B0
 
@@ -414,7 +414,7 @@
 
 //POINTER #67 @ $39268 - STRING #67 @ $38986
 #W16($39268)
-//しっぷうぎゆ[Exit]
+//しっぷうぎり[Exit]
 //
 // current address: $38992
 
@@ -462,7 +462,7 @@
 
 //POINTER #75 @ $39278 - STRING #75 @ $389EB
 #W16($39278)
-//るみのしんぱん[Exit]
+//やみのしんぱん[Exit]
 //
 // current address: $389F6
 
@@ -492,7 +492,7 @@
 
 //POINTER #80 @ $39282 - STRING #80 @ $38A2D
 #W16($39282)
-//まこうやい[Exit]
+//まこうらい[Exit]
 //
 // current address: $38A34
 
@@ -516,7 +516,7 @@
 
 //POINTER #84 @ $3928A - STRING #84 @ $38A4B
 #W16($3928A)
-//たおらかかよ[Exit]
+//たおれかかる[Exit]
 //
 // current address: $38A53
 
@@ -552,7 +552,7 @@
 
 //POINTER #90 @ $39296 - STRING #90 @ $38A79
 #W16($39296)
-//たいあたゆ[Exit]
+//たいあたり[Exit]
 //
 // current address: $38A80
 
@@ -576,7 +576,7 @@
 
 //POINTER #94 @ $3929E - STRING #94 @ $38AA5
 #W16($3929E)
-//しびらでんげき[Exit]
+//しびれでんげき[Exit]
 //
 // current address: $38AB4
 
@@ -630,7 +630,7 @@
 
 //POINTER #103 @ $392B0 - STRING #103 @ $38B26
 #W16($392B0)
-//しっぷうぎゆ[Exit]
+//しっぷうぎり[Exit]
 //
 // current address: $38B32
 
@@ -642,7 +642,7 @@
 
 //POINTER #105 @ $392B4 - STRING #105 @ $38B40
 #W16($392B4)
-//しゅんさつ5らんぞくぎゆ[Exit]
+//しゅんさつ5れんぞくぎり[Exit]
 //
 // current address: $38B52
 
@@ -690,7 +690,7 @@
 
 //POINTER #113 @ $392C4 - STRING #113 @ $38BBB
 #W16($392C4)
-//ほのおのゆゅうせい[Exit]
+//ほのおのりゅうせい[Exit]
 //
 // current address: $38BC6
 
@@ -762,7 +762,7 @@
 
 //POINTER #125 @ $392DC - STRING #125 @ $38C4E
 #W16($392DC)
-//ざんてつゆゅうびけん[Exit]
+//ざんてつりゅうびけん[Exit]
 //
 // current address: $38C5E
 
@@ -798,7 +798,7 @@
 
 //POINTER #131 @ $392E8 - STRING #131 @ $38C9A
 #W16($392E8)
-//じごくおくゆのきょくげい[Exit]
+//じごくおくりのきょくげい[Exit]
 //
 // current address: $38CAE
 
@@ -858,7 +858,7 @@
 
 //POINTER #141 @ $392FC - STRING #141 @ $38D15
 #W16($392FC)
-//メサイアのあゆじごく[Exit]
+//メサイアのありじごく[Exit]
 //
 // current address: $38D25
 
@@ -930,7 +930,7 @@
 
 //POINTER #153 @ $39314 - STRING #153 @ $38DB6
 #W16($39314)
-//おんねんぎゆ[Exit]
+//おんねんぎり[Exit]
 //
 // current address: $38DC0
 
@@ -954,13 +954,13 @@
 
 //POINTER #157 @ $3931C - STRING #157 @ $38DED
 #W16($3931C)
-//ばくらつこくえんだん[Exit]
+//ばくれつこくえんだん[Exit]
 //
 // current address: $38DFD
 
 //POINTER #158 @ $3931E - STRING #158 @ $38DFD
 #W16($3931E)
-//しんまこうやい[Exit]
+//しんまこうらい[Exit]
 //
 // current address: $38E06
 
@@ -1026,7 +1026,7 @@
 
 //POINTER #169 @ $39334 - STRING #169 @ $38E89
 #W16($39334)
-//もえさかよだいち[Exit]
+//もえさかるだいち[Exit]
 //
 // current address: $38E95
 
@@ -1044,7 +1044,7 @@
 
 //POINTER #172 @ $3933A - STRING #172 @ $38EAE
 #W16($3933A)
-//しんくうゆゅうびけん[Exit]
+//しんくうりゅうびけん[Exit]
 //
 // current address: $38EBC
 
@@ -1056,7 +1056,7 @@
 
 //POINTER #174 @ $3933E - STRING #174 @ $38EC7
 #W16($3933E)
-//いっとうゆょうだん[Exit]
+//いっとうりょうだん[Exit]
 //
 // current address: $38ED4
 
@@ -1206,7 +1206,7 @@
 
 //POINTER #199 @ $39370 - STRING #199 @ $39015
 #W16($39370)
-//ほりびのバーストストリーム[Exit]
+//ほろびのバーストストリーム[Exit]
 //
 // current address: $39028
 
@@ -1230,7 +1230,7 @@
 
 //POINTER #203 @ $39378 - STRING #203 @ $39052
 #W16($39378)
-//ひかゆのごふうけん[Exit]
+//ひかりのごふうけん[Exit]
 //
 // current address: $3905F
 
@@ -1248,7 +1248,7 @@
 
 //POINTER #206 @ $3937E - STRING #206 @ $39082
 #W16($3937E)
-//ひかゆのごふうけんS[Exit]
+//ひかりのごふうけんS[Exit]
 //
 // current address: $39090
 
@@ -1344,7 +1344,7 @@
 
 //POINTER #222 @ $3939E - STRING #222 @ $3915B
 #W16($3939E)
-//きあいぎゆ[Exit]
+//きあいぎり[Exit]
 //
 // current address: $39164
 
@@ -1386,7 +1386,7 @@
 
 //POINTER #229 @ $393AC - STRING #229 @ $391C2
 #W16($393AC)
-//ばくらつきあいぎゆ[Exit]
+//ばくれつきあいぎり[Exit]
 //
 // current address: $391D1
 

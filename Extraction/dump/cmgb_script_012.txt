@@ -1,0 +1,681 @@
+//GAME NAME:		Yu-Gi-Oh: Capsule Monsters GB
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
+
+//BLOCK #012 NAME:		Script: Dungeon 1
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($15E65, $16A81) // Jump to insertion point
+#HDR($10000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $16A82 - STRING #0 @ $15E65
+#W16($16A82)
+//モンスターが しゅつげんした![Exit]
+//
+// current address: $15E7A
+
+//POINTER #1 @ $16A84 - STRING #1 @ $15E7A
+#W16($16A84)
+//「HPカプセル」[Line]
+//を てにいれた[Exit]
+//
+// current address: $15E8E
+
+//POINTER #2 @ $16A86 - STRING #2 @ $15E8E
+#W16($16A86)
+//「ATカプセル」[Line]
+//を てにいれた[Exit]
+//
+// current address: $15EA2
+
+//POINTER #3 @ $16A88 - STRING #3 @ $15EA2
+#W16($16A88)
+//「DFカプセル」[Line]
+//を てにいれた[Exit]
+//
+// current address: $15EB6
+
+//POINTER #4 @ $16A8A - STRING #4 @ $15EB6
+#W16($16A8A)
+//「SPカプセル」[Line]
+//を てにいれた[Exit]
+//
+// current address: $15ECA
+
+//POINTER #5 @ $16A8C - STRING #5 @ $15ECA
+#W16($16A8C)
+//「わざカプセル」[Line]
+//を てにいれた[Exit]
+//
+// current address: $15EE0
+
+//POINTER #6 @ $16A8E - STRING #6 @ $15EE0
+#W16($16A8E)
+//「しんかカプセル」[Line]
+//を てにいれた[Exit]
+//
+// current address: $15EF5
+
+//POINTER #7 @ $16A90 - STRING #7 @ $15EF5
+#W16($16A90)
+//この カプセル は[Line]
+//トラップだった![Line]
+//モンスターが しゅつげんした![Exit]
+//
+// current address: $15F23
+
+//POINTER #8 @ $16A92 - STRING #8 @ $15F23
+#W16($16A92)
+//ゆうぎ オマエは [Line]
+//「モンスターワールド」の[Line]
+//ぼうけんしゃだ[Exit]
+//
+// current address: $15F4B
+
+//POINTER #9 @ $16A94 - STRING #9 @ $15F4B
+#W16($16A94)
+//モンスターを ひきつれて[Line]
+//あてもない たびをしている[Exit]
+//
+// current address: $15F69
+
+//POINTER #10 @ $16A96 - STRING #10 @ $15F69
+#W16($16A96)
+//オマエは こうだいな[Line]
+//そうげんちたいに いちする[Line]
+//いなかの むらまで やってきた[Exit]
+//
+// current address: $15F99
+
+//POINTER #11 @ $16A98 - STRING #11 @ $15F99
+#W16($16A98)
+//むらは [Line]
+//なんの へいがいも なく[Line]
+//ひっそりと へいわに くらしていた[Exit]
+//
+// current address: $15FC0
+
+//POINTER #12 @ $16A9A - STRING #12 @ $15FC0
+#W16($16A9A)
+//しかし さいきんになって[Line]
+//ある もんだいが もちあがったのだ[Exit]
+//
+// current address: $15FE8
+
+//POINTER #13 @ $16A9C - STRING #13 @ $15FE8
+#W16($16A9C)
+//ぼうけんしゃは[Line]
+//その むらの ひとびとの[Line]
+//かかえている もんだいを[Exit]
+//
+// current address: $16011
+
+//POINTER #14 @ $16A9E - STRING #14 @ $16011
+#W16($16A9E)
+//かいけつして[Line]
+//やらなければ ならない…![Exit]
+//
+// current address: $16029
+
+//POINTER #15 @ $16AA0 - STRING #15 @ $16029
+#W16($16AA0)
+//さあ じょうほうを[Line]
+//あつめて こまっている[Line]
+//むらの ひとびとを すくえ![Exit]
+//
+// current address: $16053
+
+//POINTER #16 @ $16AA2 - STRING #16 @ $16053
+#W16($16AA2)
+//それが こんかいの [Line]
+//ぼうけんの もくてきだぜい![Exit]
+//
+// current address: $16076
+
+//POINTER #17 @ $16AA4 - STRING #17 @ $16076
+#W16($16AA4)
+//そうげんのむら「メジハ」[Line]
+//に ついた[Exit]
+//
+// current address: $1608E
+
+//POINTER #18 @ $16AA6 - STRING #18 @ $1608E
+#W16($16AA6)
+//ぼうけんしゃの かたかい? こんな[Line]
+//いなかのむらまで よくきなさったのう[Line]
+//ゆっくりして いきなされ[Exit]
+//
+// current address: $160C5
+
+//POINTER #19 @ $16AA8 - STRING #19 @ $160C5
+#W16($16AA8)
+//ああ [Line]
+//こまったことに なったなぁ[Line]
+//どうしよう どうしよう…[Exit]
+//
+// current address: $160E9
+
+//POINTER #20 @ $16AAA - STRING #20 @ $160E9
+#W16($16AAA)
+//そんちょうの うちは いま[Line]
+//たいへんなことに なっているんだ[Exit]
+//
+// current address: $1610B
+
+//POINTER #21 @ $16AAC - STRING #21 @ $1610B
+#W16($16AAC)
+//おお なんてことだ… うちのむすめが[Line]
+//「やみのどうくつ」の モンスターに[Line]
+//さらわれて しまったのだ[Exit]
+//
+// current address: $16146
+
+//POINTER #22 @ $16AAE - STRING #22 @ $16146
+#W16($16AAE)
+//ヤツは むすめと ひきかえに[Line]
+//むらの 「ひほう」を さしだせと[Line]
+//いってきている…[Exit]
+//
+// current address: $16172
+
+//POINTER #23 @ $16AB0 - STRING #23 @ $16172
+#W16($16AB0)
+//しかし 「ひほう」を さしだせば[Line]
+//むらの まもりがみが おいかりに…[Line]
+//こまった こまった…[Exit]
+//
+// current address: $161A9
+
+//POINTER #24 @ $16AB2 - STRING #24 @ $161A9
+#W16($16AB2)
+//「やみのどうくつ」は[Line]
+//むらから ひがしの そうげんちたいを[Line]
+//こえたところに ある[Exit]
+//
+// current address: $161D9
+
+//POINTER #25 @ $16AB4 - STRING #25 @ $161D9
+#W16($16AB4)
+//おむかいの おじいさん[Line]
+//さいきん ちょっと[Line]
+//ボケて きちゃったのよね[Exit]
+//
+// current address: $16201
+
+//POINTER #26 @ $16AB6 - STRING #26 @ $16201
+#W16($16AB6)
+//なんだか[Line]
+//わけの わからないことを [Line]
+//いうのよ[Exit]
+//
+// current address: $1621C
+
+//POINTER #27 @ $16AB8 - STRING #27 @ $1621C
+#W16($16AB8)
+//もんすたーと せんとうに なるまえに[Line]
+//あらかじめ めにゅーから 「MC」[Line]
+//をえらび 「じんけい」で[Exit]
+//
+// current address: $16257
+
+//POINTER #28 @ $16ABA - STRING #28 @ $16257
+#W16($16ABA)
+//もんすたーの はいれつを[Line]
+//きめておくのじゃ![Exit]
+//
+// current address: $16271
+
+//POINTER #29 @ $16ABC - STRING #29 @ $16271
+#W16($16ABC)
+//「フィールドこうか」って[Line]
+//しってる?[Exit]
+//
+// current address: $16287
+
+//POINTER #30 @ $16ABE - STRING #30 @ $16287
+#W16($16ABE)
+//モンスターには それぞれ[Line]
+//フィールドの ぞくせいがあって[Line]
+//せんとうでは[Exit]
+//
+// current address: $162B6
+
+//POINTER #31 @ $16AC0 - STRING #31 @ $162B6
+#W16($16AC0)
+//じぶんの とくいなちけいに たつと[Line]
+//すこし つよく なるんだって![Line]
+//しってた?[Exit]
+//
+// current address: $162E5
+
+//POINTER #32 @ $16AC2 - STRING #32 @ $162E5
+#W16($16AC2)
+//「ひがしのそうげん」[Line]
+//に ついた[Exit]
+//
+// current address: $162FB
+
+//POINTER #33 @ $16AC4 - STRING #33 @ $162FB
+#W16($16AC4)
+//ここでは 10ぽ あるくごとに[Line]
+//30%の モンスターの[Line]
+//しゅつげんはんていの ダイスをふる[Exit]
+//
+// current address: $16334
+
+//POINTER #34 @ $16AC6 - STRING #34 @ $16334
+#W16($16AC6)
+//すなわち 30いかの めが[Line]
+//でれば モンスターと そうぐう[Line]
+//することに なるんだぜい![Exit]
+//
+// current address: $1636D
+
+//POINTER #35 @ $16AC8 - STRING #35 @ $1636D
+#W16($16AC8)
+//モンスター しゅつげんりつ30%[Line]
+//いかの めが でた![Line]
+//よって モンスターが あらわれる[Exit]
+//
+// current address: $163A3
+
+//POINTER #36 @ $16ACA - STRING #36 @ $163A3
+#W16($16ACA)
+//このさきの どうくつには[Line]
+//ちかづかない ほうがいい…[Line]
+//おそろしい モンスターが いるんだ![Exit]
+//
+// current address: $163DC
+
+//POINTER #37 @ $16ACC - STRING #37 @ $163DC
+#W16($16ACC)
+//ヤツは「やみ」ぞくせい だから[Line]
+//やみのどうくつ では とくに[Line]
+//パワーアップ しちまう…![Exit]
+//
+// current address: $16416
+
+//POINTER #38 @ $16ACE - STRING #38 @ $16416
+#W16($16ACE)
+//さっき ひとりで どうくつへ[Line]
+//はしっていった ムチャなやつが[Line]
+//いたけど だいじょうぶかなぁ…?[Exit]
+//
+// current address: $16455
+
+//POINTER #39 @ $16AD0 - STRING #39 @ $16455
+#W16($16AD0)
+//「やみのどうくつ」[Line]
+//に ついた[Exit]
+//
+// current address: $16468
+
+//POINTER #40 @ $16AD2 - STRING #40 @ $16468
+#W16($16AD2)
+//ここでは 8ぽ あるくごとに[Line]
+//30%の モンスターの[Line]
+//しゅつげんはんていの ダイスをふる[Exit]
+//
+// current address: $164A0
+
+//POINTER #41 @ $16AD4 - STRING #41 @ $164A0
+#W16($16AD4)
+//く くそー…![Exit]
+//
+// current address: $164A9
+
+//POINTER #42 @ $16AD6 - STRING #42 @ $164A9
+#W16($16AD6)
+//じょうのうちくん!?[Exit]
+//
+// current address: $164B7
+
+//POINTER #43 @ $16AD8 - STRING #43 @ $164B7
+#W16($16AD8)
+//だいじょうぶ!?[Line]
+//…でも どうして ここに…?[Exit]
+//
+// current address: $164DA
+
+//POINTER #44 @ $16ADA - STRING #44 @ $164DA
+#W16($16ADA)
+//あっ ゆうぎ!![Exit]
+//
+// current address: $164E6
+
+//POINTER #45 @ $16ADC - STRING #45 @ $164E6
+#W16($16ADC)
+//オレひとりで なんとか[Line]
+//この ゲームを おわらせようと[Line]
+//ここまで きたんだけどよ[Exit]
+//
+// current address: $1651A
+
+//POINTER #46 @ $16ADE - STRING #46 @ $1651A
+#W16($16ADE)
+//この どうくつの モンスターに[Line]
+//やられちまったんだ…! [Exit]
+//
+// current address: $1653C
+
+//POINTER #47 @ $16AE0 - STRING #47 @ $1653C
+#W16($16AE0)
+//そうだ さっき ここで[Line]
+//カプセルを ひろったんだ[Line]
+//ゆうぎに やるよ[Exit]
+//
+// current address: $16569
+
+//POINTER #48 @ $16AE2 - STRING #48 @ $16569
+#W16($16AE2)
+//「ATカプセル」[Line]
+//を もらった[Exit]
+//
+// current address: $1657C
+
+//POINTER #49 @ $16AE4 - STRING #49 @ $1657C
+#W16($16AE4)
+//このカプセルを ゆうぎのモンスターに[Line]
+//つかうと こうげきりょくが[Line]
+//パワーアップ するらしいぜ!…[Exit]
+//
+// current address: $165BC
+
+//POINTER #50 @ $16AE6 - STRING #50 @ $165BC
+#W16($16AE6)
+//…オレは もう ここまでだ…[Line]
+//すまん ゆうぎ[Line]
+//あとは たのむぜ…![Exit]
+//
+// current address: $165E7
+
+//POINTER #51 @ $16AE8 - STRING #51 @ $165E7
+#W16($16AE8)
+//イワに スイッチが[Line]
+//ひとつ ついている[Exit]
+//
+// current address: $165FE
+
+//POINTER #52 @ $16AEA - STRING #52 @ $165FE
+#W16($16AEA)
+//どうやら このさきの[Line]
+//3つの とびらの うち[Line]
+//ひとつを あけるための ものらしい[Exit]
+//
+// current address: $1662C
+
+//POINTER #53 @ $16AEC - STRING #53 @ $1662C
+#W16($16AEC)
+//しかし [Line]
+//どの とびらが ひらくかは[Line]
+//わからない[Exit]
+//
+// current address: $1664C
+
+//POINTER #54 @ $16AEE - STRING #54 @ $1664C
+#W16($16AEE)
+//ここで「ダイスロール」で[Line]
+//どの とびらが ひらくかを[Line]
+//はんてい できる[Exit]
+//
+// current address: $1667F
+
+//POINTER #55 @ $16AF0 - STRING #55 @ $1667F
+#W16($16AF0)
+// 0~39なら A[Line]
+//40~79なら B[Line]
+//80~99なら C のとびらが あく[Exit]
+//
+// current address: $166AB
+
+//POINTER #56 @ $16AF2 - STRING #56 @ $166AB
+#W16($16AF2)
+//ボタンを おしてみるか?[Line]
+//  おす[Line]
+//  おさない[Exit]
+//
+// current address: $166C7
+
+//POINTER #57 @ $16AF4 - STRING #57 @ $166C7
+#W16($16AF4)
+//Aのとびらが ひらいた![Exit]
+//
+// current address: $166D9
+
+//POINTER #58 @ $16AF6 - STRING #58 @ $166D9
+#W16($16AF6)
+//Bのとびらが ひらいた![Exit]
+//
+// current address: $166EB
+
+//POINTER #59 @ $16AF8 - STRING #59 @ $166EB
+#W16($16AF8)
+//Cのとびらが ひらいた![Exit]
+//
+// current address: $166FD
+
+//POINTER #60 @ $16AFA - STRING #60 @ $166FD
+#W16($16AFA)
+//あ~あ[Line]
+//みはりなんて たいくつだなぁ…[Exit]
+//
+// current address: $16714
+
+//POINTER #61 @ $16AFC - STRING #61 @ $16714
+#W16($16AFC)
+//さけでも のんで[Line]
+//ぐっすり やすみてぇよ[Exit]
+//
+// current address: $16730
+
+//POINTER #62 @ $16AFE - STRING #62 @ $16730
+#W16($16AFE)
+//…![Line]
+//おっ オマエ[Line]
+//いいモノ もってるじゃねえか![Exit]
+//
+// current address: $1674D
+
+//POINTER #63 @ $16B00 - STRING #63 @ $1674D
+#W16($16B00)
+//その [Line]
+//うまそうな さけを[Line]
+//オレに よこせっ![Exit]
+//
+// current address: $16766
+
+//POINTER #64 @ $16B02 - STRING #64 @ $16766
+#W16($16B02)
+//んぐっ んぐっ んぐっ…[Line]
+//…っかー うめえ![Exit]
+//
+// current address: $16784
+
+//POINTER #65 @ $16B04 - STRING #65 @ $16784
+#W16($16B04)
+//ヒック![Line]
+//う~ん よっぱらっちまったぃ…[Line]
+//…へろへろ~[Exit]
+//
+// current address: $167A3
+
+//POINTER #66 @ $16B06 - STRING #66 @ $167A3
+#W16($16B06)
+//オイ あいぼう![Line]
+//みはりの さいちゅうに[Line]
+//さけ だけは のむなよ[Exit]
+//
+// current address: $167C9
+
+//POINTER #67 @ $16B08 - STRING #67 @ $167C9
+#W16($16B08)
+//オマエは すぐ へろへろに[Line]
+//よっぱらっちまうんだからな![Exit]
+//
+// current address: $167ED
+
+//POINTER #68 @ $16B0A - STRING #68 @ $167ED
+#W16($16B0A)
+//しょうがねぇなあ…[Line]
+//1ぱい だけだぞ… ぐうぐう[Exit]
+//
+// current address: $16815
+
+//POINTER #69 @ $16B0C - STRING #69 @ $16815
+#W16($16B0C)
+//つぼの なかに[Line]
+//さけが はいっている[Exit]
+//
+// current address: $1682D
+
+//POINTER #70 @ $16B0E - STRING #70 @ $1682D
+#W16($16B0E)
+//つぼを もっていくか?[Line]
+//  もっていく[Line]
+//  もっていかない[Exit]
+//
+// current address: $1684E
+
+//POINTER #71 @ $16B10 - STRING #71 @ $1684E
+#W16($16B10)
+//「へろへろざけ」[Line]
+//を てにいれた[Exit]
+//
+// current address: $16862
+
+//POINTER #72 @ $16B12 - STRING #72 @ $16862
+#W16($16B12)
+//きゃーっ たすけてー![Exit]
+//
+// current address: $1686F
+
+//POINTER #73 @ $16B14 - STRING #73 @ $1686F
+#W16($16B14)
+//ム なんだオマエ[Line]
+//ジャマするきか!?[Exit]
+//
+// current address: $16887
+
+//POINTER #74 @ $16B16 - STRING #74 @ $16887
+#W16($16B16)
+//いたいめに あわせてやる!![Exit]
+//
+// current address: $16897
+
+//POINTER #75 @ $16B18 - STRING #75 @ $16897
+#W16($16B18)
+//たすかりました ほんとうに[Line]
+//ありがとうございます![Exit]
+//
+// current address: $168B8
+
+//POINTER #76 @ $16B1A - STRING #76 @ $168B8
+#W16($16B1A)
+//おお[Line]
+//ぼうけんしゃのかたよ ありがとう[Line]
+//よくぞ むすめを すくってくれた![Exit]
+//
+// current address: $168E5
+
+//POINTER #77 @ $16B1C - STRING #77 @ $168E5
+#W16($16B1C)
+//おれい といっては なんですが[Line]
+//この Pカプセルを[Line]
+//あなたに さしあげよう[Exit]
+//
+// current address: $16914
+
+//POINTER #78 @ $16B1E - STRING #78 @ $16914
+#W16($16B1E)
+//「しんかカプセル」[Line]
+//を もらった[Exit]
+//
+// current address: $16928
+
+//POINTER #79 @ $16B20 - STRING #79 @ $16928
+#W16($16B20)
+//この「しんかカプセル」は とくていの[Line]
+//モンスターを しんかさせる[Line]
+//Pカプセル なのです[Exit]
+//
+// current address: $1695B
+
+//POINTER #80 @ $16B22 - STRING #80 @ $1695B
+#W16($16B22)
+//こうして ぼうけんしゃは[Line]
+//まちの ひとびとに てあつく[Line]
+//みおくられ[Exit]
+//
+// current address: $16982
+
+//POINTER #81 @ $16B24 - STRING #81 @ $16982
+#W16($16B24)
+//ふたたび どこへ ともなく[Line]
+//たびだって いった…[Exit]
+//
+// current address: $169A4
+
+//POINTER #82 @ $16B26 - STRING #82 @ $169A4
+#W16($16B26)
+//テーブルだ[Line]
+//よく キレイに ふいてある[Exit]
+//
+// current address: $169BD
+
+//POINTER #83 @ $16B28 - STRING #83 @ $169BD
+#W16($16B28)
+//テーブルだ[Line]
+//よく キレイに ふいてある[Exit]
+//
+// current address: $169D6
+
+//POINTER #84 @ $16B2A - STRING #84 @ $169D6
+#W16($16B2A)
+//ひきだしの なかから[Line]
+//「HPカプセル」[Line]
+//を てにいれた![Exit]
+//
+// current address: $169F8
+
+//POINTER #85 @ $16B2C - STRING #85 @ $169F8
+#W16($16B2C)
+//タルが おいてある[Exit]
+//
+// current address: $16A05
+
+//POINTER #86 @ $16B2E - STRING #86 @ $16A05
+#W16($16B2E)
+//なかには なにもない[Exit]
+//
+// current address: $16A11
+
+//POINTER #87 @ $16B30 - STRING #87 @ $16A11
+#W16($16B30)
+//タルが おいてある[Exit]
+//
+// current address: $16A1E
+
+//POINTER #88 @ $16B32 - STRING #88 @ $16A1E
+#W16($16B32)
+//なかから「DFカプセル」[Line]
+//を てにいれた![Exit]
+//
+// current address: $16A37
+
+//POINTER #89 @ $16B34 - STRING #89 @ $16A37
+#W16($16B34)
+//たなが おいてある[Line]
+//いろいろなものが [Line]
+//せいとん されている[Exit]
+//
+// current address: $16A5B
+
+//POINTER #90 @ $16B36 - STRING #90 @ $16A5B
+#W16($16B36)
+//いどが ある[Line]
+//ここから ちかすいを[Line]
+//くみあげて いるようだ[Exit]
+//
+// current address: $16A82
