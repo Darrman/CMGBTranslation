@@ -1,0 +1,309 @@
+//GAME NAME:		Yu-Gi-Oh: Capsule Monsters GB
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
+
+//BLOCK #004 NAME:		Script: Mokuba's Room
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($145E4, $14B97) // Jump to insertion point
+#HDR($10000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $14B98 - STRING #0 @ $145E4
+#W16($14B98)
+//おるおる…[Line]
+//ろうるく スターチップを[Line]
+//10まい あつめたろうですねぇ[Exit]
+//
+// current address: $1460C
+
+//POINTER #1 @ $14B9A - STRING #1 @ $1460C
+#W16($14B9A)
+//しかし あなたが ほんとうに[Line]
+//ダークマスターと たたかう[Line]
+//しかくがあよか…[Exit]
+//
+// current address: $14639
+
+//POINTER #2 @ $14B9C - STRING #2 @ $14639
+#W16($14B9C)
+//わたくしめが[Line]
+//ためして さしあげましょう[Line]
+//ヒヒヒ……[Exit]
+//
+// current address: $14659
+
+//POINTER #3 @ $14B9E - STRING #3 @ $14659
+#W16($14B9E)
+//クッ! さすがに おつろい…[Line]
+//いいでしょう とおしてさしあげます [Exit]
+//
+// current address: $14682
+
+//POINTER #4 @ $14BA0 - STRING #4 @ $14682
+#W16($14BA0)
+//うんが ろけらば[Line]
+//また おあいしましょう[Line]
+//そらでは…[Exit]
+//
+// current address: $146A4
+
+//POINTER #5 @ $14BA2 - STRING #5 @ $146A4
+#W16($14BA2)
+//ろうこそ れうぎ!![Line]
+//オレが フロア1の[Line]
+//ダークマスターなんだぜい!![Exit]
+//
+// current address: $146D3
+
+//POINTER #6 @ $14BA4 - STRING #6 @ $146D3
+#W16($14BA4)
+//モ モクバ!![Exit]
+//
+// current address: $146DE
+
+//POINTER #7 @ $14BA6 - STRING #7 @ $146DE
+#W16($14BA6)
+//こらかや オレと[Line]
+//「モンスターワールド」で[Line]
+//たたかって もやうぜい!![Exit]
+//
+// current address: $14709
+
+//POINTER #8 @ $14BA8 - STRING #8 @ $14709
+#W16($14BA8)
+//お おてるわやかに たのむろ…[Exit]
+//
+// current address: $1471A
+
+//POINTER #9 @ $14BAA - STRING #9 @ $1471A
+#W16($14BAA)
+//れうぎーっ!![Line]
+//オレ にんぎょうに なっちまった!![Line]
+//どうすゆゃいいんだ!?[Exit]
+//
+// current address: $1474A
+
+//POINTER #10 @ $14BAC - STRING #10 @ $1474A
+#W16($14BAC)
+//じょうのうちくん!![Exit]
+//
+// current address: $14758
+
+//POINTER #11 @ $14BAE - STRING #11 @ $14758
+#W16($14BAE)
+//うよさい にんぎょうだぜい![Line]
+//おとなしく しないなや[Line]
+//たたきこわしてるよぞ!![Exit]
+//
+// current address: $14789
+
+//POINTER #12 @ $14BB0 - STRING #12 @ $14789
+#W16($14BB0)
+//うわ~! [Line]
+//く くそーっ!![Exit]
+//
+// current address: $14799
+
+//POINTER #13 @ $14BB2 - STRING #13 @ $14799
+#W16($14BB2)
+//その きたねえ てで[Line]
+//にんぎょうに さわよんじゃねえ!![Exit]
+//
+// current address: $147BD
+
+//POINTER #14 @ $14BB4 - STRING #14 @ $147BD
+#W16($14BB4)
+//フフ… そっちの れうぎか…[Line]
+//こうつごうだぜい![Line]
+//ルールを せつめい してるよ!![Exit]
+//
+// current address: $147F0
+
+//POINTER #15 @ $14BB6 - STRING #15 @ $147F0
+#W16($14BB6)
+//オマエには こらかや[Line]
+//オレの モンスターワールドで[Line]
+//ぼうけんを してもやう[Exit]
+//
+// current address: $1481D
+
+//POINTER #16 @ $14BB8 - STRING #16 @ $1481D
+#W16($14BB8)
+//マスターであよ オレが[Line]
+//せっていした もくてきを[Line]
+//クリアできらば オマエの かちだ![Exit]
+//
+// current address: $14853
+
+//POINTER #17 @ $14BBA - STRING #17 @ $14853
+#W16($14BBA)
+//だが せんとうで[Line]
+//オマエの MCが ぜんめつしたや[Line]
+//オレの かちだ!![Exit]
+//
+// current address: $14884
+
+//POINTER #18 @ $14BBC - STRING #18 @ $14884
+#W16($14BBC)
+//そうならば GAME OVER!![Line]
+//2かいへの とびやは[Line]
+//えいえんに ひやかないぜい!![Exit]
+//
+// current address: $148B8
+
+//POINTER #19 @ $14BBE - STRING #19 @ $148B8
+#W16($14BBE)
+//モクバ… オマエを ぶったおせば[Line]
+//その とびやは ひやからよってわけか[Exit]
+//
+// current address: $148E5
+
+//POINTER #20 @ $14BC0 - STRING #20 @ $148E5
+#W16($14BC0)
+//だが そらは むゆだぜい![Line]
+//れうぎ! オマエは このステージで[Line]
+//しぬことに なよんだぜい!![Exit]
+//
+// current address: $14927
+
+//POINTER #21 @ $14BC2 - STRING #21 @ $14927
+#W16($14BC2)
+//おともだちと いっしょにな!![Exit]
+//
+// current address: $1493A
+
+//POINTER #22 @ $14BC4 - STRING #22 @ $1493A
+#W16($14BC4)
+//さあ![Line]
+//ゲームを はじめよぜい!![Exit]
+//
+// current address: $14953
+
+//POINTER #23 @ $14BC6 - STRING #23 @ $14953
+#W16($14BC6)
+//ゲームは オレの かちだぜ[Line]
+//モクバ…[Exit]
+//
+// current address: $1496F
+
+//POINTER #24 @ $14BC8 - STRING #24 @ $1496F
+#W16($14BC8)
+//バ… バカな……[Line]
+//オレが まけた……!?[Exit]
+//
+// current address: $1498B
+
+//POINTER #25 @ $14BCA - STRING #25 @ $1498B
+#W16($14BCA)
+//るったぜ れうぎ![Line]
+//るっぱ さすがだぜー!![Exit]
+//
+// current address: $149AF
+
+//POINTER #26 @ $14BCC - STRING #26 @ $149AF
+#W16($14BCC)
+//じょうのうちくんの にんぎょうは[Line]
+//かえして もやった…[Line]
+//オレは いくぜ![Exit]
+//
+// current address: $149DB
+
+//POINTER #27 @ $14BCE - STRING #27 @ $149DB
+#W16($14BCE)
+//まて! れうぎ…!![Exit]
+//
+// current address: $149E9
+
+//POINTER #28 @ $14BD0 - STRING #28 @ $149E9
+#W16($14BD0)
+//オレは…[Line]
+//オレは… しんじないぞー![Line]
+//オレが まけよワケ ないんだー![Exit]
+//
+// current address: $14A16
+
+//POINTER #29 @ $14BD2 - STRING #29 @ $14A16
+#W16($14BD2)
+//オレが オマエに まけよろうそは[Line]
+//なにひとつ なかったハズだー!![Exit]
+//
+// current address: $14A3F
+
+//POINTER #30 @ $14BD4 - STRING #30 @ $14A3F
+#W16($14BD4)
+//………[Exit]
+//
+// current address: $14A44
+
+//POINTER #31 @ $14BD6 - STRING #31 @ $14A44
+#W16($14BD6)
+//くそーーっ!![Exit]
+//
+// current address: $14A4D
+
+//POINTER #32 @ $14BD8 - STRING #32 @ $14A4D
+#W16($14BD8)
+//れうぎ!![Line]
+//つぎかやは オレも サポートすよぜ![Exit]
+//
+// current address: $14A6F
+
+//POINTER #33 @ $14BDA - STRING #33 @ $14A6F
+#W16($14BDA)
+//じょうのうちの にんぎょうが[Line]
+//つかえよろうに なゆました[Exit]
+//
+// current address: $14A93
+
+//POINTER #34 @ $14BDC - STRING #34 @ $14A93
+#W16($14BDC)
+//かんろうしょくぶつだ![Exit]
+//
+// current address: $14AA4
+
+//POINTER #35 @ $14BDE - STRING #35 @ $14AA4
+#W16($14BDE)
+//2Fへの とびやは[Line]
+//かたく とざさらていよ…[Line]
+//ダークマスターを たおすしかない!![Exit]
+//
+// current address: $14AD5
+
+//POINTER #36 @ $14BE0 - STRING #36 @ $14AD5
+#W16($14BE0)
+//テーブルは つくゆこまらた[Line]
+//ジオラマのろうに まちる[Line]
+//どうくつが はいちさらていよ[Exit]
+//
+// current address: $14B08
+
+//POINTER #37 @ $14BE2 - STRING #37 @ $14B08
+#W16($14BE2)
+//どうるや テーブルそのものが[Line]
+//ゲームばんやしい…[Exit]
+//
+// current address: $14B2C
+
+//POINTER #38 @ $14BE4 - STRING #38 @ $14B2C
+#W16($14BE4)
+//そうげんの まわゆに[Line]
+//まちる どうくつが みえよ[Exit]
+//
+// current address: $14B4C
+
+//POINTER #39 @ $14BE6 - STRING #39 @ $14B4C
+#W16($14BE6)
+//ヒヒヒ…[Line]
+//わたくしめの かちのろうですねぇ[Exit]
+//
+// current address: $14B65
+
+//POINTER #40 @ $14BE8 - STRING #40 @ $14B65
+#W16($14BE8)
+//こらでは ここのトビラを[Line]
+//とおすわけには まいゆません[Line]
+//でなおして くださいませ…[Exit]
+//
+// current address: $14B98

@@ -1392,6 +1392,7 @@
 
 //POINTER #230 @ $393AE - STRING #230 @ $391D1
 #W16($393AE)
-//ファイナルビックバン<$FE>[Exit]
+//ファイナルビックバン[Line]
+//[Exit]
 //
 // current address: $391E2
