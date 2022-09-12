@@ -2,25 +2,87 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#VAR(Table_1, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#VAR(Table_2, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
 
-//BLOCK #008 NAME:		Text Speed Options
-#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+//BLOCK #008 NAME:		Boss Door
+#ACTIVETBL(Table_2) // Activate this block's starting TABLE
 
-#JMP($83267, $8329B) // Jump to insertion point
+#JMP($83017, $8315D) // Jump to insertion point
 #HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $8329C - STRING #0 @ $83267
-#W16($8329C)
-//メッセージの スピードを[Line]
-//えらんで ください[Exit]
+//POINTER #0 @ $8315E - STRING #0 @ $83017
+#W16($8315E)
+//ダークマスタールームへの[Line]
+//とびらがある…[Exit]
 //
-// current address: $83289
+// current address: $83033
 
-//POINTER #1 @ $8329E - STRING #1 @ $83289
-#W16($8329E)
-//  はやい[Line]
-//  ふつう[Line]
-//  おそい[Exit]
+//POINTER #1 @ $83160 - STRING #1 @ $83033
+#W16($83160)
+//ダークマスタールームへ いきますか?[Line]
+// はい[Line]
+// いいえ[Exit]
 //
-// current address: $8329C
+// current address: $83052
+
+//POINTER #2 @ $83162 - STRING #2 @ $83052
+#W16($83162)
+//ダークマスタールームへの[Line]
+//とびらがある…[Exit]
+//
+// current address: $8306E
+
+//POINTER #3 @ $83164 - STRING #3 @ $8306E
+#W16($83164)
+//スターチップを はめこみますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+//
+// current address: $8308B
+
+//POINTER #4 @ $83166 - STRING #4 @ $8308B
+#W16($83166)
+//スターチップを はめこんだ![Exit]
+//
+// current address: $8309F
+
+//POINTER #5 @ $83168 - STRING #5 @ $8309F
+#W16($83168)
+//とびらをひらくには スターチップが[Line]
+//あと [Var]<$10>まい ひつようだ…[Exit]
+//
+// current address: $830C9
+
+//POINTER #6 @ $8316A - STRING #6 @ $830C9
+#W16($8316A)
+//スターチップを はめこみますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+//
+// current address: $830E6
+
+//POINTER #7 @ $8316C - STRING #7 @ $830E6
+#W16($8316C)
+//…スターチップが 1まいしかない[Line]
+//この1まいを つかうと[Line]
+//バトルが できなくなる!![Exit]
+//
+// current address: $8311C
+
+//POINTER #8 @ $8316E - STRING #8 @ $8311C
+#W16($8316E)
+//とびらをひらくには スターチップが[Line]
+//あと [Var]<$10>まい ひつようだ…[Exit]
+//
+// current address: $83146
+
+//POINTER #9 @ $83170 - STRING #9 @ $83146
+#W16($83170)
+//セキュリティーが[Line]
+//かいじょされました[Exit]
+//
+// current address: $8315E

@@ -1,0 +1,231 @@
+//GAME NAME:		Yu-Gi-Oh: Capsule Monsters GB
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Top, TABLE)
+#ADDTBL("mainmenu.tbl", Top)
+#VAR(Start, TABLE)
+#ADDTBL("startmenu.tbl", Start)
+#VAR(Table_2, TABLE)
+#ADDTBL("text.tbl", Table_2)
+
+//BLOCK #004 NAME:		Main Menu
+#ACTIVETBL(Top) // Activate this block's starting TABLE
+
+#JMP($82BB8, $82C54) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//StoryBaleTdLNw
+
+//POINTER #0 @ $82C55 - STRING #0 @ $82BB8
+#W16($82C55)
+//ストーリーモード[Exit]
+//Story Mode
+Story[Exit]
+// current address: $82BC2
+
+//POINTER #1 @ $82C57 - STRING #1 @ $82BC2
+#W16($82C57)
+//たいせんバトル[Exit]
+//Battle
+Battle[Exit]
+// current address: $82BCD
+
+//POINTER #2 @ $82C59 - STRING #2 @ $82BCD
+#W16($82C59)
+//MC トレード[Exit]
+//Capsule Monster Trade
+Trade[Exit]
+// current address: $82BD8
+
+//POINTER #3 @ $82C5B - STRING #3 @ $82BD8
+#W16($82C5B)
+//ロード[Exit]
+//Load
+Load[Exit]
+// current address: $82BDD
+
+//POINTER #4 @ $82C5D - STRING #4 @ $82BDD
+#W16($82C5D)
+//さいしょから[Exit]
+//New Game
+//Space needed to format correctly in game
+Ne w[Exit]
+// current address: $82BE5
+
+//POINTER #5 @ $82C5F - STRING #5 @ $82BE5
+#W16($82C5F)
+//セーブデータ゛か ありません![Exit]
+//
+// current address: $82BFB
+
+//POINTER #6 @ $82C61 - STRING #6 @ $82BFB
+#W16($82C61)
+//このゲームは[Exit]
+//
+// current address: $82C05
+
+//POINTER #7 @ $82C63 - STRING #7 @ $82C05
+#W16($82C63)
+//スーパーゲームボーイでは[Exit]
+//
+// current address: $82C1B
+
+//POINTER #8 @ $82C65 - STRING #8 @ $82C1B
+#W16($82C65)
+//たいせんできません[Exit]
+//
+// current address: $82C28
+
+//POINTER #9 @ $82C67 - STRING #9 @ $82C28
+#W16($82C67)
+//このゲームは[Exit]
+//
+// current address: $82C32
+
+//POINTER #10 @ $82C69 - STRING #10 @ $82C32
+#W16($82C69)
+//スーパーゲームボーイでは[Exit]
+//
+// current address: $82C48
+
+//POINTER #11 @ $82C6B - STRING #11 @ $82C48
+#W16($82C6B)
+//こうかんできません[Exit]
+//
+// current address: $82C55
+
+//BLOCK #005 NAME:		Start Menu
+#ACTIVETBL(Start) // Activate this block's starting TABLE
+
+#JMP($82C6D, $82CFF) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//CM(Yugi)(Save)Do yuwantsvergm?YNGd.InfFSpDEvlxHPAk
+//a  defg   klmnop rstuvwxy 
+//A CDEFGH     N P        Y 
+//POINTER #0 @ $82D00 - STRING #0 @ $82C6D
+#W16($82D00)
+//MC[Exit]
+//Capsule Monsters
+CM[Exit]
+// current address: $82C72
+
+//POINTER #1 @ $82D02 - STRING #1 @ $82C72
+#W16($82D02)
+//ゆうぎ[Exit]
+//Yugi
+Yugi[Exit]
+// current address: $82C79
+
+//POINTER #2 @ $82D04 - STRING #2 @ $82C79
+#W16($82D04)
+//きそく[Exit]
+//Save
+Sav[Exit]
+// current address: $82C7E
+
+//POINTER #3 @ $82D06 - STRING #3 @ $82C7E
+#W16($82D06)
+//ぼうけんの きそくを[Exit]
+//Save prompt 1
+Save your[Exit]
+// current address: $82C8C
+
+//POINTER #4 @ $82D08 - STRING #4 @ $82C8C
+#W16($82D08)
+//つけますか?[Exit]
+//Save prompt 2
+game?[Exit]
+// current address: $82C94
+
+//POINTER #5 @ $82D0A - STRING #5 @ $82C94
+#W16($82D0A)
+//はい  いいえ[Exit]
+//Yes/No
+Yes No[Exit]
+// current address: $82C9D
+
+//POINTER #6 @ $82D0C - STRING #6 @ $82C9D
+#W16($82D0C)
+//きそくしました[Exit]
+//Game saved
+Saved.[Exit]
+// current address: $82CA6
+
+//POINTER #7 @ $82D0E - STRING #7 @ $82CA6
+#W16($82D0E)
+//つよさ[Exit]
+//Status
+Info[Exit]
+// current address: $82CAB
+
+//POINTER #8 @ $82D10 - STRING #8 @ $82CAB
+#W16($82D10)
+//カプセル[Exit]
+//Capsule - specifically the power-up ones, not the monsters
+//Changing for clarity and space
+Item[Exit]
+// current address: $82CB3
+
+//POINTER #9 @ $82D12 - STRING #9 @ $82CB3
+#W16($82D12)
+//じんけい[Exit]
+//Formation
+Form[Exit]
+// current address: $82CBB
+
+//POINTER #10 @ $82D14 - STRING #10 @ $82CBB
+#W16($82D14)
+//いれかえ[Exit]
+//Reorder
+Swap[Exit]
+// current address: $82CC1
+
+//POINTER #11 @ $82D16 - STRING #11 @ $82CC1
+#W16($82D16)
+//すてる[Exit]
+//Throw away
+Drop[Exit]
+// current address: $82CC6
+
+//POINTER #12 @ $82D18 - STRING #12 @ $82CC6
+#W16($82D18)
+//しんか  x[Exit]
+//Evolution
+Evolvx[Exit]
+// current address: $82CCE
+
+//POINTER #13 @ $82D1A - STRING #13 @ $82CCE
+#W16($82D1A)
+//わざ   x[Exit]
+//Move
+Move x[Exit]
+// current address: $82CD8
+
+//POINTER #14 @ $82D1C - STRING #14 @ $82CD8
+#W16($82D1C)
+//HPアップx[Exit]
+//HP Up
+HP Upx[Exit]
+// current address: $82CE2
+
+//POINTER #15 @ $82D1E - STRING #15 @ $82CE2
+#W16($82D1E)
+//ATアップx[Exit]
+//Attack Up
+AtkUpx[Exit]
+// current address: $82CEC
+
+//POINTER #16 @ $82D20 - STRING #16 @ $82CEC
+#W16($82D20)
+//DFアップx[Exit]
+//Defence Up
+DefUpx[Exit]
+// current address: $82CF6
+
+//POINTER #17 @ $82D22 - STRING #17 @ $82CF6
+#W16($82D22)
+//SPアップx[Exit]
+//Speed Up
+SpdUpx[Exit]
+// current address: $82D00

@@ -4,3 +4,6 @@
 )
 
 perl ..\abcde.pl -cm abcde::Atlas "CMGBEN.gbc" "script/monstername.txt"
+perl ..\abcde.pl -cm abcde::Atlas "CMGBEN.gbc" "script/bank20.txt"
+
+pause

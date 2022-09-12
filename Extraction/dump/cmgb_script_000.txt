@@ -2,10 +2,14 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#VAR(Table_1, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#VAR(Table_2, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
 
 //BLOCK #000 NAME:		Monster Names
-#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+#ACTIVETBL(Table_2) // Activate this block's starting TABLE
 
 #JMP($38000, $385A6) // Jump to insertion point
 #HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
