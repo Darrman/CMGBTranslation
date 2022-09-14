@@ -5,8 +5,8 @@
 #ADDTBL("mainmenu.tbl", Top)
 #VAR(Start, TABLE)
 #ADDTBL("startmenu.tbl", Start)
-#VAR(Table_2, TABLE)
-#ADDTBL("text.tbl", Table_2)
+#VAR(Text, TABLE)
+#ADDTBL("text.tbl", Text)
 
 //BLOCK #004 NAME:		Main Menu
 #ACTIVETBL(Top) // Activate this block's starting TABLE
@@ -229,3 +229,301 @@ DefUpx[Exit]
 //Speed Up
 SpdUpx[Exit]
 // current address: $82D00
+
+//BLOCK #006 NAME:		Capsule Machine
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($82D24, $82DE5) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//Block could do with real translator
+//POINTER #0 @ $82DE6 - STRING #0 @ $82D24
+#W16($82DE6)
+//Check a machine
+//カプセルマシンだ![Exit]
+//
+A Capsule Machine.[Exit]
+// current address: $82D33
+
+//POINTER #1 @ $82DE8 - STRING #1 @ $82D33
+#W16($82DE8)
+//Insert a Star Chip, y/n
+//スターチップを 1まい いれますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+//
+Insert Star Chip?[Line]
+ Yes[Line]
+ No[Exit]
+// current address: $82D52
+
+//POINTER #2 @ $82DEA - STRING #2 @ $82D52
+#W16($82DEA)
+//Party full?
+//これいじょう MCを もてない![Exit]
+//
+Can't carry any[Line]
+more monsters![Exit]
+// current address: $82D66
+
+//POINTER #3 @ $82DEC - STRING #3 @ $82D66
+#W16($82DEC)
+//いらない MCを[Line]
+//せいりしてから こよう![Exit]
+//
+Poin3[Exit]
+// current address: $82D7D
+
+//POINTER #4 @ $82DEE - STRING #4 @ $82D7D
+#W16($82DEE)
+//Last Star Chip
+//…スターチップが 1まいしかない[Line]
+//この1まいを つかうと[Line]
+//バトルが できなくなる!![Exit]
+//
+If you use your[Line]
+last Star Chip,[Line]
+you can't battle![Exit]
+// current address: $82DB3
+
+//POINTER #5 @ $82DF0 - STRING #5 @ $82DB3
+#W16($82DF0)
+//Got a monster
+//「[Var]<$10> LV[Var]<$11>」の[Line]
+//カプセルを てにいれた!![Exit]
+//
+You got:[Line]
+[Var]<$10>, Lv[Var]<$11>[Exit]
+// current address: $82DCF
+
+//POINTER #6 @ $82DF2 - STRING #6 @ $82DCF
+#W16($82DF2)
+//Got an item
+//「[Var]<$10>」の[Line]
+//カプセルを てにいれた!![Exit]
+//
+You got a[Line]
+[Var]<$10>.[Exit]
+// current address: $82DE6
+
+//BLOCK #007 NAME:		Monster Status Screen
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($82DF4, $82F44) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $82F45 - STRING #0 @ $82DF4
+#W16($82F45)
+Lv[Exit]
+//
+// current address: $82DF9
+
+//POINTER #1 @ $82F47 - STRING #1 @ $82DF9
+#W16($82F47)
+HP   /[Exit]
+//
+// current address: $82E02
+
+//POINTER #2 @ $82F49 - STRING #2 @ $82E02
+#W16($82F49)
+At[Exit]
+//
+// current address: $82E07
+
+//POINTER #3 @ $82F4B - STRING #3 @ $82E07
+#W16($82F4B)
+Df[Exit]
+//
+// current address: $82E0C
+
+//POINTER #4 @ $82F4D - STRING #4 @ $82E0C
+#W16($82F4D)
+Sp[Exit]
+//
+// current address: $82E11
+
+//POINTER #5 @ $82F4F - STRING #5 @ $82E11
+#W16($82F4F)
+//ぞくせい/[Exit]
+//As in what gives field power bonus
+Type/[Exit]
+// current address: $82E1A
+
+//POINTER #6 @ $82F51 - STRING #6 @ $82E1A
+#W16($82F51)
+//わざ/[Exit]
+//The attack prefix
+Mv/[Exit]
+// current address: $82E21
+
+//POINTER #7 @ $82F53 - STRING #7 @ $82E21
+#W16($82F53)
+//つぎのレベルまで[Exit]
+//To next level
+To next:[Exit]
+// current address: $82E31
+
+//POINTER #8 @ $82F55 - STRING #8 @ $82E31
+#W16($82F55)
+// あと[Exit]
+//Next to the experience count
+EXP[Exit]
+// current address: $82E36
+
+//POINTER #9 @ $82F57 - STRING #9 @ $82E36
+#W16($82F57)
+//もり[Exit]
+//Forest
+Tree[Exit]
+// current address: $82E3A
+
+//POINTER #10 @ $82F59 - STRING #10 @ $82E3A
+#W16($82F59)
+//そうげん[Exit]
+//Plains
+Flat[Exit]
+// current address: $82E42
+
+//POINTER #11 @ $82F5B - STRING #11 @ $82E42
+#W16($82F5B)
+//みず[Exit]
+//Sea
+Sea[Exit]
+// current address: $82E48
+
+//POINTER #12 @ $82F5D - STRING #12 @ $82E48
+#W16($82F5D)
+//さんがく[Exit]
+//Mountain
+Hill[Exit]
+// current address: $82E50
+
+//POINTER #13 @ $82F5F - STRING #13 @ $82E50
+#W16($82F5F)
+//あれち[Exit]
+//Wasteland
+Wast[Exit]
+// current address: $82E55
+
+//POINTER #14 @ $82F61 - STRING #14 @ $82E55
+#W16($82F61)
+//やみ[Exit]
+//Darkness
+Dark[Exit]
+// current address: $82E59
+
+//POINTER #15 @ $82F63 - STRING #15 @ $82E59
+#W16($82F63)
+//ひかり[Exit]
+//Light
+Lght[Exit]
+// current address: $82E5E
+
+//POINTER #16 @ $82F65 - STRING #16 @ $82E5E
+#W16($82F65)
+//こうげきはんい[Exit]
+//Attack heading
+Attack:[Exit]
+//
+// current address: $82E69
+
+//POINTER #17 @ $82F67 - STRING #17 @ $82E69
+#W16($82F67)
+//わざのレベル/[Exit]
+//Move level
+MoveLv/[Exit]
+//
+// current address: $82E76
+
+//POINTER #18 @ $82F69 - STRING #18 @ $82E76
+#W16($82F69)
+//Discard 1
+//ほんとうに すてても[Exit]
+Drop monster.[Exit]
+//
+// current address: $82E82
+
+//POINTER #19 @ $82F6B - STRING #19 @ $82E82
+#W16($82F6B)
+//Discard 2
+//  いいですか?[Exit]
+Are you sure?[Exit]
+// current address: $82E8E
+
+//POINTER #20 @ $82F6D - STRING #20 @ $82E8E
+#W16($82F6D)
+//Y/N
+//  はい  いいえ[Exit]
+  Yes No[Exit]
+// current address: $82E99
+
+//POINTER #21 @ $82F6F - STRING #21 @ $82E99
+#W16($82F6F)
+//Item failed
+//こうかが なかった[Exit]
+It didn't work.[Exit]
+// current address: $82EA6
+
+//POINTER #22 @ $82F71 - STRING #22 @ $82EA6
+#W16($82F71)
+//Evolution
+//[Var]<$10>は[Line]
+//[Var]<$11>に[Line]
+//しんかした[Exit]
+[Var]<$10>[Line]
+evolved into[Line]
+[Var]<$11>.[Exit]
+// current address: $82EB5
+
+//POINTER #23 @ $82F73 - STRING #23 @ $82EB5
+#W16($82F73)
+//[Var]<$10>は[Line]
+//[Var]<$11>の[Line]
+//わざを おぼえた[Exit]
+//Learned new move
+[Var]<$10>[Line]
+learned[Line]
+[Var]<$11>.[Exit]
+// current address: $82ECB
+
+//POINTER #24 @ $82F75 - STRING #24 @ $82ECB
+#W16($82F75)
+//HPが [Var]<$10>ポイント あがった[Exit]
+//HP up
+HP +[Var]<$10>.[Exit]
+// current address: $82EE2
+
+//POINTER #25 @ $82F77 - STRING #25 @ $82EE2
+#W16($82F77)
+//ATが [Var]<$10>ポイント あがった[Exit]
+//Attack up
+Attack +[Var]<$10>.[Exit]
+// current address: $82EF9
+
+//POINTER #26 @ $82F79 - STRING #26 @ $82EF9
+#W16($82F79)
+//DFが [Var]<$10>ポイント あがった[Exit]
+//Defence up
+Defence +[Var]<$10>.[Exit]
+// current address: $82F10
+
+//POINTER #27 @ $82F7B - STRING #27 @ $82F10
+#W16($82F7B)
+//SPが [Var]<$10>ポイント あがった[Exit]
+//Speed up
+Speed +[Var]<$10>.[Exit]
+// current address: $82F27
+
+//POINTER #28 @ $82F7D - STRING #28 @ $82F27
+#W16($82F7D)
+//レベルが たりません[Exit]
+//Level too low to evolve
+Level too low.[Exit]
+// current address: $82F37
+
+//POINTER #29 @ $82F7F - STRING #29 @ $82F37
+#W16($82F7F)
+//ほんとうに わたしても[Line]
+//[Exit]
+Poin29[Exit]
+// current address: $82F45
