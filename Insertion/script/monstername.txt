@@ -2258,6 +2258,520 @@ Attack230[Exit]
   
 // current address: $391E2
 
+//BLOCK #002 NAME:		Battle Text
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($3954F, $398FF) // Jump to insertion point
+#HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $39900 - STRING #0 @ $3954F
+#W16($39900)
+//Monster attack
+//[Var]<$10>の[Line]
+//こうげき![Line]
+//「[Var]<$11>」[Exit]
+[Var]<$10>[Line]
+attacks with[Line]
+[Var]<$11>![Exit]
+// current address: $39561
+
+//POINTER #1 @ $39902 - STRING #1 @ $39561
+#W16($39902)
+//Accuracy check
+//[Var]<$10>への[Line]
+//めいちゅうりつ[Var]<$11>%[Exit]
+//
+[Var]<$11>% chance to hit[Line]
+[Var]<$10>.[Exit]
+// current address: $39572
+
+//POINTER #2 @ $39904 - STRING #2 @ $39572
+#W16($39904)
+//Redundant damage printout
+//[Var]<$10>に[Line]
+//[Var]<$11>ポイントのダメージ![Exit]
+[Var]<$10> takes[Line]
+[Var]<$11> damage.[Exit]
+// current address: $3958A
+
+//POINTER #3 @ $39906 - STRING #3 @ $3958A
+#W16($39906)
+//Attack dodged
+//[Var]<$10>に[Line]
+//ダメージをあたえられなかった![Exit]
+[Var]<$10>[Line]
+avoids the attack.[Exit]
+// current address: $395A3
+
+//POINTER #4 @ $39908 - STRING #4 @ $395A3
+#W16($39908)
+//Monster dies
+//[Var]<$10>に[Line]
+//[Var]<$11>ポイントのダメージ![Line]
+//[Var]<$10>は たおれた![Exit]
+[Var]<$10> takes[Line]
+[Var]<$11> damage.[Line]
+[Var]<$10> falls.[Exit]
+// current address: $395C5
+
+//POINTER #5 @ $3990A - STRING #5 @ $395C5
+#W16($3990A)
+//Field power bonus, text unused?
+//[Var]<$10>は[Line]
+//フィールドパワーをえた![Exit]
+Field power.[Exit]
+// current address: $395DB
+
+//POINTER #6 @ $3990C - STRING #6 @ $395DB
+#W16($3990C)
+//Type advantage? unused?
+//[Var]<$10>は[Line]
+//なかまの しえんこうかをえた![Exit]
+Type advantage.[Exit]
+// current address: $395F0
+
+//POINTER #7 @ $3990E - STRING #7 @ $395F0
+#W16($3990E)
+//Support bonus, unused?
+//めいちゅうりつアップ![Line]
+//こうげきりょくアップ![Exit]
+Support bonus.[Exit]
+// current address: $3960F
+
+//POINTER #8 @ $39910 - STRING #8 @ $3960F
+#W16($39910)
+//Critical
+//クリティカルヒット!![Exit]
+Critical hit![Exit]
+//
+// current address: $3961C
+
+//POINTER #9 @ $39912 - STRING #9 @ $3961C
+#W16($39912)
+//さいあく![Line]
+//ファンブルが でてしまった![Exit]
+Attack fumbled.[Exit]
+// current address: $39638
+
+//POINTER #10 @ $39914 - STRING #10 @ $39638
+#W16($39914)
+//Damage backfires after fumble
+//ダメージが[Line]
+//じぶんに ふりかかる![Exit]
+Attacker takes[Line]
+the damage.[Exit]
+// current address: $39655
+
+//POINTER #11 @ $39916 - STRING #11 @ $39655
+#W16($39916)
+//Special attack
+//[Var]<$10>の まほう[Line]
+//「[Var]<$11>」![Exit]
+[Var]<$10> casts[Line]
+[Var]<$11>.[Exit]
+// current address: $39664
+
+//POINTER #12 @ $39918 - STRING #12 @ $39664
+#W16($39918)
+//Healing
+//[Var]<$10>の HPが[Line]
+//[Var]<$11>% かいふくした![Exit]
+[Var]<$10>'s HP[Line]
+recovers by [Var]<$11>%.[Exit]
+//
+// current address: $3967B
+
+//POINTER #13 @ $3991A - STRING #13 @ $3967B
+#W16($3991A)
+//Spellbinding Circle
+//[Var]<$10>の[Line]
+//こうげきりょくを [Var]<$11>%さげた![Exit]
+[Var]<$10>'s[Line]
+attack falls by[Line]
+[Var]<$11>.[Exit]
+// current address: $39695
+
+//POINTER #14 @ $3991C - STRING #14 @ $39695
+#W16($3991C)
+//Eye of Illusion or whatever
+//[Var]<$10>は[Line]
+//こんらん して[Line]
+//じぶんを こうげきした![Exit]
+[Var]<$10> is[Line]
+confused.[Exit]
+//
+// current address: $396B5
+
+//POINTER #15 @ $3991E - STRING #15 @ $396B5
+#W16($3991E)
+//Swords of Revealing Light
+//[Var]<$10>のこうどうを[Line]
+//[Var]<$11>ターン ふうじこめた![Exit]
+[Var]<$10>[Line]
+can't attack for[Line]
+[Var]<$11> turns.[Exit]
+// current address: $396D1
+
+//POINTER #16 @ $39920 - STRING #16 @ $396D1
+#W16($39920)
+//Magic fails
+//しっぱい![Line]
+//まほうは きかなかった![Exit]
+The magic didn't[Line]
+work.[Exit]
+// current address: $396E7
+
+//POINTER #17 @ $39922 - STRING #17 @ $396E7
+#W16($39922)
+//Victory
+//てきモンスターを やっつけた![Line]
+//それぞれ[Line]
+//けいけんち [Var]<$10>ポイントを えた[Exit]
+Victory![Line]
+Everybody gains[Line]
+[Var]<$10> EXP.[Exit]
+// current address: $39712
+
+//POINTER #18 @ $39924 - STRING #18 @ $39712
+#W16($39924)
+//Monster dropped?
+//[Var]<$10>の MCは ぜんめつした![Line]
+//[Var]<$11>の かち![Exit]
+[Var]<$10>'s[Line]
+monster drops.[Line]
+Got [Var]<$11>![Exit]
+// current address: $3972D
+
+//POINTER #19 @ $39926 - STRING #19 @ $3972D
+#W16($39926)
+//Get Star Chip
+//スターチップを 1まい[Line]
+//かくとくした[Exit]
+Got 1 Star Chip.[Exit]
+// current address: $39743
+
+//POINTER #20 @ $39928 - STRING #20 @ $39743
+#W16($39928)
+//Level up
+//[Var]<$10>は[Line]
+//レベルがあがった![Exit]
+[Var]<$10> has[Line]
+levelled up![Exit]
+// current address: $39758
+
+//POINTER #21 @ $3992A - STRING #21 @ $39758
+#W16($3992A)
+//LV[Var]<$12>[Line]
+//HPが [Var]<$10>あがった[Line]
+//ATが [Var]<$11>あがった[Exit]
+Level [Var]<$12>[Line]
+HP +[Var]<$10>[Line]
+Attack +[Var]<$11>[Exit]
+// current address: $3977D
+
+//POINTER #22 @ $3992C - STRING #22 @ $3977D
+#W16($3992C)
+//DFが [Var]<$10>あがった[Line]
+//SPが [Var]<$11>あがった[Exit]
+Defence +[Var]<$10>[Line]
+Speed +[Var]<$11>[Exit]
+// current address: $3979C
+
+//POINTER #23 @ $3992E - STRING #23 @ $3979C
+#W16($3992E)
+//LV[Var]<$10>[Exit]
+Level [Var]<$10>[Exit]
+
+// current address: $397A3
+
+//POINTER #24 @ $39930 - STRING #24 @ $397A3
+#W16($39930)
+//HPが [Var]<$10>あがった[Exit]
+HP +[Var]<$10>[Exit]
+// current address: $397B3
+
+//POINTER #25 @ $39932 - STRING #25 @ $397B3
+#W16($39932)
+//ATが [Var]<$10>あがった[Exit]
+Attack +[Var]<$10>[Exit]
+// current address: $397C3
+
+//POINTER #26 @ $39934 - STRING #26 @ $397C3
+#W16($39934)
+//DFが [Var]<$10>あがった[Exit]
+Defence +[Var]<$10>[Exit]
+// current address: $397D3
+
+//POINTER #27 @ $39936 - STRING #27 @ $397D3
+#W16($39936)
+//SPが [Var]<$10>あがった[Exit]
+Speed +[Var]<$10>[Exit]
+// current address: $397E3
+
+//POINTER #28 @ $39938 - STRING #28 @ $397E3
+#W16($39938)
+//Defeat, used both for rout and surrender
+//[Var]<$10>の MCは ぜんめつした![Exit]
+[Var]<$10> has lost the[Line]
+battle.[Exit]
+// current address: $397F6
+
+//POINTER #29 @ $3993A - STRING #29 @ $397F6
+#W16($3993A)
+//Lost a Star Chip
+//スターチップを 1まい[Line]
+//うしなった![Exit]
+You lose a Star[Line]
+Chip.[Exit]
+// current address: $3980C
+
+//POINTER #30 @ $3993C - STRING #30 @ $3980C
+#W16($3993C)
+//Exodia
+//ふういんされし[Line]
+//エクゾディアの しょうかん[Line]
+//「エクゾートフレイム」!![Exit]
+All Exodia pieces[Line]
+present. Exodia,[Line]
+Obliterate![Exit]
+// current address: $39837
+
+//POINTER #31 @ $3993E - STRING #31 @ $39837
+#W16($3993E)
+//Dragon Capture Jar
+//「ドラゴンふういんのつぼ」は[Line]
+//ドラゴンぞくの モンスターを[Line]
+//ふうじこめた![Exit]
+Dragon Capture[Line]
+Jar seals away[Line]
+all dragons.[Exit]
+
+// current address: $3986C
+
+//POINTER #32 @ $39940 - STRING #32 @ $3986C
+#W16($39940)
+//Dragon Piper
+//しかし つぼまじんの ちからによって[Line]
+//ふういんは うちけされた!![Exit]
+Dragon Piper[Line]
+negates Dragon[Line]
+Capture Jar![Exit]
+// current address: $39893
+
+//POINTER #33 @ $39942 - STRING #33 @ $39893
+#W16($39942)
+//Lose the Puzzle
+//せんねんパズルを[Line]
+//うしなった![Exit]
+You lose the[Line]
+Millennium Puzzle…[Exit]
+// current address: $398A8
+
+//POINTER #34 @ $39944 - STRING #34 @ $398A8
+#W16($39944)
+//Three Star Chips
+//スターチップを 3まい[Line]
+//かくとくした[Exit]
+Got 3 Star Chips.[Line]
+// current address: $398BE
+
+//POINTER #35 @ $39946 - STRING #35 @ $398BE
+#W16($39946)
+//Lose an Exodia piece
+//エクゾディアの[Line]
+//パーツの 1つが[Line]
+//しょうめつしてしまった!![Exit]
+A piece of Exodia[Line]
+disappeared.[Exit]
+// current address: $398E6
+
+//POINTER #36 @ $39948 - STRING #36 @ $398E6
+#W16($39948)
+//No Star Chips left
+//スターチップを すべて[Line]
+//うしなった![Exit]
+You have no more[Line]
+Star Chips…[Exit]
+// current address: $398FE
+
+//POINTER #37 @ $3994A - STRING #37 @ $398FE
+#W16($3994A)
+[Exit]
+//
+// current address: $39900
+
+#JMP($399FA, $39A75) // Jump to insertion point
+#HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//It's all Japanese pronouns! How the hell do I translate this?
+//Just reduce it to "Yugi's turn" or "Your turn" and "My turn".
+
+//POINTER #0 @ $39A76 - STRING #0 @ $399FA
+#W16($39A76)
+//[Var]<$10>ターンめ[Line]
+//[Var]<$11>の ターン[Exit]
+It's [Var]<$11> turn.[Line]
+Turn [Var]<$10>[Exit]
+// current address: $39A0A
+
+//POINTER #1 @ $39A78 - STRING #1 @ $39A0A
+#W16($39A78)
+#W16($39A8C)
+#W16($39A8E)
+#W16($39A90)
+#W16($39A92)
+#W16($39A94)
+#W16($39A96)
+#W16($39A98)
+#W16($39A9A)
+#W16($39A9C)
+
+//ゆうぎ[Exit]
+Yugi's[Exit]
+// current address: $39A11
+
+//POINTER #2 @ $39A7A - STRING #2 @ $39A11
+#W16($39A7A)
+#W16($39A7C)
+#W16($39A7E)
+#W16($39A80)
+#W16($39A82)
+#W16($39A84)
+#W16($39A86)
+#W16($39A88)
+#W16($39A8A)
+//オレ[Exit]
+//ore
+my[Exit]
+// current address: $39A15
+
+//POINTER #3 @ $39A7C - STRING #3 @ $39A15
+//#W16($39A7C)
+//ボク[Exit]
+//boku
+//
+// current address: $39A1B
+
+//POINTER #4 @ $39A7E - STRING #4 @ $39A1B
+//#W16($39A7E)
+//わたし[Exit]
+//watashi
+//
+// current address: $39A20
+
+//POINTER #5 @ $39A80 - STRING #5 @ $39A20
+//#W16($39A80)
+//オレさま[Exit]
+//ore-sama
+//
+// current address: $39A26
+
+//POINTER #6 @ $39A82 - STRING #6 @ $39A26
+//#W16($39A82)
+//わたくし[Exit]
+//watakushi
+//
+// current address: $39A2C
+
+//POINTER #7 @ $39A84 - STRING #7 @ $39A2C
+//#W16($39A84)
+//ワイ[Exit]
+//wai
+//
+// current address: $39A30
+
+//POINTER #8 @ $39A86 - STRING #8 @ $39A30
+//#W16($39A86)
+//あたし[Exit]
+//atashi
+//
+// current address: $39A35
+
+//POINTER #9 @ $39A88 - STRING #9 @ $39A35
+//#W16($39A88)
+//ワシ[Exit]
+//washi
+//
+// current address: $39A39
+
+//POINTER #10 @ $39A8A - STRING #10 @ $39A39
+//#W16($39A8A)
+//ボクさま[Exit]
+//boku-sama
+//
+// current address: $39A41
+
+//POINTER #11 @ $39A8C - STRING #11 @ $39A41
+//#W16($39A8C)
+//キミ[Exit]
+//kimi
+//
+// current address: $39A45
+
+//POINTER #12 @ $39A8E - STRING #12 @ $39A45
+//#W16($39A8E)
+//あいて[Exit]
+//aite
+//
+// current address: $39A4A
+
+//POINTER #13 @ $39A90 - STRING #13 @ $39A4A
+//#W16($39A90)
+//てめえ[Exit]
+//teme
+//
+// current address: $39A4F
+
+//POINTER #14 @ $39A92 - STRING #14 @ $39A4F
+//#W16($39A92)
+//ユー[Exit]
+//you in katakana
+//
+// current address: $39A53
+
+//POINTER #15 @ $39A94 - STRING #15 @ $39A53
+//#W16($39A94)
+//おまえ[Exit]
+//omae
+//
+// current address: $39A58
+
+//POINTER #16 @ $39A96 - STRING #16 @ $39A58
+//#W16($39A96)
+//あなた[Exit]
+//anata
+//
+// current address: $39A5D
+
+//POINTER #17 @ $39A98 - STRING #17 @ $39A5D
+//#W16($39A98)
+//ゆうぎさま[Exit]
+//Yugi-sama
+//
+// current address: $39A66
+
+//POINTER #18 @ $39A9A - STRING #18 @ $39A66
+//#W16($39A9A)
+//きさま[Exit]
+//kisama
+//
+// current address: $39A6B
+
+//POINTER #19 @ $39A9C - STRING #19 @ $39A6B
+//#W16($39A9C)
+//ゆうぎくん[Exit]
+//Yugi-kun
+//
+// current address: $39A74
+
+//POINTER #20 @ $39A9E - STRING #20 @ $39A74
+//#W16($39A9E)
+//[Exit]
+//
+// current address: $39A76
+
+
+
 //
 #JMP($39F20, $3C000) // Jump to insertion point
 #HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations
