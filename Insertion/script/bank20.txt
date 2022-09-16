@@ -527,3 +527,201 @@ Level too low.[Exit]
 //[Exit]
 Poin29[Exit]
 // current address: $82F45
+
+//BLOCK #015 NAME:		Boss Door
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($83017, $8315D) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $8315E - STRING #0 @ $83017
+#W16($8315E)
+//Boss door
+//Can't merge pointers, breaks display
+//ダークマスタールームへの[Line]
+//とびらがある…[Exit]
+This door leads to[Line]
+the Dark Master's[Line]
+room.[Exit]
+// current address: $83033
+
+//POINTER #1 @ $83160 - STRING #1 @ $83033
+#W16($83160)
+//Enter
+//ダークマスタールームへ いきますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+Enter the room?[Line]
+ Yes[Line]
+ No[Exit]
+// current address: $83052
+
+//Pointer 2
+#W16($83162)
+This door leads to[Line]
+the Dark Master's[Line]
+room.[Exit]
+
+
+//POINTER #3 @ $83164 - STRING #3 @ $8306E
+#W16($83164)
+//Insert Star Chip?
+//スターチップを はめこみますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+Insert Star Chip?[Line]
+ Yes[Line]
+ No[Exit]
+// current address: $8308B
+
+//POINTER #4 @ $83166 - STRING #4 @ $8308B
+#W16($83166)
+//Inserted Star Chip
+//スターチップを はめこんだ![Exit]
+You inserted a[Line]
+Star Chip.[Exit]
+// current address: $8309F
+
+//POINTER #5 @ $83168 - STRING #5 @ $8309F
+#W16($83168)
+//X Star Chips required
+//とびらをひらくには スターチップが[Line]
+//あと [Var]<$10>まい ひつようだ…[Exit]
+Insert [Var]<$10> more[Line]
+Star Chips to open[Line]
+the door.[Exit]
+// current address: $830C9
+
+//Pointer 6
+#W16($8316A)
+Insert Star Chip?[Line]
+ Yes[Line]
+ No[Exit]
+
+//BLOCK #016 NAME:		Lift Menu
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($83172, $83256) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $83257 - STRING #0 @ $83172
+#W16($83257)
+//エレベーターがある[Exit]
+//Kana uses "elevator"
+A lift.[Exit]
+// current address: $83181
+
+//POINTER #1 @ $83259 - STRING #1 @ $83181
+#W16($83259)
+//いまは つかえないようだ[Exit]
+You can't use it.[Exit]
+// current address: $83191
+
+//POINTER #2 @ $8325B - STRING #2 @ $83191
+#W16($8325B)
+//なんかいに いきますか?[Line]
+//   1F   2F[Exit]
+Pick a floor.[Line]
+   1F   2F[Exit]
+// current address: $831AA
+
+//POINTER #3 @ $8325D - STRING #3 @ $831AA
+#W16($8325D)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Exit]
+Pick a floor.[Line]
+   1F   2F   3F[Exit]
+
+// current address: $831C8
+
+//POINTER #4 @ $8325F - STRING #4 @ $831C8
+#W16($8325F)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F[Exit]
+Pick a floor.[Line]
+   1F   2F   3F[Line]
+   4F[Exit]
+// current address: $831EC
+
+//POINTER #5 @ $83261 - STRING #5 @ $831EC
+#W16($83261)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F   5F[Exit]
+Pick a floor.[Line]
+   1F   2F   3F[Line]
+   4F   5F[Exit]
+// current address: $83215
+
+//POINTER #6 @ $83263 - STRING #6 @ $83215
+#W16($83263)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F   5F   B1[Exit]
+Pick a floor.[Line]
+   1F   2F   3F[Line]
+   4F   5F   B1[Exit]
+// current address: $83243
+
+//POINTER #7 @ $83265 - STRING #7 @ $83243
+#W16($83265)
+//Stay put
+//もうすこし このフロアに いよう…[Line]
+//[Exit]
+You stay here.[Exit]
+// current address: $83257
+
+//BLOCK #017 NAME:		Text Speed Options
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($83267, $8329B) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $8329C - STRING #0 @ $83267
+#W16($8329C)
+//メッセージの スピードを[Line]
+//えらんで ください[Exit]
+Select text[Line]
+speed.[Exit]
+// current address: $83289
+
+//POINTER #1 @ $8329E - STRING #1 @ $83289
+#W16($8329E)
+//  はやい[Line]
+//  ふつう[Line]
+//  おそい[Exit]
+ Fast[Line]
+ Normal[Line]
+ Slow[Exit]
+// current address: $8329C
+
+#JMP($83AC0, $83FFF)
+//Free space
+
+//POINTER #7 @ $8316C - STRING #7 @ $830E6
+#W16($8316C)
+//Last Star Chip
+//…スターチップが 1まいしかない[Line]
+//この1まいを つかうと[Line]
+//バトルが できなくなる!![Exit]
+If you use your[Line]
+last Star Chip,[Line]
+you can't battle![Exit]
+// current address: $8311C
+
+//Pointer 8
+#W16($8316E)
+Insert [Var]<$10> more[Line]
+Star Chips to open[Line]
+the door.[Exit]
+
+
+//POINTER #9 @ $83170 - STRING #9 @ $83146
+#W16($83170)
+//Door opens
+//セキュリティーが[Line]
+//かいじょされました[Exit]
+The security has[Line]
+been broken.[Exit]
+// current address: $8315E
