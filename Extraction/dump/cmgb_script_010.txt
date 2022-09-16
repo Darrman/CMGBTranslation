@@ -2,29 +2,67 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/battlestatus.tbl", Table_0)
 #VAR(Table_1, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_1)
 #VAR(Table_2, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/noselection.tbl", Table_2)
+#VAR(Table_3, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_3)
+#VAR(Table_4, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_4)
+#VAR(Table_5, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
+#VAR(Table_6, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
 
-//BLOCK #010 NAME:		Text Speed Options
-#ACTIVETBL(Table_2) // Activate this block's starting TABLE
+//BLOCK #010 NAME:		Status Screen (Battle)
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
 
-#JMP($83267, $8329B) // Jump to insertion point
-#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($3FC3C, $3FC78) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $8329C - STRING #0 @ $83267
-#W16($8329C)
-//メッセージの スピードを[Line]
-//えらんで ください[Exit]
-//
-// current address: $83289
+//POINTER #0 @ $3FC79 - STRING #0 @ $3FC3C
+#W16($3FC79)
+//LV.[Exit]
+// current address: $3FC41
 
-//POINTER #1 @ $8329E - STRING #1 @ $83289
-#W16($8329E)
-//  はやい[Line]
-//  ふつう[Line]
-//  おそい[Exit]
-//
-// current address: $8329C
+//POINTER #1 @ $3FC7B - STRING #1 @ $3FC41
+#W16($3FC7B)
+//HP.[Exit]
+// current address: $3FC46
+
+//POINTER #2 @ $3FC7D - STRING #2 @ $3FC46
+#W16($3FC7D)
+//AT.[Exit]
+// current address: $3FC4B
+
+//POINTER #3 @ $3FC7F - STRING #3 @ $3FC4B
+#W16($3FC7F)
+//DF.[Exit]
+// current address: $3FC50
+
+//POINTER #4 @ $3FC81 - STRING #4 @ $3FC50
+#W16($3FC81)
+//SP.[Exit]
+// current address: $3FC55
+
+//POINTER #5 @ $3FC83 - STRING #5 @ $3FC55
+#W16($3FC83)
+//ぞくせい/[Exit]
+// current address: $3FC5E
+
+//POINTER #6 @ $3FC85 - STRING #6 @ $3FC5E
+#W16($3FC85)
+//わざ/[Exit]
+// current address: $3FC65
+
+//POINTER #7 @ $3FC87 - STRING #7 @ $3FC65
+#W16($3FC87)
+//つぎのレベルまで[Exit]
+// current address: $3FC75
+
+//POINTER #8 @ $3FC89 - STRING #8 @ $3FC75
+#W16($3FC89)
+//あと[Exit]
+// current address: $3FC79

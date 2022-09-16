@@ -2,14 +2,22 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/battlestatus.tbl", Table_0)
 #VAR(Table_1, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_1)
 #VAR(Table_2, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/noselection.tbl", Table_2)
+#VAR(Table_3, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_3)
+#VAR(Table_4, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_4)
+#VAR(Table_5, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
+#VAR(Table_6, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
 
 //BLOCK #002 NAME:		Battle Text
-#ACTIVETBL(Table_2) // Activate this block's starting TABLE
+#ACTIVETBL(Table_4) // Activate this block's starting TABLE
 
 #JMP($3954F, $398FF) // Jump to insertion point
 #HDR($34000) // Difference between ROM and RAM addresses for pointer value calculations

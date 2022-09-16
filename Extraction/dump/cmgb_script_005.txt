@@ -2,122 +2,59 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/battlestatus.tbl", Table_0)
 #VAR(Table_1, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_1)
 #VAR(Table_2, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/noselection.tbl", Table_2)
+#VAR(Table_3, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_3)
+#VAR(Table_4, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_4)
+#VAR(Table_5, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
+#VAR(Table_6, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
 
-//BLOCK #005 NAME:		Start Menu
-#ACTIVETBL(Table_1) // Activate this block's starting TABLE
+//BLOCK #005 NAME:		Pre-Battle Screens?
+#ACTIVETBL(Table_4) // Activate this block's starting TABLE
 
-#JMP($82C6D, $82CFF) // Jump to insertion point
-#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($3F8D0, $3F919) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $82D00 - STRING #0 @ $82C6D
-#W16($82D00)
-//MC[Exit]
+//POINTER #0 @ $3F91A - STRING #0 @ $3F8D0
+#W16($3F91A)
+//モンスターを はいちしてください[Exit]
 //
-// current address: $82C72
+// current address: $3F8E4
 
-//POINTER #1 @ $82D02 - STRING #1 @ $82C72
-#W16($82D02)
-//ゆうぎ[Exit]
+//POINTER #1 @ $3F91C - STRING #1 @ $3F8E4
+#W16($3F91C)
+//すでに はいちしたものをつかう[Exit]
 //
-// current address: $82C79
+// current address: $3F8F7
 
-//POINTER #2 @ $82D04 - STRING #2 @ $82C79
-#W16($82D04)
-//きそく[Exit]
+//POINTER #2 @ $3F91E - STRING #2 @ $3F8F7
+#W16($3F91E)
+//いま はいちする[Exit]
 //
-// current address: $82C7E
+// current address: $3F901
 
-//POINTER #3 @ $82D06 - STRING #3 @ $82C7E
-#W16($82D06)
-//ぼうけんの きそくを[Exit]
+//POINTER #3 @ $3F920 - STRING #3 @ $3F901
+#W16($3F920)
+//これでいいですか?[Exit]
 //
-// current address: $82C8C
+// current address: $3F910
 
-//POINTER #4 @ $82D08 - STRING #4 @ $82C8C
-#W16($82D08)
-//つけますか?[Exit]
+//POINTER #4 @ $3F922 - STRING #4 @ $3F910
+#W16($3F922)
+//はい[Exit]
 //
-// current address: $82C94
+// current address: $3F914
 
-//POINTER #5 @ $82D0A - STRING #5 @ $82C94
-#W16($82D0A)
-//はい  いいえ[Exit]
+//POINTER #5 @ $3F924 - STRING #5 @ $3F914
+#W16($3F924)
+//いいえ[Line]
+//[Exit]
 //
-// current address: $82C9D
-
-//POINTER #6 @ $82D0C - STRING #6 @ $82C9D
-#W16($82D0C)
-//きそくしました[Exit]
-//
-// current address: $82CA6
-
-//POINTER #7 @ $82D0E - STRING #7 @ $82CA6
-#W16($82D0E)
-//つよさ[Exit]
-//
-// current address: $82CAB
-
-//POINTER #8 @ $82D10 - STRING #8 @ $82CAB
-#W16($82D10)
-//カプセル[Exit]
-//
-// current address: $82CB3
-
-//POINTER #9 @ $82D12 - STRING #9 @ $82CB3
-#W16($82D12)
-//じんけい[Exit]
-//
-// current address: $82CBB
-
-//POINTER #10 @ $82D14 - STRING #10 @ $82CBB
-#W16($82D14)
-//いれかえ[Exit]
-//
-// current address: $82CC1
-
-//POINTER #11 @ $82D16 - STRING #11 @ $82CC1
-#W16($82D16)
-//すてる[Exit]
-//
-// current address: $82CC6
-
-//POINTER #12 @ $82D18 - STRING #12 @ $82CC6
-#W16($82D18)
-//しんか  x[Exit]
-//
-// current address: $82CCE
-
-//POINTER #13 @ $82D1A - STRING #13 @ $82CCE
-#W16($82D1A)
-//わざ   x[Exit]
-//
-// current address: $82CD8
-
-//POINTER #14 @ $82D1C - STRING #14 @ $82CD8
-#W16($82D1C)
-//HPアップx[Exit]
-//
-// current address: $82CE2
-
-//POINTER #15 @ $82D1E - STRING #15 @ $82CE2
-#W16($82D1E)
-//ATアップx[Exit]
-//
-// current address: $82CEC
-
-//POINTER #16 @ $82D20 - STRING #16 @ $82CEC
-#W16($82D20)
-//DFアップx[Exit]
-//
-// current address: $82CF6
-
-//POINTER #17 @ $82D22 - STRING #17 @ $82CF6
-#W16($82D22)
-//SPアップx[Exit]
-//
-// current address: $82D00
+// current address: $3F91A

@@ -2511,8 +2511,9 @@ Speed +[Var]<$10>[Exit]
 //POINTER #28 @ $39938 - STRING #28 @ $397E3
 #W16($39938)
 //Defeat, used both for rout and surrender
+//Control code to vary "you" used here
 //[Var]<$10>の MCは ぜんめつした![Exit]
-[Var]<$10> has lost the[Line]
+Yugi has lost the[Line]
 battle.[Exit]
 // current address: $397F6
 

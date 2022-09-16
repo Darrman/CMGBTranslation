@@ -5,5 +5,6 @@
 
 perl ..\abcde.pl -cm abcde::Atlas "CMGBEN.gbc" "script/monstername.txt"
 perl ..\abcde.pl -cm abcde::Atlas "CMGBEN.gbc" "script/bank20.txt"
+perl ..\abcde.pl -cm abcde::Atlas "CMGBEN.gbc" "script/battle.txt"
 
 pause

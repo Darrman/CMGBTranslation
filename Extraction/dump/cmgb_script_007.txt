@@ -2,199 +2,32 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/battlestatus.tbl", Table_0)
 #VAR(Table_1, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_1)
 #VAR(Table_2, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/noselection.tbl", Table_2)
+#VAR(Table_3, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_3)
+#VAR(Table_4, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_4)
+#VAR(Table_5, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
+#VAR(Table_6, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
 
-//BLOCK #007 NAME:		Monster Status Screen
-#ACTIVETBL(Table_2) // Activate this block's starting TABLE
+//BLOCK #007 NAME:		When Unit Moved
+#ACTIVETBL(Table_5) // Activate this block's starting TABLE
 
-#JMP($82DF4, $82F44) // Jump to insertion point
-#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($3F940, $3F94C) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $82F45 - STRING #0 @ $82DF4
-#W16($82F45)
-//LV[Exit]
-//
-// current address: $82DF9
+//POINTER #0 @ $3F94D - STRING #0 @ $3F940
+#W16($3F94D)
+//こうげき[Exit]
+// current address: $3F948
 
-//POINTER #1 @ $82F47 - STRING #1 @ $82DF9
-#W16($82F47)
-//HP   /[Exit]
-//
-// current address: $82E02
-
-//POINTER #2 @ $82F49 - STRING #2 @ $82E02
-#W16($82F49)
-//AT[Exit]
-//
-// current address: $82E07
-
-//POINTER #3 @ $82F4B - STRING #3 @ $82E07
-#W16($82F4B)
-//DF[Exit]
-//
-// current address: $82E0C
-
-//POINTER #4 @ $82F4D - STRING #4 @ $82E0C
-#W16($82F4D)
-//SP[Exit]
-//
-// current address: $82E11
-
-//POINTER #5 @ $82F4F - STRING #5 @ $82E11
-#W16($82F4F)
-//ぞくせい/[Exit]
-//
-// current address: $82E1A
-
-//POINTER #6 @ $82F51 - STRING #6 @ $82E1A
-#W16($82F51)
-//わざ/[Exit]
-//
-// current address: $82E21
-
-//POINTER #7 @ $82F53 - STRING #7 @ $82E21
-#W16($82F53)
-//つぎのレベルまで[Exit]
-//
-// current address: $82E31
-
-//POINTER #8 @ $82F55 - STRING #8 @ $82E31
-#W16($82F55)
-// あと[Exit]
-//
-// current address: $82E36
-
-//POINTER #9 @ $82F57 - STRING #9 @ $82E36
-#W16($82F57)
-//もり[Exit]
-//
-// current address: $82E3A
-
-//POINTER #10 @ $82F59 - STRING #10 @ $82E3A
-#W16($82F59)
-//そうげん[Exit]
-//
-// current address: $82E42
-
-//POINTER #11 @ $82F5B - STRING #11 @ $82E42
-#W16($82F5B)
-//みず[Exit]
-//
-// current address: $82E48
-
-//POINTER #12 @ $82F5D - STRING #12 @ $82E48
-#W16($82F5D)
-//さんがく[Exit]
-//
-// current address: $82E50
-
-//POINTER #13 @ $82F5F - STRING #13 @ $82E50
-#W16($82F5F)
-//あれち[Exit]
-//
-// current address: $82E55
-
-//POINTER #14 @ $82F61 - STRING #14 @ $82E55
-#W16($82F61)
-//やみ[Exit]
-//
-// current address: $82E59
-
-//POINTER #15 @ $82F63 - STRING #15 @ $82E59
-#W16($82F63)
-//ひかり[Exit]
-//
-// current address: $82E5E
-
-//POINTER #16 @ $82F65 - STRING #16 @ $82E5E
-#W16($82F65)
-//こうげきはんい[Exit]
-//
-// current address: $82E69
-
-//POINTER #17 @ $82F67 - STRING #17 @ $82E69
-#W16($82F67)
-//わざのレベル/[Exit]
-//
-// current address: $82E76
-
-//POINTER #18 @ $82F69 - STRING #18 @ $82E76
-#W16($82F69)
-//ほんとうに すてても[Exit]
-//
-// current address: $82E82
-
-//POINTER #19 @ $82F6B - STRING #19 @ $82E82
-#W16($82F6B)
-//  いいですか?[Exit]
-//
-// current address: $82E8E
-
-//POINTER #20 @ $82F6D - STRING #20 @ $82E8E
-#W16($82F6D)
-//  はい  いいえ[Exit]
-//
-// current address: $82E99
-
-//POINTER #21 @ $82F6F - STRING #21 @ $82E99
-#W16($82F6F)
-//こうかが なかった[Exit]
-//
-// current address: $82EA6
-
-//POINTER #22 @ $82F71 - STRING #22 @ $82EA6
-#W16($82F71)
-//[Var]<$10>は[Line]
-//[Var]<$11>に[Line]
-//しんかした[Exit]
-//
-// current address: $82EB5
-
-//POINTER #23 @ $82F73 - STRING #23 @ $82EB5
-#W16($82F73)
-//[Var]<$10>は[Line]
-//[Var]<$11>の[Line]
-//わざを おぼえた[Exit]
-//
-// current address: $82ECB
-
-//POINTER #24 @ $82F75 - STRING #24 @ $82ECB
-#W16($82F75)
-//HPが [Var]<$10>ポイント あがった[Exit]
-//
-// current address: $82EE2
-
-//POINTER #25 @ $82F77 - STRING #25 @ $82EE2
-#W16($82F77)
-//ATが [Var]<$10>ポイント あがった[Exit]
-//
-// current address: $82EF9
-
-//POINTER #26 @ $82F79 - STRING #26 @ $82EF9
-#W16($82F79)
-//DFが [Var]<$10>ポイント あがった[Exit]
-//
-// current address: $82F10
-
-//POINTER #27 @ $82F7B - STRING #27 @ $82F10
-#W16($82F7B)
-//SPが [Var]<$10>ポイント あがった[Exit]
-//
-// current address: $82F27
-
-//POINTER #28 @ $82F7D - STRING #28 @ $82F27
-#W16($82F7D)
-//レベルが たりません[Exit]
-//
-// current address: $82F37
-
-//POINTER #29 @ $82F7F - STRING #29 @ $82F37
-#W16($82F7F)
-//ほんとうに わたしても[Line]
-//[Exit]
-//
-// current address: $82F45
+//POINTER #1 @ $3F94F - STRING #1 @ $3F948
+#W16($3F94F)
+//たいき[Exit]
+// current address: $3F94D

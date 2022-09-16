@@ -314,31 +314,31 @@ You got a[Line]
 
 //POINTER #0 @ $82F45 - STRING #0 @ $82DF4
 #W16($82F45)
-Lv[Exit]
+Lv.[Exit]
 //
 // current address: $82DF9
 
 //POINTER #1 @ $82F47 - STRING #1 @ $82DF9
 #W16($82F47)
-HP   /[Exit]
+HP.   /[Exit]
 //
 // current address: $82E02
 
 //POINTER #2 @ $82F49 - STRING #2 @ $82E02
 #W16($82F49)
-At[Exit]
+At.[Exit]
 //
 // current address: $82E07
 
 //POINTER #3 @ $82F4B - STRING #3 @ $82E07
 #W16($82F4B)
-Df[Exit]
+Df.[Exit]
 //
 // current address: $82E0C
 
 //POINTER #4 @ $82F4D - STRING #4 @ $82E0C
 #W16($82F4D)
-Sp[Exit]
+Sp.[Exit]
 //
 // current address: $82E11
 
@@ -374,7 +374,7 @@ EXP[Exit]
 #W16($82F57)
 //もり[Exit]
 //Forest
-Tree[Exit]
+Wood[Exit]
 // current address: $82E3A
 
 //POINTER #10 @ $82F59 - STRING #10 @ $82E3A

@@ -2,63 +2,37 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/battlestatus.tbl", Table_0)
 #VAR(Table_1, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_1)
 #VAR(Table_2, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/noselection.tbl", Table_2)
+#VAR(Table_3, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_3)
+#VAR(Table_4, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_4)
+#VAR(Table_5, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
+#VAR(Table_6, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
 
-//BLOCK #006 NAME:		Capsule Machine
-#ACTIVETBL(Table_2) // Activate this block's starting TABLE
+//BLOCK #006 NAME:		When Unit Selected
+#ACTIVETBL(Table_6) // Activate this block's starting TABLE
 
-#JMP($82D24, $82DE5) // Jump to insertion point
-#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($3F926, $3F939) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $82DE6 - STRING #0 @ $82D24
-#W16($82DE6)
-//カプセルマシンだ![Exit]
-//
-// current address: $82D33
+//POINTER #0 @ $3F93A - STRING #0 @ $3F926
+#W16($3F93A)
+//いどう[Exit]
+// current address: $3F92D
 
-//POINTER #1 @ $82DE8 - STRING #1 @ $82D33
-#W16($82DE8)
-//スターチップを 1まい いれますか?[Line]
-// はい[Line]
-// いいえ[Exit]
-//
-// current address: $82D52
+//POINTER #1 @ $3F93C - STRING #1 @ $3F92D
+#W16($3F93C)
+//こうげき[Exit]
+// current address: $3F935
 
-//POINTER #2 @ $82DEA - STRING #2 @ $82D52
-#W16($82DEA)
-//これいじょう MCを もてない![Exit]
-//
-// current address: $82D66
-
-//POINTER #3 @ $82DEC - STRING #3 @ $82D66
-#W16($82DEC)
-//いらない MCを[Line]
-//せいりしてから こよう![Exit]
-//
-// current address: $82D7D
-
-//POINTER #4 @ $82DEE - STRING #4 @ $82D7D
-#W16($82DEE)
-//…スターチップが 1まいしかない[Line]
-//この1まいを つかうと[Line]
-//バトルが できなくなる!![Exit]
-//
-// current address: $82DB3
-
-//POINTER #5 @ $82DF0 - STRING #5 @ $82DB3
-#W16($82DF0)
-//「[Var]<$10> LV[Var]<$11>」の[Line]
-//カプセルを てにいれた!![Exit]
-//
-// current address: $82DCF
-
-//POINTER #6 @ $82DF2 - STRING #6 @ $82DCF
-#W16($82DF2)
-//「[Var]<$10>」の[Line]
-//カプセルを てにいれた!![Exit]
-//
-// current address: $82DE6
+//POINTER #2 @ $3F93E - STRING #2 @ $3F935
+#W16($3F93E)
+//つよさ[Exit]
+// current address: $3F93A

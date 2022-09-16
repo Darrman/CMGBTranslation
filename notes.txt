@@ -1,1 +1,2 @@
-Font: 0x82098
+Status screen font: 0x3FC8B	
+Normal font: 0x82098

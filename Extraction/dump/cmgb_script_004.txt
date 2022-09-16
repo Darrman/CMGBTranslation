@@ -2,86 +2,64 @@
 
 // Define required TABLE variables and load the corresponding tables
 #VAR(Table_0, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_0)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/battlestatus.tbl", Table_0)
 #VAR(Table_1, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_1)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/mainmenu.tbl", Table_1)
 #VAR(Table_2, TABLE)
-#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_2)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/noselection.tbl", Table_2)
+#VAR(Table_3, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/startmenu.tbl", Table_3)
+#VAR(Table_4, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/text.tbl", Table_4)
+#VAR(Table_5, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
+#VAR(Table_6, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
 
-//BLOCK #004 NAME:		Main Menu
-#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+//BLOCK #004 NAME:		Types (In Battle)
+#ACTIVETBL(Table_4) // Activate this block's starting TABLE
 
-#JMP($82BB8, $82C54) // Jump to insertion point
-#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($3C1B0, $3C1D7) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $82C55 - STRING #0 @ $82BB8
-#W16($82C55)
-//ストーリーモード[Exit]
+//POINTER #0 @ $3C1D8 - STRING #0 @ $3C1B0
+#W16($3C1D8)
+//もり[Exit]
 //
-// current address: $82BC2
+// current address: $3C1B4
 
-//POINTER #1 @ $82C57 - STRING #1 @ $82BC2
-#W16($82C57)
-//たいせんバトル[Exit]
+//POINTER #1 @ $3C1DA - STRING #1 @ $3C1B4
+#W16($3C1DA)
+//そうげん[Exit]
 //
-// current address: $82BCD
+// current address: $3C1BC
 
-//POINTER #2 @ $82C59 - STRING #2 @ $82BCD
-#W16($82C59)
-//MC トレード[Exit]
+//POINTER #2 @ $3C1DC - STRING #2 @ $3C1BC
+#W16($3C1DC)
+//みず[Exit]
 //
-// current address: $82BD8
+// current address: $3C1C2
 
-//POINTER #3 @ $82C5B - STRING #3 @ $82BD8
-#W16($82C5B)
-//ロード[Exit]
+//POINTER #3 @ $3C1DE - STRING #3 @ $3C1C2
+#W16($3C1DE)
+//さんがく[Exit]
 //
-// current address: $82BDD
+// current address: $3C1CA
 
-//POINTER #4 @ $82C5D - STRING #4 @ $82BDD
-#W16($82C5D)
-//さいしょから[Exit]
+//POINTER #4 @ $3C1E0 - STRING #4 @ $3C1CA
+#W16($3C1E0)
+//あれち[Exit]
 //
-// current address: $82BE5
+// current address: $3C1CF
 
-//POINTER #5 @ $82C5F - STRING #5 @ $82BE5
-#W16($82C5F)
-//セーブデータ゛か ありません![Exit]
+//POINTER #5 @ $3C1E2 - STRING #5 @ $3C1CF
+#W16($3C1E2)
+//やみ[Exit]
 //
-// current address: $82BFB
+// current address: $3C1D3
 
-//POINTER #6 @ $82C61 - STRING #6 @ $82BFB
-#W16($82C61)
-//このゲームは[Exit]
+//POINTER #6 @ $3C1E4 - STRING #6 @ $3C1D3
+#W16($3C1E4)
+//ひかり[Exit]
 //
-// current address: $82C05
-
-//POINTER #7 @ $82C63 - STRING #7 @ $82C05
-#W16($82C63)
-//スーパーゲームボーイでは[Exit]
-//
-// current address: $82C1B
-
-//POINTER #8 @ $82C65 - STRING #8 @ $82C1B
-#W16($82C65)
-//たいせんできません[Exit]
-//
-// current address: $82C28
-
-//POINTER #9 @ $82C67 - STRING #9 @ $82C28
-#W16($82C67)
-//このゲームは[Exit]
-//
-// current address: $82C32
-
-//POINTER #10 @ $82C69 - STRING #10 @ $82C32
-#W16($82C69)
-//スーパーゲームボーイでは[Exit]
-//
-// current address: $82C48
-
-//POINTER #11 @ $82C6B - STRING #11 @ $82C48
-#W16($82C6B)
-//こうかんできません[Exit]
-//
-// current address: $82C55
+// current address: $3C1D8

@@ -1,0 +1,323 @@
+//GAME NAME:		Yu-Gi-Oh: Capsule Monsters GB
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(BStatus, TABLE)
+#ADDTBL("battlestatus.tbl", BStatus)
+#VAR(BSelect, TABLE)
+#ADDTBL("unitselected.tbl", BSelect)
+#VAR(BMove, TABLE)
+#ADDTBL("unitmoved.tbl", BMove)
+#VAR(BNoSelect, TABLE)
+#ADDTBL("noselection.tbl", BNoSelect)
+
+#VAR(Text, TABLE)
+#ADDTBL("text.tbl", Text)
+
+
+//BLOCK #004 NAME:		Types (In Battle)
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($3C1B0, $3C1D7) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3C1D8 - STRING #0 @ $3C1B0
+#W16($3C1D8)
+//もり[Exit]
+//Forest
+Wood[Exit]
+// current address: $3C1B4
+
+//POINTER #1 @ $3C1DA - STRING #1 @ $3C1B4
+#W16($3C1DA)
+//そうげん[Exit]
+//Plains
+Flat[Exit]
+// current address: $3C1BC
+
+//POINTER #2 @ $3C1DC - STRING #2 @ $3C1BC
+#W16($3C1DC)
+//みず[Exit]
+//Sea
+Sea[Exit]
+// current address: $3C1C2
+
+//POINTER #3 @ $3C1DE - STRING #3 @ $3C1C2
+#W16($3C1DE)
+//さんがく[Exit]
+//Mountain
+Hill[Exit]
+// current address: $3C1CA
+
+//POINTER #4 @ $3C1E0 - STRING #4 @ $3C1CA
+#W16($3C1E0)
+//あれち[Exit]
+//Wasteland
+Wast[Exit]
+// current address: $3C1CF
+
+//POINTER #5 @ $3C1E2 - STRING #5 @ $3C1CF
+#W16($3C1E2)
+//やみ[Exit]
+//Darkness
+Dark[Exit]
+// current address: $3C1D3
+
+//POINTER #6 @ $3C1E4 - STRING #6 @ $3C1D3
+#W16($3C1E4)
+//ひかり[Exit]
+//Light
+Lght[Exit]
+// current address: $3C1D8
+
+//BLOCK #005 NAME:		Pre-Battle Screens?
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($3F8D0, $3F919) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3F91A - STRING #0 @ $3F8D0
+#W16($3F91A)
+//モンスターを はいちしてください[Exit]
+//Heading, roughly "fight the monsters"
+Battle[Exit]
+// current address: $3F8E4
+
+//POINTER #1 @ $3F91C - STRING #1 @ $3F8E4
+#W16($3F91C)
+//すでに はいちしたものをつかう[Exit]
+//Default formation
+Use Default[Exit]
+// current address: $3F8F7
+
+//POINTER #2 @ $3F91E - STRING #2 @ $3F8F7
+#W16($3F91E)
+//いま はいちする[Exit]
+//Select units
+Pick Monsters[Exit]
+// current address: $3F901
+
+//POINTER #3 @ $3F920 - STRING #3 @ $3F901
+#W16($3F920)
+//これでいいですか?[Exit]
+//Are you sure
+Are you ready?[Exit]
+// current address: $3F910
+
+//POINTER #4 @ $3F922 - STRING #4 @ $3F910
+#W16($3F922)
+//はい[Exit]
+Yes[Exit]
+// current address: $3F914
+
+//POINTER #5 @ $3F924 - STRING #5 @ $3F914
+#W16($3F924)
+//いいえ[Line]
+No[Exit]
+//
+// current address: $3F91A
+
+//BLOCK #006 NAME:		When Unit Selected
+#ACTIVETBL(BSelect) // Activate this block's starting TABLE
+
+#JMP($3F926, $3F939) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3F93A - STRING #0 @ $3F926
+#W16($3F93A)
+//いどう[Exit]
+//Move
+Move[Exit]
+// current address: $3F92D
+
+//POINTER #1 @ $3F93C - STRING #1 @ $3F92D
+#W16($3F93C)
+//こうげき[Exit]
+//Attack
+Atk[Exit]
+// current address: $3F935
+
+//POINTER #2 @ $3F93E - STRING #2 @ $3F935
+#W16($3F93E)
+//つよさ[Exit]
+//Status
+Chek[Exit]
+// current address: $3F93A
+
+//BLOCK #007 NAME:		When Unit Moved
+#ACTIVETBL(BMove) // Activate this block's starting TABLE
+
+#JMP($3F940, $3F94C) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3F94D - STRING #0 @ $3F940
+#W16($3F94D)
+//こうげき[Exit]
+//Attack
+Atk[Exit]
+// current address: $3F948
+
+//POINTER #1 @ $3F94F - STRING #1 @ $3F948
+#W16($3F94F)
+//たいき[Exit]
+//Wait
+Wait[Exit]
+// current address: $3F94D
+
+//BLOCK #008 NAME:		Blank Tile Selected
+#ACTIVETBL(BNoSelect) // Activate this block's starting TABLE
+
+#JMP($3F951, $3F96C) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3F96D - STRING #0 @ $3F951
+#W16($3F96D)
+//つづけそ[Exit]
+//Continue
+Cont[Exit]
+// current address: $3F959
+
+//POINTER #1 @ $3F96F - STRING #1 @ $3F959
+#W16($3F96F)
+//タイマー[Exit]
+//Literally "timer", actually text speed
+Speed[Exit]
+// current address: $3F95F
+
+//POINTER #2 @ $3F971 - STRING #2 @ $3F95F
+#W16($3F971)
+//ターンおれそ[Exit]
+//Pass turn
+Pass[Exit]
+// current address: $3F967
+
+//POINTER #3 @ $3F973 - STRING #3 @ $3F967
+#W16($3F973)
+//こうさん[Exit]
+//Surrender
+Quit[Exit]
+// current address: $3F96D
+
+
+//BLOCK #009	 NAME:		Surrender Prompts
+#ACTIVETBL(Text) // Activate this block's starting TABLE
+
+#JMP($3FB75, $3FC2F) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3FC30 - STRING #0 @ $3FB75
+#W16($3FC30)
+//Text speed
+//メッセージの スピードを[Line]
+//えらんで ください[Exit]
+//
+Select text[Line]
+speed.[Exit]
+// current address: $3FB97
+
+//POINTER #1 @ $3FC32 - STRING #1 @ $3FB97
+#W16($3FC32)
+//  はやい[Line]
+//  ふつう[Line]
+//  おそい[Exit]
+//
+ Fast[Line]
+ Normal[Line]
+ Slow[Exit]
+// current address: $3FBAA
+
+//POINTER #2 @ $3FC34 - STRING #2 @ $3FBAA
+#W16($3FC34)
+//Loss of Star Chips
+//こうさんすると[Line]
+//スターチップを うしないます[Exit]
+You'll lose a[Line]
+Star Chip.[Exit]
+// current address: $3FBC4
+
+//POINTER #3 @ $3FC36 - STRING #3 @ $3FBC4
+#W16($3FC36)
+//Restart a dungeon
+//こうさんすると[Line]
+//ワールドの はじめから[Line]
+//やりなおしに なります[Exit]
+You'll return[Line]
+to the start of[Line]
+Monster World.[Exit]
+// current address: $3FBE9
+
+//POINTER #4 @ $3FC38 - STRING #4 @ $3FBE9
+#W16($3FC38)
+//Lose the Puzzle
+//こうさんすると[Line]
+//せんねんパズルを うしない[Line]
+//GAME OVERに なります[Exit]
+You'll lose the[Line]
+Puzzle. Game Over.[Exit]
+// current address: $3FC14
+
+//POINTER #5 @ $3FC3A - STRING #5 @ $3FC14
+#W16($3FC3A)
+//Are you sure
+//ほんとうに こうさんしますか?[Line]
+//  はい[Line]
+//  いいえ[Exit]
+Are you certain?[Line]
+ Yes[Line]
+ No[Exit]
+// current address: $3FC30
+
+
+//BLOCK #010 NAME:		Status Screen (Battle)
+#ACTIVETBL(BStatus) // Activate this block's starting TABLE
+
+#JMP($3FC3C, $3FC78) // Jump to insertion point
+#HDR($38000) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $3FC79 - STRING #0 @ $3FC3C
+#W16($3FC79)
+Lv.[Exit]
+// current address: $3FC41
+
+//POINTER #1 @ $3FC7B - STRING #1 @ $3FC41
+#W16($3FC7B)
+HP.[Exit]
+// current address: $3FC46
+
+//POINTER #2 @ $3FC7D - STRING #2 @ $3FC46
+#W16($3FC7D)
+At.[Exit]
+// current address: $3FC4B
+
+//POINTER #3 @ $3FC7F - STRING #3 @ $3FC4B
+#W16($3FC7F)
+Df.[Exit]
+// current address: $3FC50
+
+//POINTER #4 @ $3FC81 - STRING #4 @ $3FC50
+#W16($3FC81)
+Sp.[Exit]
+// current address: $3FC55
+
+//POINTER #5 @ $3FC83 - STRING #5 @ $3FC55
+#W16($3FC83)
+//ぞくせい/[Exit]
+Type/[Exit]
+// current address: $3FC5E
+
+//POINTER #6 @ $3FC85 - STRING #6 @ $3FC5E
+#W16($3FC85)
+//わざ/[Exit]
+Mv/[Exit]
+// current address: $3FC65
+
+//POINTER #7 @ $3FC87 - STRING #7 @ $3FC65
+#W16($3FC87)
+//つぎのレベルまで[Exit]
+To next:[Exit]
+// current address: $3FC75
+
+//POINTER #8 @ $3FC89 - STRING #8 @ $3FC75
+#W16($3FC89)
+//あと[Exit]
+XP[Exit]
+// current address: $3FC79
