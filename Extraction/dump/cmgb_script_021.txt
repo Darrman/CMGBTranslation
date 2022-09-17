@@ -15,307 +15,902 @@
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
 #VAR(Table_6, TABLE)
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
+#VAR(Table_7, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/yugi.tbl", Table_7)
 
-//BLOCK #021 NAME:		Script: Mokuba's Room
+//BLOCK #021 NAME:		Script: First Floor
 #ACTIVETBL(Table_4) // Activate this block's starting TABLE
 
-#JMP($145E4, $14B97) // Jump to insertion point
-#HDR($10000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($11823, $12A41) // Jump to insertion point
+#HDR($C000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $14B98 - STRING #0 @ $145E4
-#W16($14B98)
-//おやおや…[Line]
-//ようやく スターチップを[Line]
-//10まい あつめたようですねぇ[Exit]
+//POINTER #0 @ $12A42 - STRING #0 @ $11823
+#W16($12A42)
+//バトルしますか?[Line]
+// はい[Line]
+// いいえ[Exit]
 //
-// current address: $1460C
+// current address: $11838
 
-//POINTER #1 @ $14B9A - STRING #1 @ $1460C
-#W16($14B9A)
-//しかし あなたが ほんとうに[Line]
-//ダークマスターと たたかう[Line]
-//しかくがあるか…[Exit]
+//POINTER #1 @ $12A44 - STRING #1 @ $11838
+#W16($12A44)
+//この ダークゲートの むこうに[Line]
+//ダークマスターがいます[Exit]
 //
-// current address: $14639
+// current address: $1185D
 
-//POINTER #2 @ $14B9C - STRING #2 @ $14639
-#W16($14B9C)
-//わたくしめが[Line]
-//ためして さしあげましょう[Line]
-//ヒヒヒ……[Exit]
+//POINTER #2 @ $12A46 - STRING #2 @ $1185D
+#W16($12A46)
+//ようこそ![Line]
+//スターチップを とびらの あなに[Line]
+//はめてください…[Exit]
 //
-// current address: $14659
+// current address: $11884
 
-//POINTER #3 @ $14B9E - STRING #3 @ $14659
-#W16($14B9E)
-//クッ! さすがに おつよい…[Line]
-//いいでしょう とおしてさしあげます [Exit]
+//POINTER #3 @ $12A48 - STRING #3 @ $11884
+#W16($12A48)
+//あ… ゆうぎくん![Exit]
 //
-// current address: $14682
+// current address: $11891
 
-//POINTER #4 @ $14BA0 - STRING #4 @ $14682
-#W16($14BA0)
-//うんが よければ[Line]
-//また おあいしましょう[Line]
-//それでは…[Exit]
+//POINTER #4 @ $12A4A - STRING #4 @ $11891
+#W16($12A4A)
+//MCって カプセルマシンから[Line]
+//にゅうしゅ できるんですね[Line]
+//ボク しらなかったです[Exit]
 //
-// current address: $146A4
+// current address: $118C5
 
-//POINTER #5 @ $14BA2 - STRING #5 @ $146A4
-#W16($14BA2)
-//ようこそ ゆうぎ!![Line]
-//オレが フロア1の[Line]
-//ダークマスターなんだぜい!![Exit]
+//POINTER #5 @ $12A4C - STRING #5 @ $118C5
+#W16($12A4C)
+//そうだ!![Line]
+//もしよろしければ ボクと[Line]
+//たいせんしましょう![Exit]
 //
-// current address: $146D3
+// current address: $118EA
 
-//POINTER #6 @ $14BA4 - STRING #6 @ $146D3
-#W16($14BA4)
-//モ モクバ!![Exit]
+//POINTER #6 @ $12A4E - STRING #6 @ $118EA
+#W16($12A4E)
+//やあ ボクも ゆうしょう めざして[Line]
+//がんばります!![Line]
+//もういちど たいせんしましょう![Exit]
 //
-// current address: $146DE
+// current address: $11921
 
-//POINTER #7 @ $14BA6 - STRING #7 @ $146DE
-#W16($14BA6)
-//これから オレと[Line]
+//POINTER #7 @ $12A50 - STRING #7 @ $11921
+#W16($12A50)
+//う~ん さすが ゆうぎくんですね…[Line]
+//ボクも がんばらなくては![Exit]
+//
+// current address: $1194E
+
+//POINTER #8 @ $12A52 - STRING #8 @ $1194E
+#W16($12A52)
+//すごい… すごいよ…[Line]
+//がんばれば ボクでも かてるんだ![Exit]
+//
+// current address: $1197C
+
+//POINTER #9 @ $12A54 - STRING #9 @ $1197C
+#W16($12A54)
+//やあ ゆうぎくんか…[Line]
+//きょうは さいなんだよ[Exit]
+//
+// current address: $11998
+
+//POINTER #10 @ $12A56 - STRING #10 @ $11998
+#W16($12A56)
+//なまいきな しょうがくせいに[Line]
+//コテンパンに やられちまったよ[Exit]
+//
+// current address: $119BC
+
+//POINTER #11 @ $12A58 - STRING #11 @ $119BC
+#W16($12A58)
+//それにくらべると[Line]
+//ゆうぎくんは いいなぁ…[Exit]
+//
+// current address: $119D7
+
+//POINTER #12 @ $12A5A - STRING #12 @ $119D7
+#W16($12A5A)
+//ゆうぎくん みたいのと[Line]
+//たいせんできると あんしんするんだ[Line]
+//…しょうぶしようよ[Exit]
+//
+// current address: $11A08
+
+//POINTER #13 @ $12A5C - STRING #13 @ $11A08
+#W16($12A5C)
+//また あったね[Line]
+//おねがいだ! もういちど[Line]
+//しょうぶしてくれ!![Exit]
+//
+// current address: $11A31
+
+//POINTER #14 @ $12A5E - STRING #14 @ $11A31
+#W16($12A5E)
+//フン[Line]
+//MCなんか みたくもない!![Exit]
+//
+// current address: $11A44
+
+//POINTER #15 @ $12A60 - STRING #15 @ $11A44
+#W16($12A60)
+//オレに かてないんじゃ[Line]
+//ゆうしょうなんて むりだよ…[Exit]
+//
+// current address: $11A64
+
+//POINTER #16 @ $12A62 - STRING #16 @ $11A64
+#W16($12A62)
+//みえる~[Line]
+//みえるぞ~~![Exit]
+//
+// current address: $11A74
+
+//POINTER #17 @ $12A64 - STRING #17 @ $11A74
+#W16($12A64)
+//このたいかいで ゆうしょうする[Line]
+//ボクの すがたが[Line]
+//みえる~~っっっ!![Exit]
+//
+// current address: $11AA1
+
+//POINTER #18 @ $12A66 - STRING #18 @ $11AA1
+#W16($12A66)
+//ちょっと そこのキミ…[Line]
+//ボクの ちょうのうりょくで[Line]
+//かるく いなしてあげよう[Exit]
+//
+// current address: $11ACF
+
+//POINTER #19 @ $12A68 - STRING #19 @ $11ACF
+#W16($12A68)
+//かかって きたまえ![Exit]
+//
+// current address: $11ADB
+
+//POINTER #20 @ $12A6A - STRING #20 @ $11ADB
+#W16($12A6A)
+//フン… ボクが このバトルに[Line]
+//まける みらいは みえないよ[Line]
+//…もういちど しょうぶしたまえ![Exit]
+//
+// current address: $11B15
+
+//POINTER #21 @ $12A6C - STRING #21 @ $11B15
+#W16($12A6C)
+//フ… フハハ…[Line]
+//…バカな… ボクは[Line]
+//ちょうのうりょくしゃなんだぞ![Exit]
+//
+// current address: $11B40
+
+//POINTER #22 @ $12A6E - STRING #22 @ $11B40
+#W16($12A6E)
+//ひーーっひひひ[Line]
+//ちょうのうりょくが あるかぎり[Line]
+//ボクは むてきなんだーっ!![Exit]
+//
+// current address: $11B70
+
+//POINTER #23 @ $12A70 - STRING #23 @ $11B70
+#W16($12A70)
+//ねえ キミ![Line]
+//MCもってる?[Line]
+//オレと バトルしようよ![Exit]
+//
+// current address: $11B8F
+
+//POINTER #24 @ $12A72 - STRING #24 @ $11B8F
+#W16($12A72)
+//ダークマスターの へやの カギは[Line]
+//スターチップを つかわないと[Line]
+//ひらかないんだって![Exit]
+//
+// current address: $11BC3
+
+//POINTER #25 @ $12A74 - STRING #25 @ $11BC3
+#W16($12A74)
+//たいせん! たいせん!![Line]
+//ボク ぜったいに[Line]
+//ゆうしょうするんだ![Exit]
+//
+// current address: $11BEB
+
+//POINTER #26 @ $12A76 - STRING #26 @ $11BEB
+#W16($12A76)
+//モンスターあつめに スターチップを[Line]
+//つかいすぎちゃったよ![Exit]
+//
+// current address: $11C0E
+
+//POINTER #27 @ $12A78 - STRING #27 @ $11C0E
+#W16($12A78)
+//キミ こうこうせいだろ?[Line]
+//いいトシして MCやるなよ![Exit]
+//
+// current address: $11C2D
+
+//POINTER #28 @ $12A7A - STRING #28 @ $11C2D
+#W16($12A7A)
+//ようこそ デュエルタワーへ![Exit]
+//
+// current address: $11C3F
+
+//POINTER #29 @ $12A7C - STRING #29 @ $11C3F
+#W16($12A7C)
+//「モンスターワールドたいかい」へ[Line]
+//ごさんか いただき[Line]
+//ありがとう ございます![Exit]
+//
+// current address: $11C74
+
+//POINTER #30 @ $12A7E - STRING #30 @ $11C74
+#W16($12A7E)
+//ルールは もう ごぞんじですね?[Line]
+//ほかのさんかしゃと バトルをして [Line]
+//スターチップを あつめてください[Exit]
+//
+// current address: $11CB7
+
+//POINTER #31 @ $12A80 - STRING #31 @ $11CB7
+#W16($12A80)
+//バトルに つかう MCは [Line]
+//フロアのすみに せっちしてある[Line]
+//カプセルマシンから てにはいります[Exit]
+//
+// current address: $11CEC
+
+//POINTER #32 @ $12A82 - STRING #32 @ $11CEC
+#W16($12A82)
+//…では がんばってください![Line]
+//いつでも きてくださいね[Exit]
+//
+// current address: $11D15
+
+//POINTER #33 @ $12A84 - STRING #33 @ $11D15
+#W16($12A84)
+//こちらは[Line]
+//「MCそうだんカウンター」[Line]
+//です[Exit]
+//
+// current address: $11D30
+
+//POINTER #34 @ $12A86 - STRING #34 @ $11D30
+#W16($12A86)
+//MCについて[Line]
+//わからないことが あったら[Line]
+//なんでも きいてね![Exit]
+//
+// current address: $11D55
+
+//POINTER #35 @ $12A88 - STRING #35 @ $11D55
+#W16($12A88)
+//なにか ききたいこと ある?[Line]
+//  ききたい[Line]
+//  やめる[Exit]
+//
+// current address: $11D72
+
+//POINTER #36 @ $12A8A - STRING #36 @ $11D72
+#W16($12A8A)
+//  「たいかいのルール」[Line]
+//  「MCってなに?」[Line]
+//  つぎのしつもん[Exit]
+//
+// current address: $11D98
+
+//POINTER #37 @ $12A8C - STRING #37 @ $11D98
+#W16($12A8C)
+//  「カプセルマシンってなに?」[Line]
+//  「スターチップってなに?」[Line]
+//  つぎのしつもん[Exit]
+//
+// current address: $11DCA
+
+//POINTER #38 @ $12A8E - STRING #38 @ $11DCA
+#W16($12A8E)
+//  「たいせんってなに?」[Line]
+//  「バトルのしかた」[Line]
+//  つぎのしつもん[Exit]
+//
+// current address: $11DF3
+
+//POINTER #39 @ $12A90 - STRING #39 @ $11DF3
+#W16($12A90)
+//  「じんけいってなに?」[Line]
+//  「ダイスロールってなに?」[Line]
+//  つぎのしつもん[Exit]
+//
+// current address: $11E22
+
+//POINTER #40 @ $12A92 - STRING #40 @ $11E22
+#W16($12A92)
+//  「ダークマスターってなに?」[Line]
+//  「モンスターワールドってなに?」[Line]
+//  つぎのしつもん[Exit]
+//
+// current address: $11E57
+
+//POINTER #41 @ $12A94 - STRING #41 @ $11E57
+#W16($12A94)
+//  「きろくについて」[Line]
+//  「ゲームオーバーについて」[Line]
+//  つぎのしつもん[Exit]
+//
+// current address: $11E84
+
+//POINTER #42 @ $12A96 - STRING #42 @ $11E84
+#W16($12A96)
+//  「Pカプセルってなに?」[Line]
+//  「おねえさん きょうヒマ?」[Line]
+//  やめる[Exit]
+//
+// current address: $11EAD
+
+//POINTER #43 @ $12A98 - STRING #43 @ $11EAD
+#W16($12A98)
+//わからないことが あったら[Line]
+//いつでも きいてね![Exit]
+//
+// current address: $11ECB
+
+//POINTER #44 @ $12A9A - STRING #44 @ $11ECB
+#W16($12A9A)
+//モンスターワールドたいかいは[Line]
+//MCをつかって たいせんし[Line]
+//スターチップを うばいあっていきます[Exit]
+//
+// current address: $11F02
+
+//POINTER #45 @ $12A9C - STRING #45 @ $11F02
+#W16($12A9C)
+//スターチップが たまると[Line]
+//フロアの ダークマスターに[Line]
+//ちょうせん できます[Exit]
+//
+// current address: $11F31
+
+//POINTER #46 @ $12A9E - STRING #46 @ $11F31
+#W16($12A9E)
+//ダークマスターと[Line]
+//モンスターワールドで たたかい[Line]
+//かつと うえのフロアに すすめます[Exit]
+//
+// current address: $11F63
+
+//POINTER #47 @ $12AA0 - STRING #47 @ $11F63
+#W16($12AA0)
+//さいじょうかいの 5フロアの[Line]
+//ダークマスターである かいばさまを [Line]
+//たおせば ゆうしょうです[Exit]
+//
+// current address: $11F9F
+
+//POINTER #48 @ $12AA2 - STRING #48 @ $11F9F
+#W16($12AA2)
+//MCは バトルのときに[Line]
+//たたかわせる モンスターのことです[Exit]
+//
+// current address: $11FC2
+
+//POINTER #49 @ $12AA4 - STRING #49 @ $11FC2
+#W16($12AA4)
+//てきを たおして[Line]
+//けいけんちを あげれば[Line]
+//つよくなって いきます[Exit]
+//
+// current address: $11FE8
+
+//POINTER #50 @ $12AA6 - STRING #50 @ $11FE8
+#W16($12AA6)
+//MCは カプセルマシンで[Line]
+//てにいれることが できます[Exit]
+//
+// current address: $1200C
+
+//POINTER #51 @ $12AA8 - STRING #51 @ $1200C
+#W16($12AA8)
+//カプセルマシンに [Line]
+//スターチップを いれると [Line]
+//MCが てにはいります[Exit]
+//
+// current address: $12037
+
+//POINTER #52 @ $12AAA - STRING #52 @ $12037
+#W16($12AAA)
+//カプセルマシンは かくフロアに[Line]
+//せっち してあります[Exit]
+//
+// current address: $12055
+
+//POINTER #53 @ $12AAC - STRING #53 @ $12055
+#W16($12AAC)
+//スターチップを かけて[Line]
+//フロアにいる ほかの [Line]
+//しゅつじょうしゃと バトルします[Exit]
+//
+// current address: $12085
+
+//POINTER #54 @ $12AAE - STRING #54 @ $12085
+#W16($12AAE)
+//スターチップが たまると[Line]
+//フロアの ダークマスターに[Line]
+//ちょうせん できます[Exit]
+//
+// current address: $120B4
+
+//POINTER #55 @ $12AB0 - STRING #55 @ $120B4
+#W16($12AB0)
+//そのほかには カプセルマシンに[Line]
+//スターチップを いれると[Line]
+//MCを にゅうしゅ できます[Exit]
+//
+// current address: $120E7
+
+//POINTER #56 @ $12AB2 - STRING #56 @ $120E7
+#W16($12AB2)
+//スターチップや てもちのMCを[Line]
+//すべて うしなった ばあいは[Line]
+//しっかくです[Exit]
+//
+// current address: $12116
+
+//POINTER #57 @ $12AB4 - STRING #57 @ $12116
+#W16($12AB4)
+//フロアにいる たいかいさんかしゃと[Line]
+//スターチップを かけて[Line]
+//バトルすることを たいせんといいます[Exit]
+//
+// current address: $1214C
+
+//POINTER #58 @ $12AB6 - STRING #58 @ $1214C
+#W16($12AB6)
+//バトルに なると[Line]
+//MCを 4たいまで えらび[Line]
+//じんけいを きめます[Exit]
+//
+// current address: $12177
+
+//POINTER #59 @ $12AB8 - STRING #59 @ $12177
+#W16($12AB8)
+//そうさは[Line]
+//じぶんのターンと あいてのターンを[Line]
+//じゅんばんに くりかえします[Exit]
+//
+// current address: $121A6
+
+//POINTER #60 @ $12ABA - STRING #60 @ $121A6
+#W16($12ABA)
+//じぶんのターンでは MCの[Line]
+//「いどう」や 「こうげき」を[Line]
+//させることが できます[Exit]
+//
+// current address: $121DE
+
+//POINTER #61 @ $12ABC - STRING #61 @ $121DE
+#W16($12ABC)
+//てきのMCを たおし[Line]
+//さきに ぜんめつさせたほうが [Line]
+//かちです[Exit]
+//
+// current address: $12205
+
+//POINTER #62 @ $12ABE - STRING #62 @ $12205
+#W16($12ABE)
+//じんけいとは バトルの はじめに[Line]
+//MCを フィールドに [Line]
+//はいち することです[Exit]
+//
+// current address: $12238
+
+//POINTER #63 @ $12AC0 - STRING #63 @ $12238
+#W16($12AC0)
+//その MCのじんけい によって[Line]
+//バトルの てんかいが [Line]
+//かわって くるでしょう[Exit]
+//
+// current address: $12269
+
+//POINTER #64 @ $12AC2 - STRING #64 @ $12269
+#W16($12AC2)
+//メニューから「じんけい」を[Line]
+//えらぶと バトル いがいでも[Line]
+//じんけいを くむことが できます[Exit]
+//
+// current address: $122A8
+
+//POINTER #65 @ $12AC4 - STRING #65 @ $122A8
+#W16($12AC4)
+//サイコロで[Line]
+//けっかはんてい することを[Line]
+//ダイスロール といいます[Exit]
+//
+// current address: $122CE
+
+//POINTER #66 @ $12AC6 - STRING #66 @ $122CE
+#W16($12AC6)
+//バトルでの こうげきの はんていや[Line]
+//さまざまな イベントなどに [Line]
+//つかわれます[Exit]
+//
+// current address: $12303
+
+//POINTER #67 @ $12AC8 - STRING #67 @ $12303
+#W16($12AC8)
+//フロアの でぐちを まもるのが[Line]
+//ダークマスターです[Line]
+//かくフロアに ひとりずつ います[Exit]
+//
+// current address: $1233B
+
+//POINTER #68 @ $12ACA - STRING #68 @ $1233B
+#W16($12ACA)
+//スターチップを あつめたものだけが[Line]
+//ダークマスターと たたかうことが[Line]
+//できます[Exit]
+//
+// current address: $12370
+
+//POINTER #69 @ $12ACC - STRING #69 @ $12370
+#W16($12ACC)
+//ダークマスターを たおせば[Line]
+//つぎのフロアに すすめます[Exit]
+//
+// current address: $12393
+
+//POINTER #70 @ $12ACE - STRING #70 @ $12393
+#W16($12ACE)
+//ダークマスターとは[Line]
 //「モンスターワールド」で[Line]
-//たたかって もらうぜい!![Exit]
+//たたかいます[Exit]
 //
-// current address: $14709
+// current address: $123B8
 
-//POINTER #8 @ $14BA8 - STRING #8 @ $14709
-#W16($14BA8)
-//お おてやわらかに たのむよ…[Exit]
+//POINTER #71 @ $12AD0 - STRING #71 @ $123B8
+#W16($12AD0)
+//ちょうせんしゃは ダークマスターが [Line]
+//せっていした せかいを[Line]
+//MCをつれて ぼうけんします[Exit]
 //
-// current address: $1471A
+// current address: $123ED
 
-//POINTER #9 @ $14BAA - STRING #9 @ $1471A
-#W16($14BAA)
-//ゆうぎーっ!![Line]
-//オレ にんぎょうに なっちまった!![Line]
-//どうすりゃいいんだ!?[Exit]
+//POINTER #72 @ $12AD2 - STRING #72 @ $123ED
+#W16($12AD2)
+//そのせかいで あたえられた [Line]
+//もくてきを クリアできれば[Line]
+//ちょうせんしゃの かちです[Exit]
 //
-// current address: $1474A
+// current address: $12421
 
-//POINTER #10 @ $14BAC - STRING #10 @ $1474A
-#W16($14BAC)
-//じょうのうちくん!![Exit]
+//POINTER #73 @ $12AD4 - STRING #73 @ $12421
+#W16($12AD4)
+//しかし ぼうけんの とちゅうで [Line]
+//モンスターなどに やられたり[Exit]
 //
-// current address: $14758
+// current address: $12448
 
-//POINTER #11 @ $14BAE - STRING #11 @ $14758
-#W16($14BAE)
-//うるさい にんぎょうだぜい![Line]
-//おとなしく しないなら[Line]
-//たたきこわしてやるぞ!![Exit]
+//POINTER #74 @ $12AD6 - STRING #74 @ $12448
+#W16($12AD6)
+//もくてきを [Line]
+//クリアできなかった ばあいは [Line]
+//ちょうせんしゃの まけです[Exit]
 //
-// current address: $14789
+// current address: $12474
 
-//POINTER #12 @ $14BB0 - STRING #12 @ $14789
-#W16($14BB0)
-//うわ~! [Line]
-//く くそーっ!![Exit]
+//POINTER #75 @ $12AD8 - STRING #75 @ $12474
+#W16($12AD8)
+//メニューから「きろく」をえらぶと[Line]
+//それまでの ゆうぎの じょうたいを[Line]
+//きろくすることが できます[Exit]
 //
-// current address: $14799
+// current address: $124B2
 
-//POINTER #13 @ $14BB2 - STRING #13 @ $14799
-#W16($14BB2)
-//その きたねえ てで[Line]
-//にんぎょうに さわるんじゃねえ!![Exit]
+//POINTER #76 @ $12ADA - STRING #76 @ $124B2
+#W16($12ADA)
+//どこでも きろくできますが[Line]
+//モンスターワールドでの ぼうけんでは[Line]
+//きろくできない ばしょもあります[Exit]
 //
-// current address: $147BD
+// current address: $124F9
 
-//POINTER #14 @ $14BB4 - STRING #14 @ $147BD
-#W16($14BB4)
-//フフ… そっちの ゆうぎか…[Line]
-//こうつごうだぜい![Line]
-//ルールを せつめい してやる!![Exit]
+//POINTER #77 @ $12ADC - STRING #77 @ $124F9
+#W16($12ADC)
+//たいせんで まけて[Line]
+//てもちの MCや[Line]
+//スターチップが 0になったり[Exit]
 //
-// current address: $147F0
+// current address: $12522
 
-//POINTER #15 @ $14BB6 - STRING #15 @ $147F0
-#W16($14BB6)
-//オマエには これから[Line]
-//オレの モンスターワールドで[Line]
-//ぼうけんを してもらう[Exit]
+//POINTER #78 @ $12ADE - STRING #78 @ $12522
+#W16($12ADE)
+//モンスターワールドで モンスターに[Line]
+//ぜんめつさせられた ばあいは[Line]
+//ゲームオーバーです[Exit]
 //
-// current address: $1481D
+// current address: $1255C
 
-//POINTER #16 @ $14BB8 - STRING #16 @ $1481D
-#W16($14BB8)
-//マスターである オレが[Line]
-//せっていした もくてきを[Line]
-//クリアできれば オマエの かちだ![Exit]
+//POINTER #79 @ $12AE0 - STRING #79 @ $1255C
+#W16($12AE0)
+//ときどき カプセルマシンから[Line]
+//MC いがいの カプセルが [Line]
+//でてくることが あります[Exit]
 //
-// current address: $14853
+// current address: $12596
 
-//POINTER #17 @ $14BBA - STRING #17 @ $14853
-#W16($14BBA)
-//だが せんとうで[Line]
-//オマエの MCが ぜんめつしたら[Line]
-//オレの かちだ!![Exit]
+//POINTER #80 @ $12AE2 - STRING #80 @ $12596
+#W16($12AE2)
+//それらの カプセルを [Line]
+//MCに つかうと のうりょくが[Line]
+//すこしだけ あがります[Exit]
 //
-// current address: $14884
+// current address: $125C7
 
-//POINTER #18 @ $14BBC - STRING #18 @ $14884
-#W16($14BBC)
-//そうなれば GAME OVER!![Line]
-//2かいへの とびらは[Line]
-//えいえんに ひらかないぜい!![Exit]
+//POINTER #81 @ $12AE4 - STRING #81 @ $125C7
+#W16($12AE4)
+//「ATカプセル」は こうげきりょく[Line]
+//「DFカプセル」は しゅびりょく[Exit]
 //
-// current address: $148B8
+// current address: $125F3
 
-//POINTER #19 @ $14BBE - STRING #19 @ $148B8
-#W16($14BBE)
-//モクバ… オマエを ぶったおせば[Line]
-//その とびらは ひらかれるってわけか[Exit]
+//POINTER #82 @ $12AE6 - STRING #82 @ $125F3
+#W16($12AE6)
+//「HPカプセル」は たいりょく[Line]
+//「SPカプセル」は すばやさが[Line]
+//それぞれ あがります[Exit]
 //
-// current address: $148E5
+// current address: $1262B
 
-//POINTER #20 @ $14BC0 - STRING #20 @ $148E5
-#W16($14BC0)
-//だが それは むりだぜい![Line]
-//ゆうぎ! オマエは このステージで[Line]
-//しぬことに なるんだぜい!![Exit]
+//POINTER #83 @ $12AE8 - STRING #83 @ $1262B
+#W16($12AE8)
+//これらの カプセルを[Line]
+//「Pカプセル」と いいます[Exit]
 //
-// current address: $14927
+// current address: $12649
 
-//POINTER #21 @ $14BC2 - STRING #21 @ $14927
-#W16($14BC2)
-//おともだちと いっしょにな!![Exit]
+//POINTER #84 @ $12AEA - STRING #84 @ $12649
+#W16($12AEA)
+//もう ボーヤったら[Line]
+//おませさんね![Line]
+//…え? こうこうせい!?[Exit]
 //
-// current address: $1493A
+// current address: $1266B
 
-//POINTER #22 @ $14BC4 - STRING #22 @ $1493A
-#W16($14BC4)
-//さあ![Line]
-//ゲームを はじめるぜい!![Exit]
+//POINTER #85 @ $12AEC - STRING #85 @ $1266B
+#W16($12AEC)
+//カプセルマシンだ![Exit]
 //
-// current address: $14953
+// current address: $1267A
 
-//POINTER #23 @ $14BC6 - STRING #23 @ $14953
-#W16($14BC6)
-//ゲームは オレの かちだぜ[Line]
-//モクバ…[Exit]
+//POINTER #86 @ $12AEE - STRING #86 @ $1267A
+#W16($12AEE)
+//スターチップを 1まい いれますか?[Line]
+// はい[Line]
+// いいえ[Exit]
 //
-// current address: $1496F
+// current address: $12699
 
-//POINTER #24 @ $14BC8 - STRING #24 @ $1496F
-#W16($14BC8)
-//バ… バカな……[Line]
-//オレが まけた……!?[Exit]
+//POINTER #87 @ $12AF0 - STRING #87 @ $12699
+#W16($12AF0)
+//これいじょう MCを もてない![Exit]
 //
-// current address: $1498B
+// current address: $126AD
 
-//POINTER #25 @ $14BCA - STRING #25 @ $1498B
-#W16($14BCA)
-//やったぜ ゆうぎ![Line]
-//やっぱ さすがだぜー!![Exit]
+//POINTER #88 @ $12AF2 - STRING #88 @ $126AD
+#W16($12AF2)
+//いらない MCを[Line]
+//せいりしてから こよう![Exit]
 //
-// current address: $149AF
+// current address: $126C4
 
-//POINTER #26 @ $14BCC - STRING #26 @ $149AF
-#W16($14BCC)
-//じょうのうちくんの にんぎょうは[Line]
-//かえして もらった…[Line]
-//オレは いくぜ![Exit]
+//POINTER #89 @ $12AF4 - STRING #89 @ $126C4
+#W16($12AF4)
+//[Var]<$10>の[Line]
+//カプセルを てにいれた!![Exit]
 //
-// current address: $149DB
+// current address: $126D9
 
-//POINTER #27 @ $14BCE - STRING #27 @ $149DB
-#W16($14BCE)
-//まて! ゆうぎ…!![Exit]
+//POINTER #90 @ $12AF6 - STRING #90 @ $126D9
+#W16($12AF6)
+//…スターチップが 1まいしかない[Line]
+//この1まいを つかうと[Line]
+//バトルが できなくなる!![Exit]
 //
-// current address: $149E9
+// current address: $1270F
 
-//POINTER #28 @ $14BD0 - STRING #28 @ $149E9
-#W16($14BD0)
-//オレは…[Line]
-//オレは… しんじないぞー![Line]
-//オレが まけるワケ ないんだー![Exit]
+//POINTER #91 @ $12AF8 - STRING #91 @ $1270F
+#W16($12AF8)
+//エレベーターがある[Exit]
 //
-// current address: $14A16
+// current address: $1271E
 
-//POINTER #29 @ $14BD2 - STRING #29 @ $14A16
-#W16($14BD2)
-//オレが オマエに まけるようそは[Line]
-//なにひとつ なかったハズだー!![Exit]
+//POINTER #92 @ $12AFA - STRING #92 @ $1271E
+#W16($12AFA)
+//いまは つかえないようだ[Exit]
 //
-// current address: $14A3F
+// current address: $1272E
 
-//POINTER #30 @ $14BD4 - STRING #30 @ $14A3F
-#W16($14BD4)
-//………[Exit]
+//POINTER #93 @ $12AFC - STRING #93 @ $1272E
+#W16($12AFC)
+//なんかいに いきますか?[Line]
+//   1F   2F[Exit]
 //
-// current address: $14A44
+// current address: $12747
 
-//POINTER #31 @ $14BD6 - STRING #31 @ $14A44
-#W16($14BD6)
-//くそーーっ!![Exit]
+//POINTER #94 @ $12AFE - STRING #94 @ $12747
+#W16($12AFE)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Exit]
 //
-// current address: $14A4D
+// current address: $12765
 
-//POINTER #32 @ $14BD8 - STRING #32 @ $14A4D
-#W16($14BD8)
-//ゆうぎ!![Line]
-//つぎからは オレも サポートするぜ![Exit]
+//POINTER #95 @ $12B00 - STRING #95 @ $12765
+#W16($12B00)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F[Exit]
 //
-// current address: $14A6F
+// current address: $12789
 
-//POINTER #33 @ $14BDA - STRING #33 @ $14A6F
-#W16($14BDA)
-//じょうのうちの にんぎょうが[Line]
-//つかえるように なりました[Exit]
+//POINTER #96 @ $12B02 - STRING #96 @ $12789
+#W16($12B02)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F   5F[Exit]
 //
-// current address: $14A93
+// current address: $127B2
 
-//POINTER #34 @ $14BDC - STRING #34 @ $14A93
-#W16($14BDC)
+//POINTER #97 @ $12B04 - STRING #97 @ $127B2
+#W16($12B04)
+//もうすこし このフロアに いよう…[Exit]
+//
+// current address: $127C5
+
+//POINTER #98 @ $12B06 - STRING #98 @ $127C5
+#W16($12B06)
+//このおくに ダークマスターがいる…[Line]
+//とびらの セキュリティロックは[Line]
+//みぎのはしらにある…[Exit]
+//
+// current address: $127FB
+
+//POINTER #99 @ $12B08 - STRING #99 @ $127FB
+#W16($12B08)
+//ダークマスタールームへの[Line]
+//とびらがある…[Exit]
+//
+// current address: $12817
+
+//POINTER #100 @ $12B0A - STRING #100 @ $12817
+#W16($12B0A)
+//ダークマスタールームへ いきますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+//
+// current address: $12836
+
+//POINTER #101 @ $12B0C - STRING #101 @ $12836
+#W16($12B0C)
+//スターチップを はめこみますか?[Line]
+// はい[Line]
+// いいえ[Exit]
+//
+// current address: $12853
+
+//POINTER #102 @ $12B0E - STRING #102 @ $12853
+#W16($12B0E)
+//スターチップを はめこんだ![Exit]
+//
+// current address: $12867
+
+//POINTER #103 @ $12B10 - STRING #103 @ $12867
+#W16($12B10)
+//とびらをひらくには スターチップが[Line]
+//あと [Var]<$00>まい ひつようだ…[Exit]
+//
+// current address: $12891
+
+//POINTER #104 @ $12B12 - STRING #104 @ $12891
+#W16($12B12)
+//ジュースの はんばいきがある[Exit]
+//
+// current address: $128A7
+
+//POINTER #105 @ $12B14 - STRING #105 @ $128A7
+#W16($12B14)
+//おかねをいれて ジュースをかった![Exit]
+//
+// current address: $128BC
+
+//POINTER #106 @ $12B16 - STRING #106 @ $128BC
+#W16($12B16)
+//…ゴク ……ゴク[Line]
+//フゥ… おいしかった![Exit]
+//
+// current address: $128D6
+
+//POINTER #107 @ $12B18 - STRING #107 @ $128D6
+#W16($12B18)
+//ジュースは さっき のんだばかりだ![Exit]
+//
+// current address: $128F2
+
+//POINTER #108 @ $12B1A - STRING #108 @ $128F2
+#W16($12B1A)
+//きれいな ベンチがある[Exit]
+//
+// current address: $12903
+
+//POINTER #109 @ $12B1C - STRING #109 @ $12903
+#W16($12B1C)
 //かんようしょくぶつだ![Exit]
 //
-// current address: $14AA4
+// current address: $12914
 
-//POINTER #35 @ $14BDE - STRING #35 @ $14AA4
-#W16($14BDE)
-//2Fへの とびらは[Line]
-//かたく とざされている…[Line]
-//ダークマスターを たおすしかない!![Exit]
+//POINTER #110 @ $12B1E - STRING #110 @ $12914
+#W16($12B1E)
+//クレーンゲームがある[Line]
+//なかには かわいいヌイグルミが[Line]
+//たくさん つまれている[Exit]
 //
-// current address: $14AD5
+// current address: $12944
 
-//POINTER #36 @ $14BE0 - STRING #36 @ $14AD5
-#W16($14BE0)
-//テーブルは つくりこまれた[Line]
-//ジオラマのように まちや[Line]
-//どうくつが はいちされている[Exit]
+//POINTER #111 @ $12B20 - STRING #111 @ $12944
+#W16($12B20)
+//ジュークボックスから[Line]
+//ノリのいい おんがくが きこえる…[Exit]
 //
-// current address: $14B08
+// current address: $1296A
 
-//POINTER #37 @ $14BE2 - STRING #37 @ $14B08
-#W16($14BE2)
-//どうやら テーブルそのものが[Line]
-//ゲームばんらしい…[Exit]
+//POINTER #112 @ $12B22 - STRING #112 @ $1296A
+#W16($12B22)
+//ジュークボックスが[Line]
+//おいてある…[Exit]
 //
-// current address: $14B2C
+// current address: $12982
 
-//POINTER #38 @ $14BE4 - STRING #38 @ $14B2C
-#W16($14BE4)
-//そうげんの まわりに[Line]
-//まちや どうくつが みえる[Exit]
+//POINTER #113 @ $12B24 - STRING #113 @ $12982
+#W16($12B24)
+//おかねを いれてみますか?[Line]
+// はい[Line]
+// いいえ[Exit]
 //
-// current address: $14B4C
+// current address: $1299A
 
-//POINTER #39 @ $14BE6 - STRING #39 @ $14B4C
-#W16($14BE6)
-//ヒヒヒ…[Line]
-//わたくしめの かちのようですねぇ[Exit]
+//POINTER #114 @ $12B26 - STRING #114 @ $1299A
+#W16($12B26)
+//おおがたの レースゲームだ[Exit]
 //
-// current address: $14B65
+// current address: $129AF
 
-//POINTER #40 @ $14BE8 - STRING #40 @ $14B65
-#W16($14BE8)
-//これでは ここのトビラを[Line]
-//とおすわけには まいりません[Line]
-//でなおして くださいませ…[Exit]
+//POINTER #115 @ $12B28 - STRING #115 @ $129AF
+#W16($12B28)
+//2だいの くるまが[Line]
+//はげしい デッドヒートを[Line]
+//くりかえしている[Exit]
 //
-// current address: $14B98
+// current address: $129DA
+
+//POINTER #116 @ $12B2A - STRING #116 @ $129DA
+#W16($12B2A)
+//ビルの でいりぐちだ!![Exit]
+//
+// current address: $129F0
+
+//POINTER #117 @ $12B2C - STRING #117 @ $129F0
+#W16($12B2C)
+//ボーヤ!![Line]
+//まずは MCを[Line]
+//てにいれてね!![Exit]
+//
+// current address: $12A0C
+
+//POINTER #118 @ $12B2E - STRING #118 @ $12A0C
+#W16($12B2E)
+//MCは やられてしまうと[Line]
+//なくなっちゃうから あぶないときは[Line]
+//こうさんするのも ひとつのテだよ![Exit]
+//
+// current address: $12A42

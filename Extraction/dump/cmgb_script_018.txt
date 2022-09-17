@@ -15,141 +15,26 @@
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
 #VAR(Table_6, TABLE)
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
+#VAR(Table_7, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/yugi.tbl", Table_7)
 
-//BLOCK #018 NAME:		Sound Test?
+//BLOCK #018 NAME:		Text Speed Options
 #ACTIVETBL(Table_4) // Activate this block's starting TABLE
 
-#JMP($D4B5, $D599) // Jump to insertion point
-#HDR($8000) // Difference between ROM and RAM addresses for pointer value calculations
+#JMP($83267, $8329B) // Jump to insertion point
+#HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $D59A - STRING #0 @ $D4B5
-#W16($D59A)
-//だげき1[Exit]
+//POINTER #0 @ $8329C - STRING #0 @ $83267
+#W16($8329C)
+//メッセージの スピードを[Line]
+//えらんで ください[Exit]
 //
-// current address: $D4BF
+// current address: $83289
 
-//POINTER #1 @ $D59C - STRING #1 @ $D4BF
-#W16($D59C)
-//だげき2[Exit]
+//POINTER #1 @ $8329E - STRING #1 @ $83289
+#W16($8329E)
+//  はやい[Line]
+//  ふつう[Line]
+//  おそい[Exit]
 //
-// current address: $D4C9
-
-//POINTER #2 @ $D59E - STRING #2 @ $D4C9
-#W16($D59E)
-//ざんげき1[Exit]
-//
-// current address: $D4D4
-
-//POINTER #3 @ $D5A0 - STRING #3 @ $D4D4
-#W16($D5A0)
-//ざんげき2[Exit]
-//
-// current address: $D4DF
-
-//POINTER #4 @ $D5A2 - STRING #4 @ $D4DF
-#W16($D5A2)
-//ファイア1[Exit]
-//
-// current address: $D4E6
-
-//POINTER #5 @ $D5A4 - STRING #5 @ $D4E6
-#W16($D5A4)
-//ファイア2[Exit]
-//
-// current address: $D4ED
-
-//POINTER #6 @ $D5A6 - STRING #6 @ $D4ED
-#W16($D5A6)
-//サンダー1[Exit]
-//
-// current address: $D4F6
-
-//POINTER #7 @ $D5A8 - STRING #7 @ $D4F6
-#W16($D5A8)
-//サンダー2[Exit]
-//
-// current address: $D4FF
-
-//POINTER #8 @ $D5AA - STRING #8 @ $D4FF
-#W16($D5AA)
-//ブレス1[Exit]
-//
-// current address: $D507
-
-//POINTER #9 @ $D5AC - STRING #9 @ $D507
-#W16($D5AC)
-//ブレス2[Exit]
-//
-// current address: $D50F
-
-//POINTER #10 @ $D5AE - STRING #10 @ $D50F
-#W16($D5AE)
-//こうげきまほう1[Exit]
-//
-// current address: $D51B
-
-//POINTER #11 @ $D5B0 - STRING #11 @ $D51B
-#W16($D5B0)
-//こうげきまほう2[Exit]
-//
-// current address: $D527
-
-//POINTER #12 @ $D5B2 - STRING #12 @ $D527
-#W16($D5B2)
-//ばくはつ[Exit]
-//
-// current address: $D52F
-
-//POINTER #13 @ $D5B4 - STRING #13 @ $D52F
-#W16($D5B4)
-//みずけい[Exit]
-//
-// current address: $D537
-
-//POINTER #14 @ $D5B6 - STRING #14 @ $D537
-#W16($D5B6)
-//ひかりのたま[Exit]
-//
-// current address: $D53F
-
-//POINTER #15 @ $D5B8 - STRING #15 @ $D53F
-#W16($D5B8)
-//まほうはつどう[Exit]
-//
-// current address: $D54A
-
-//POINTER #16 @ $D5BA - STRING #16 @ $D54A
-#W16($D5BA)
-//かいふく[Exit]
-//
-// current address: $D550
-
-//POINTER #17 @ $D5BC - STRING #17 @ $D550
-#W16($D5BC)
-//ひかりのごふうけん[Exit]
-//
-// current address: $D55D
-
-//POINTER #18 @ $D5BE - STRING #18 @ $D55D
-#W16($D5BE)
-//ぺンタグラムのじゅばく[Exit]
-//
-// current address: $D572
-
-//POINTER #19 @ $D5C0 - STRING #19 @ $D572
-#W16($D5C0)
-//げんわくのまなこ[Exit]
-//
-// current address: $D57E
-
-//POINTER #20 @ $D5C2 - STRING #20 @ $D57E
-#W16($D5C2)
-//フィールドこうかはっせい[Exit]
-//
-// current address: $D58E
-
-//POINTER #21 @ $D5C4 - STRING #21 @ $D58E
-#W16($D5C4)
-//しえんこうかはっせい[Exit]
-//
-// current address: $D59A
+// current address: $8329C

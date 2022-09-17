@@ -15,6 +15,8 @@
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
 #VAR(Table_6, TABLE)
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
+#VAR(Table_7, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/yugi.tbl", Table_7)
 
 //BLOCK #008 NAME:		Blank Tile Selected
 #ACTIVETBL(Table_2) // Activate this block's starting TABLE

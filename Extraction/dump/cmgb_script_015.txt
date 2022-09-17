@@ -15,82 +15,91 @@
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
 #VAR(Table_6, TABLE)
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
+#VAR(Table_7, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/yugi.tbl", Table_7)
 
-//BLOCK #015 NAME:		Boss Door
-#ACTIVETBL(Table_4) // Activate this block's starting TABLE
+//BLOCK #015 NAME:		Yugi's Status Screen
+#ACTIVETBL(Table_7) // Activate this block's starting TABLE
 
-#JMP($83017, $8315D) // Jump to insertion point
+#JMP($82F81, $82FFC) // Jump to insertion point
 #HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $8315E - STRING #0 @ $83017
-#W16($8315E)
-//ダークマスタールームへの[Line]
-//とびらがある…[Exit]
+//POINTER #0 @ $82FFD - STRING #0 @ $82F81
+#W16($82FFD)
+//にんぎょうx[Exit]
 //
-// current address: $83033
+// current address: $82F8B
 
-//POINTER #1 @ $83160 - STRING #1 @ $83033
-#W16($83160)
-//ダークマスタールームへ いきますか?[Line]
-// はい[Line]
-// いいえ[Exit]
+//POINTER #1 @ $82FFF - STRING #1 @ $82F8B
+#W16($82FFF)
+//スターチップ[Exit]
 //
-// current address: $83052
+// current address: $82F95
 
-//POINTER #2 @ $83162 - STRING #2 @ $83052
-#W16($83162)
-//ダークマスタールームへの[Line]
-//とびらがある…[Exit]
+//POINTER #2 @ $83001 - STRING #2 @ $82F95
+#W16($83001)
+//Mカプセル[Exit]
 //
-// current address: $8306E
+// current address: $82F9E
 
-//POINTER #3 @ $83164 - STRING #3 @ $8306E
-#W16($83164)
-//スターチップを はめこみますか?[Line]
-// はい[Line]
-// いいえ[Exit]
+//POINTER #3 @ $83003 - STRING #3 @ $82F9E
+#W16($83003)
+//This pointer and beyond are for items
+//Without proper translations for these I'm not touching them
+//へろへろざけ[Exit]
 //
-// current address: $8308B
+// current address: $82FA8
 
-//POINTER #4 @ $83166 - STRING #4 @ $8308B
-#W16($83166)
-//スターチップを はめこんだ![Exit]
+//POINTER #4 @ $83005 - STRING #4 @ $82FA8
+#W16($83005)
+//マリーのてがめ[Exit]
 //
-// current address: $8309F
+// current address: $82FB3
 
-//POINTER #5 @ $83168 - STRING #5 @ $8309F
-#W16($83168)
-//とびらをひらくには スターチップが[Line]
-//あと [Var]<$10>まい ひつようだ…[Exit]
+//POINTER #5 @ $83007 - STRING #5 @ $82FB3
+#W16($83007)
+//モエモエンウ[Exit]
 //
-// current address: $830C9
+// current address: $82FBB
 
-//POINTER #6 @ $8316A - STRING #6 @ $830C9
-#W16($8316A)
-//スターチップを はめこみますか?[Line]
-// はい[Line]
-// いいえ[Exit]
+//POINTER #6 @ $83009 - STRING #6 @ $82FBB
+#W16($83009)
+//のろいふうじのクイ[Exit]
 //
-// current address: $830E6
+// current address: $82FC8
 
-//POINTER #7 @ $8316C - STRING #7 @ $830E6
-#W16($8316C)
-//…スターチップが 1まいしかない[Line]
-//この1まいを つかうと[Line]
-//バトルが できなくなる!![Exit]
+//POINTER #7 @ $8300B - STRING #7 @ $82FC8
+#W16($8300B)
+//まかいのまもり[Exit]
 //
-// current address: $8311C
+// current address: $82FD1
 
-//POINTER #8 @ $8316E - STRING #8 @ $8311C
-#W16($8316E)
-//とびらをひらくには スターチップが[Line]
-//あと [Var]<$10>まい ひつようだ…[Exit]
+//POINTER #8 @ $8300D - STRING #8 @ $82FD1
+#W16($8300D)
+//てつのばう[Exit]
 //
-// current address: $83146
+// current address: $82FDA
 
-//POINTER #9 @ $83170 - STRING #9 @ $83146
-#W16($83170)
-//セキュリティーが[Line]
-//かいじょされました[Exit]
+//POINTER #9 @ $8300F - STRING #9 @ $82FDA
+#W16($8300F)
+//マジシャンのつえ[Exit]
 //
-// current address: $8315E
+// current address: $82FE6
+
+//POINTER #10 @ $83011 - STRING #10 @ $82FE6
+#W16($83011)
+//つきのけん[Exit]
+//
+// current address: $82FED
+
+//POINTER #11 @ $83013 - STRING #11 @ $82FED
+#W16($83013)
+//たいようのけん[Exit]
+//
+// current address: $82FF6
+
+//POINTER #12 @ $83015 - STRING #12 @ $82FF6
+#W16($83015)
+//はしのけん[Exit]
+//
+// current address: $82FFD

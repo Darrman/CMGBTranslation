@@ -15,24 +15,68 @@
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitmoved.tbl", Table_5)
 #VAR(Table_6, TABLE)
 #ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/unitselected.tbl", Table_6)
+#VAR(Table_7, TABLE)
+#ADDTBL("/home/darrm/Documents/Emulation/GBA/Yugioh/CMGB/CMGBTranslation/Extraction/yugi.tbl", Table_7)
 
-//BLOCK #017 NAME:		Text Speed Options
+//BLOCK #017 NAME:		Lift Menu
 #ACTIVETBL(Table_4) // Activate this block's starting TABLE
 
-#JMP($83267, $8329B) // Jump to insertion point
+#JMP($83172, $83256) // Jump to insertion point
 #HDR($7C000) // Difference between ROM and RAM addresses for pointer value calculations
 
-//POINTER #0 @ $8329C - STRING #0 @ $83267
-#W16($8329C)
-//メッセージの スピードを[Line]
-//えらんで ください[Exit]
+//POINTER #0 @ $83257 - STRING #0 @ $83172
+#W16($83257)
+//エレベーターがある[Exit]
 //
-// current address: $83289
+// current address: $83181
 
-//POINTER #1 @ $8329E - STRING #1 @ $83289
-#W16($8329E)
-//  はやい[Line]
-//  ふつう[Line]
-//  おそい[Exit]
+//POINTER #1 @ $83259 - STRING #1 @ $83181
+#W16($83259)
+//いまは つかえないようだ[Exit]
 //
-// current address: $8329C
+// current address: $83191
+
+//POINTER #2 @ $8325B - STRING #2 @ $83191
+#W16($8325B)
+//なんかいに いきますか?[Line]
+//   1F   2F[Exit]
+//
+// current address: $831AA
+
+//POINTER #3 @ $8325D - STRING #3 @ $831AA
+#W16($8325D)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Exit]
+//
+// current address: $831C8
+
+//POINTER #4 @ $8325F - STRING #4 @ $831C8
+#W16($8325F)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F[Exit]
+//
+// current address: $831EC
+
+//POINTER #5 @ $83261 - STRING #5 @ $831EC
+#W16($83261)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F   5F[Exit]
+//
+// current address: $83215
+
+//POINTER #6 @ $83263 - STRING #6 @ $83215
+#W16($83263)
+//なんかいに いきますか?[Line]
+//   1F   2F   3F[Line]
+//   4F   5F   B1[Exit]
+//
+// current address: $83243
+
+//POINTER #7 @ $83265 - STRING #7 @ $83243
+#W16($83265)
+//もうすこし このフロアに いよう…[Line]
+//[Exit]
+//
+// current address: $83257
